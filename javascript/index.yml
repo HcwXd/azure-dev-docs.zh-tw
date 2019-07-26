@@ -1,0 +1,254 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: 適用於 JavaScript 和 Node.js 雲端開發人員的 Azure
+metadata:
+  title: 適用於 JavaScript 和 Node.js 開發人員的 Azure - 教學課程、工具與 SDK 參考
+  description: 請使用專為 Node.js 和 node.js 開發人員撰寫的教學課程、課程模組與工具，透過 Azure 開始開發應用程式。
+  keywords: 'Azure, JavaScript, Node.js, SDK, API, NPM'
+  author: kraigb
+  ms.author: kraigb
+  manager: douge
+  ms.date: 07/01/2019
+  ms.topic: landing-page
+  featureFlags:
+    - clicktale
+  ms.technology: azure
+  ms.devlang: nodejs
+  ms.service: multiple
+sections:
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: 'https://aka.ms/try-azure-node'
+            html: <p>在 Azure App Service 免費的沙箱環境中部署第一個應用程式</p>
+            image:
+              src: /media/common/i_get-started.svg
+            title: 部署第一個 Node.js 範例應用程式
+  - title: 選擇正確的可擴充應用程式裝載
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - title: 靜態 Web 應用程式、SPA 和漸進式 Web 應用程式
+            html: <p>在 Azure 儲存體上部署使用 React、Angular 和 Vue 等架構建置的靜態應用程式</p>
+            href: 'https://code.visualstudio.com/tutorials/static-website/getting-started'
+            image:
+              src: /media/logos/logo_React.svg
+          - title: 完整堆疊的 Node.js Web 應用程式和 API
+            html: <p>在 Azure App Service 上部署使用 Express 等架構建置的完整堆疊 node.js Web 應用程式和 API</p>
+            href: 'https://code.visualstudio.com/tutorials/app-service-extension/getting-started'
+            image:
+              src: /media/logos/logo_vs-code.svg
+          - title: 使用 Docker 的容器化應用程式和微服務
+            html: <p>使用 Azure App Service 上的 Docker 容器部署容器化應用程式和微服務</p>
+            href: 'https://code.visualstudio.com/tutorials/docker-extension/getting-started'
+            image:
+              src: /azure/docker/media/docker.png
+          - title: 無伺服器應用程式和 API
+            href: 'https://code.visualstudio.com/tutorials/functions-extension/getting-started'
+            html: <p>部署在 Azure Functions 中以 JavaScript 撰寫的無伺服器應用程式和 API</p>
+            image:
+              src: /azure/media/index/azurefunctions.svg
+  - title: Azure SDK for Node.js
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /javascript/api/overview/azure/
+            html: <p>適用於 Azure SDK 的完整參考文件</p>
+            image:
+              src: /media/common/i_api-reference.svg
+            title: 參考
+          - href: 'https://azure.microsoft.com/en-us/resources/samples/?sort=0&platform=nodejs'
+            html: <p>適用於 Azure SDK 的 GitHub 存放庫範例</p>
+            image:
+              src: /common/i_code-samples.svg
+            title: SDK 範例
+  - title: 持續部署和 DevOps
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - title: Azure DevOps Projects
+            href: /azure/devops-project/azure-devops-project-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>從 Azure DevOps Project 建置和部署應用程式</p>
+            image:
+              src: /media/logos/logo_vs-team-services.svg
+          - title: GitHub 動作
+            href: 'https://css-tricks.com/introducing-github-actions/'
+            html: <p>從 GitHub 動作將應用程式建置和部署到 Azure</p>
+            image:
+              src: /media/logos/logo_octokitty.svg
+          - title: 持續整合
+            href: /azure/devops-project/azure-devops-project-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>新增 Jenkins、CircleCI 或 Travis 以管理組建</p>
+            image:
+              src: /media/common/i_scrum.svg
+  - title: 使用偵錯工具和診斷工具來尋找和修正錯誤
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - title: Azure App Service 遠端偵錯
+            href: 'https://code.visualstudio.com/docs/azure/remote-debugging'
+            html: <p>將偵錯工具附加至 Azure App Service 中的測試或生產應用程式中</p>
+            image:
+              src: /media/common/i_debug.svg
+          - title: 針對 Azure App Service 以 VS Code 記錄點
+            href: 'https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach'
+            html: <p>將記錄陳述式新增至 Azure App Service 應用程式，無需從 VS Code 重新部署</p>
+            image:
+              src: /media/common/i_tools.svg
+          - title: 以 VS Code 偵錯本機 Node.js 應用程式
+            href: 'https://code.visualstudio.com/docs/nodejs/nodejs-debugging'
+            html: <p>自動附加偵錯工具以執行流程</p>
+            image:
+              src: /media/logos/logo_vs-code.svg
+  - title: 工具和擴充功能
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: 'https://code.visualstudio.com/docs/azure/extensions'
+            html: <p>直接透過延伸模組從 Visual Studio Code 使用 Azure</p>
+            image:
+              src: /media/logos/logo_vs-code.svg
+            title: Visual Studio Code
+          - href: /cli/azure
+            html: <p>從命令列管理 Azure 資源</p>
+            image:
+              src: /azure/media/index/azure_dev-7.svg
+            title: Azure CLI 2.0
+  - title: 儲存和管理檔案或資料庫中的資料
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - image:
+              src: /azure/media/index/Storage.svg
+            title: 檔案儲存體
+            html: <p>將檔案安全地儲存在雲端儲存體中</p>
+            href: /azure/storage/blobs/storage-quickstart-blobs-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/cosmos-db/create-mongodb-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            title: MongoDB
+            html: <p>在應用程式中使用 MongoDB 和 CosmosDB</p>
+            image:
+              src: /azure/media/index/cosmosdb.svg
+          - image:
+              src: /azure/media/index/RedisCache.svg
+            title: Redis 快取
+            html: <p>將資料讀取和寫入至 Redis 的記憶體內資料存放區</p>
+            href: /azure/redis-cache/cache-nodejs-get-started?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - image:
+              src: /azure/media/index/PostgreSQL.svg
+            title: PostgreSQL
+            html: <p>建立和管理雲端 Postgres 資料庫</p>
+            href: /azure/postgresql/connect-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - image:
+              src: /azure/media/index/MySQL.SVG
+            title: MySQL
+            html: <p>建立和管理雲端 MySQL 資料庫</p>
+            href: /azure/mysql/connect-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - image:
+              src: /azure/media/index/SQLDatabase.svg
+            title: Azure SQL Database
+            html: <p>建立和管理雲端 SQL 資料庫</p>
+            href: /azure/sql-database/sql-database-connect-query-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+  - title: 使用驗證與授權保護應用程式和資源
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/active-directory/develop/active-directory-devquickstarts-webapi-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>使用 Passport 策略驗證使用者</p>
+            image:
+              src: /azure/media/index/ActiveDirectory.svg
+            title: Active Directory
+          - href: /azure/key-vault/quick-create-cli?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>將 API 金鑰和祕密安全地儲存在您的應用程式中</p>
+            image:
+              src: /azure/media/index/KeyVault.svg
+            title: Key Vault
+          - href: /azure/active-directory-b2c/active-directory-b2c-devquickstarts-web-node?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>使用 Passport 和 Azure AD 將 Facebook、Twitter 或 GitHub 登入資料新增至您的 Web 應用程式</p>
+            image:
+              src: /azure/media/index/ActiveDirectory.svg
+            title: Active Directory B2C
+  - title: 監視資源健康狀態，並偵測應用程式中的問題
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/application-insights/app-insights-nodejs-quick-start?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>監視要求，並找出應用程式中的錯誤</p>
+            image:
+              src: /azure/media/index/ApplicationInsights.svg
+            title: Application Insights
+          - href: /azure/log-analytics/log-analytics-quick-collect-linux-computer?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>檢閱單一位置中的環境相關資料</p>
+            image:
+              src: /azure/media/index/operationsmanagementsuite.svg
+            title: Log Analytics
+          - href: /azure/monitoring-and-diagnostics?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>取得詳細的效能和使用量資料</p>
+            image:
+              src: /azure/media/index/AzureMonitoring.svg
+            title: Azure 監視器
+  - title: 透過訊息將裝置和應用程式連線並進行管理
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/event-grid/custom-event-quickstart?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>使用 HTTP 式事件傳遞以消除輪詢</p>
+            image:
+              src: /azure/media/index/azure_event_grid.svg
+            title: Event Grid
+          - href: /azure/service-bus-messaging/service-bus-nodejs-how-to-use-queues?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>在服務中採用高度可靠的傳訊</p>
+            image:
+              src: /azure/media/index/IOT_edge_50.svg
+            title: 服務匯流排
+          - href: /azure/storage/queues/storage-nodejs-how-to-use-queues?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>使用佇列進行高擴充性傳訊</p>
+            image:
+              src: /media/common/i_sharepoint-list.svg
+            title: 佇列儲存體
+  - title: IoT
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/iot-hub/iot-hub-node-node-getstarted?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>使用 IoT 中樞管理數千部裝置</p>
+            image:
+              src: /azure/media/index/IOT_edge_50.svg
+            title: 連線及管理 IoT 裝置
+          - href: /azure/iot-hub/iot-hub-node-node-getstarted?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            html: <p>使用事件中樞收集數十億個資料點</p>
+            image:
+              src: /azure/media/index/EventHubs.svg
+            title: 巨量資料串流
