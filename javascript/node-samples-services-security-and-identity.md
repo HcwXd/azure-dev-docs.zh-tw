@@ -1,19 +1,19 @@
 ---
 title: 使用 Node.js 的 Azure 安全性和身分識別程式碼範例
 description: 展示如何以 Node.js 來使用 Azure 安全性和身分識別的範例程式碼。
-author: KarlErickson
+author: karlerickson
 manager: douge
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
 ms.author: karler
-ms.openlocfilehash: d53e083847d784c06a74d3234b62a7c6fe342bd4
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 251c5226958b5c653c3c92581dff18c87904ee4a
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285959"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68690918"
 ---
 # <a name="azure-security-and-identity-with-nodejs-code-samples"></a>使用 Node.js 的 Azure 安全性和身分識別程式碼範例
 

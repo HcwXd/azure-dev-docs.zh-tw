@@ -3,17 +3,18 @@ title: 如何在 Linux 上的 App Service 中使用 Spring 和 Cosmos DB
 description: 本文將引導您完成在 Linux 上的 Azure App Service 中建置、設定、部署、疑難排解及調整 Java Web 應用程式的程序。
 documentationcenter: java
 author: bmitchell287
-ms.author: brendm; joshuapa
+ms.author: brendm
+ms.reviewer: joshuapa
 ms.date: 4/24/2019
 ms.devlang: java
 ms.service: app-service, cosmos-db
 ms.topic: article
-ms.openlocfilehash: 16cbcfa99400d56692679d2ccd0ad6b962af7fb9
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: e7360067deaa9d038440978892f093dfb28db499
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284809"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691153"
 ---
 # <a name="how-to-use-spring-and-cosmos-db-with-app-service-on-linux"></a>如何在 Linux 上的 App Service 中使用 Spring 和 Cosmos DB
 
@@ -37,7 +38,7 @@ ms.locfileid: "68284809"
 - [Maven 3](http://maven.apache.org/)
 
 ## <a name="clone-the-sample-java-web-app-repository"></a>複製範例 Java Web 應用程式存放庫
-在此練習中，您將使用 Spring Todo 應用程式，這是使用 [Spring Boot](https://spring.io/projects/spring-boot)、[適用於 Cosmos DB 的 Spring 資料](https://docs.microsoft.com/azure/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db?view=azure-java-stable)和 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) 建置的 Java 應用程式。
+在此練習中，您將使用 Spring Todo 應用程式，這是使用 [Spring Boot](https://spring.io/projects/spring-boot)、[適用於 Cosmos DB 的 Spring 資料](https://docs.microsoft.com/azure/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db)和 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) 建置的 Java 應用程式。
 1. 複製 Spring Todo 應用程式，並複製 **.prep** 資料夾的內容以初始化專案：
 
     若為 Bash：

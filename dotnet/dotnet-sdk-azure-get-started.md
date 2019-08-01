@@ -2,12 +2,13 @@
 title: 開始使用 Azure 與 .NET
 description: 了解您需要知道的 Azure 和 .NET 基本概念。
 ms.date: 09/19/2018
-ms.openlocfilehash: 2f5277987780c16e9a36d03ac2c08b1247460e73
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.topic: conceptual
+ms.openlocfilehash: 70c3dbecbd184ed8952ad343e33686bdf8ae1fd5
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68280709"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691385"
 ---
 # <a name="get-started-with-azure-and-net"></a>開始使用 Azure 與 .NET
 
@@ -53,7 +54,7 @@ Azure 中的託管可分為三類。
 
 根據您的需求，Azure 提供多個儲存資料的服務。 適用於 .NET 開發人員的最常見資料服務為：
 
-* [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/)：如果您想要將已使用 SQL Server 的應用程式遷移至雲端，那麼 Azure SQL Database 就是理所當然的起點。 若要開始使用，請參閱[教學課程：在 Azure 中搭配 SQL Database 來建置 ASP.NET 應用程式](https://docs.microsoft.com/azure/cosmos-db/)的地方繼續下去。
+* [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/)：如果您想要將已使用 SQL Server 的應用程式遷移至雲端，那麼 Azure SQL Database 就是理所當然的起點。 若要開始使用，請參閱[教學課程：在 Azure 中搭配 SQL Database 來建置 ASP.NET 應用程式](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)的地方繼續下去。
 
 * [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/)：Azure Cosmos DB 是針對雲端設計的新式資料庫。 當您開始建置尚未有特定資料庫相依性的新應用程式時，應該考慮使用 Azure Cosmos DB。 對於新的 Web、行動裝置、遊戲和 IoT 應用程式，若其中自動調整規模、可預測的效能、快速回應時間，以及查詢無結構描述資料的能力都很重要，則 Cosmos DB 是個不錯的選擇。 若要開始使用，請參閱[快速入門：使用 SQL API 和 Azure 入口網站建置採用 Azure Cosmos DB 的 .NET Web 應用程式](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)。
 

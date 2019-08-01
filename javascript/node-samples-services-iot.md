@@ -1,19 +1,19 @@
 ---
 title: 使用 Node.js 的 Azure 傳訊和 IoT 程式碼範例
 description: 展示如何以 Node.js 來使用 Azure 傳訊和 IoT 的範例程式碼
-author: KarlErickson
+author: karlerickson
 manager: douge
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
 ms.author: karler
-ms.openlocfilehash: 96e2cbfeb960b34404e35401655fdc0f5f19e314
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 26948fde3f585c1f02fe38347902722c248b0e8b
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284989"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68690923"
 ---
 # <a name="sample-code-for-using-azure-messaging-and-iot-with-nodejs"></a>使用 Azure 傳訊和 IoT 搭配 Node.js 的範例程式碼
 

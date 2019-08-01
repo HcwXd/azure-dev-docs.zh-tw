@@ -69,7 +69,7 @@ sections:
           - href: 'https://azure.microsoft.com/en-us/resources/samples/?sort=0&platform=nodejs'
             html: <p>適用於 Azure SDK 的 GitHub 存放庫範例</p>
             image:
-              src: /common/i_code-samples.svg
+              src: /media/common/i_code-samples.svg
             title: SDK 範例
   - title: 持續部署和 DevOps
     items:
@@ -89,7 +89,7 @@ sections:
             image:
               src: /media/logos/logo_octokitty.svg
           - title: 持續整合
-            href: /azure/devops-project/azure-devops-project-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+            href: /vsts/build-release/apps/cd/azure/azure-devops-project-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>新增 Jenkins、CircleCI 或 Travis 以管理組建</p>
             image:
               src: /media/common/i_scrum.svg
@@ -176,7 +176,7 @@ sections:
         className: cardsM
         columns: 3
         items:
-          - href: /azure/active-directory/develop/active-directory-devquickstarts-webapi-nodejs?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/active-directory/develop/quickstart-v1-nodejs-webapi?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>使用 Passport 策略驗證使用者</p>
             image:
               src: /azure/media/index/ActiveDirectory.svg
@@ -186,7 +186,7 @@ sections:
             image:
               src: /azure/media/index/KeyVault.svg
             title: Key Vault
-          - href: /azure/active-directory-b2c/active-directory-b2c-devquickstarts-web-node?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/active-directory-b2c/active-directory-b2c-tutorials-spa?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>使用 Passport 和 Azure AD 將 Facebook、Twitter 或 GitHub 登入資料新增至您的 Web 應用程式</p>
             image:
               src: /azure/media/index/ActiveDirectory.svg
@@ -198,17 +198,17 @@ sections:
         className: cardsM
         columns: 3
         items:
-          - href: /azure/application-insights/app-insights-nodejs-quick-start?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/azure-monitor/learn/nodejs-quick-start?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>監視要求，並找出應用程式中的錯誤</p>
             image:
               src: /azure/media/index/ApplicationInsights.svg
             title: Application Insights
-          - href: /azure/log-analytics/log-analytics-quick-collect-linux-computer?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/azure-monitor/learn/quick-collect-linux-computer?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>檢閱單一位置中的環境相關資料</p>
             image:
               src: /azure/media/index/operationsmanagementsuite.svg
             title: Log Analytics
-          - href: /azure/monitoring-and-diagnostics?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/azure-monitor/?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>取得詳細的效能和使用量資料</p>
             image:
               src: /azure/media/index/AzureMonitoring.svg
@@ -242,12 +242,12 @@ sections:
         className: cardsM
         columns: 3
         items:
-          - href: /azure/iot-hub/iot-hub-node-node-getstarted?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/iot-hub/quickstart-control-device-node?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>使用 IoT 中樞管理數千部裝置</p>
             image:
               src: /azure/media/index/IOT_edge_50.svg
             title: 連線及管理 IoT 裝置
-          - href: /azure/iot-hub/iot-hub-node-node-getstarted?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+          - href: /azure/iot-hub/quickstart-send-telemetry-node?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             html: <p>使用事件中樞收集數十億個資料點</p>
             image:
               src: /azure/media/index/EventHubs.svg

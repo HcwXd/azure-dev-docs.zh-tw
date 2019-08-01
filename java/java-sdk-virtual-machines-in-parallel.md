@@ -4,17 +4,18 @@ description: 使用 Azure SDK for Java 跨不同 Azure 區域平行建立虛擬�
 author: rloutlaw
 manager: douge
 ms.assetid: e5a36699-2d96-4571-84f9-a6af13f3c067
-ms.service: Azure
+ms.service: azure
 ms.devlang: java
 ms.topic: article
 ms.date: 03/30/2017
-ms.author: brendm;asirveda
-ms.openlocfilehash: 22b149a24a2335ae8f7b9c8696ce1862f1017614
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.author: brendm
+ms.reviewer: asirveda
+ms.openlocfilehash: 8aacf198657da96218ef48b4714c26c6199724fc
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284289"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691783"
 ---
 # <a name="create-virtual-machines-across-multiple-regions-from-your-java-applications"></a>從 Java 應用程式跨多個區域建立虛擬機器
 

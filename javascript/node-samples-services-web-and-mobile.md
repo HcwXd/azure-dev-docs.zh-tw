@@ -1,19 +1,19 @@
 ---
 title: 使用 Node.js 的 Azure Web 和行動裝置應用程式程式碼範例
 description: 在 Node.js 中的 Azure Web 和行動裝置應用程式程式碼範例
-author: KarlErickson
+author: karlerickson
 manager: douge
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
 ms.author: karler
-ms.openlocfilehash: 6ddf9959130a943a716027c5d8ca03708821d68c
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 588b39aa20ab02efb733bcd88371f9067f581676
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285939"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68690812"
 ---
 # <a name="azure-web-and-mobile-apps-with-nodejs-code-samples"></a>使用 Node.js 的 Azure Web 和行動裝置應用程式程式碼範例
 

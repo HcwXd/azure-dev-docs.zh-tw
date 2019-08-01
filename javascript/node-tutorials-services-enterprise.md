@@ -1,19 +1,19 @@
 ---
 title: 使用 Node.js 的 Azure 企業服務教學課程
 description: 使用 Azure 企業服務搭配 Node.js 的教學課程。
-author: KarlErickson
+author: karlerickson
 manager: douge
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
 ms.author: karler
-ms.openlocfilehash: 318242b6f4b042638d92de9a9407c70dc34e1a4c
-ms.sourcegitcommit: 4cc7f5e1e4601065bfcb4c2eeb7d47ad0bec61f8
+ms.openlocfilehash: e8444653525a49cac413159ce644dc0b868b68ac
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68430519"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68690733"
 ---
 # <a name="tutorials-for-using-azure-enterprise-services-with-nodejs"></a>使用 Azure 企業服務搭配 Node.js 的教學課程
 
