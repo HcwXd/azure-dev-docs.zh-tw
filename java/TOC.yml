@@ -8,13 +8,13 @@
         - name: 部署 Web Apps
           items:
             - name: Windows 與 Eclipse
-              href: /azure/app-service-web/app-service-web-get-started-java?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+              href: /azure/app-service/app-service-web-get-started-java?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
             - name: Linux 與 Tomcat
               href: /azure/app-service/containers/quickstart-java?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
             - name: Linux 與 Java SE
               href: spring-framework/deploy-spring-boot-java-app-with-maven-plugin.md?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: 監視 Web Apps
-          href: /azure/application-insights/app-insights-java-quick-start?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+          href: /azure/azure-monitor/learn/java-quick-start?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: Azure DevOps Projects
           href: /azure/devops-project/azure-devops-project-java?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: 無伺服器函式
@@ -42,7 +42,7 @@
         - name: 儲存體 Blob
           href: /azure/storage/blobs/storage-quickstart-blobs-java-v10?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: Redis 快取
-          href: /azure/redis-cache/cache-java-get-started?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+          href: /azure/azure-cache-for-redis/cache-java-get-started?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: Service Fabric
           items:
             - name: 部署 Spring Boot
@@ -60,11 +60,7 @@
                 - name: JMS 與 AMQP
                   href: /azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
             - name: 事件中樞
-              items:
-                - name: 傳送事件
-                  href: /azure/event-hubs/event-hubs-java-get-started-send?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
-                - name: 接收事件
-                  href: /azure/event-hubs/event-hubs-java-get-started-receive-eph?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+              href: /azure/event-hubs/event-hubs-java-get-started-send?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: IoT 中樞
           items:
             - name: 傳送遙測
@@ -119,7 +115,7 @@
               href: /java/api/overview/azure/maven/azure-functions-maven-plugin/README
         - name: Jenkins CI/CD
           href: /azure/jenkins/
-        - name: Azure Pipelines
+        - name: Azure DevOps
           href: /azure/devops/java/
     - name: 概念
       items:
@@ -129,10 +125,10 @@
       items:
         - name: 在 Service Fabric 上部署微服務
           href: /azure/service-fabric/service-fabric-tutorial-create-java-app?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
-        - name: App Service with MySQL 上的 Spring Boot
-          href: /azure/app-service-web/app-service-web-tutorial-java-mysql?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+        - name: App Service with Cosmos DB 上的 Spring Boot
+          href: /azure/app-service/containers/tutorial-java-spring-cosmosdb?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: Jenkins CI/CD 至 App Service
-          href: /azure/jenkins/java-deploy-webapp-tutorial?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+          href: /azure/jenkins/tutorial-jenkins-deploy-web-app-azure-app-service?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: 使用 Maven 部署到 App Service
           href: spring-framework/deploy-spring-boot-java-app-with-maven-plugin.md?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: 將容器部署到 App Service
