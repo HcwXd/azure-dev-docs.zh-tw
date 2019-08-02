@@ -10,20 +10,20 @@ ms.assetid: ''
 ms.author: ruyakubu
 ms.date: 09/14/2018
 ms.devlang: Java
-ms.service: Azure DevOps
+ms.service: devops
 ms.tgt_pltfrm: multiple
 ms.topic: tutorial
 ms.workload: web
-ms.openlocfilehash: 8ba4a880cb69948d396c3c81f2ddeafd54d68eb2
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 28a21bf0e1b4cb09ed4dc5e9f80f292c52eab103
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284099"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691779"
 ---
 # <a name="cicd-for-microprofile-applications-using-azure-devops"></a>使用 Azure DevOps 為 MicroProfile 應用程式設定 CI/CD
 
-本教學課程將示範 Java EE 開發人員如何輕鬆地使用 Azure DevOps (先前稱為 VSTS) 設定 CI/CD 發行週期，藉此將他們的 [MicroProfile](http://microprofile.io) 應用程式部署至用於容器的 Web App。  在此範例中，我們使用的 MicroProfile 應用程式會使用 [Payara Micro](https://www.payara.fish/payara_micro) 作為基礎映像。   
+本教學課程將示範 Java EE 開發人員如何輕鬆地使用 Azure Web App (先前稱為 VSTS) 設定 CI/CD 發行週期，藉此將他們的 [MicroProfile](http://microprofile.io) 應用程式部署至用於容器的 Azure Web App。  在此範例中，我們使用的 MicroProfile 應用程式會使用 [Payara Micro](https://www.payara.fish/payara_micro) 作為基礎映像。   
 
 ```Dockerfile
 FROM payara/micro:5.182
