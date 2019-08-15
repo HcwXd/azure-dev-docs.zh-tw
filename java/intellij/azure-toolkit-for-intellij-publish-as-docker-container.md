@@ -15,10 +15,10 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: a4518994b961294a6a9cf3dffc302da6bd52b441
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.sourcegitcommit: 3d42245ecbfaeda31abba5f3f813b28f715ffd7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 08/12/2019
 ms.locfileid: "68279209"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>使用適用於 IntelliJ 的 Azure 工具組，將 Web 應用程式發佈作為 Docker 容器
@@ -35,7 +35,7 @@ Docker 容器是常見的 Web 應用程式部署方法。 藉由使用 Docker �
 ## <a name="publish-your-web-app-to-azure-by-using-a-docker-container"></a>使用 Docker 容器將您的 Web 應用程式發佈至 Azure
 
 > [!NOTE]
-> * 若要發佈 Web 應用程式，您必須建立已可供部署的成品。 若要深入了解，請參閱[建立成品的其他資訊](#artifacts)一節。
+> * 若要發佈 Web 應用程式，您必須建立已可供部署的構件。 若要深入了解，請參閱[建立構件的其他資訊](#artifacts)一節。
 >
 > * 至少完成部署精靈一次之後，其中的大部分設定便會在您再次執行精靈時作為預設值。
 >
@@ -55,7 +55,7 @@ Docker 容器是常見的 Web 應用程式部署方法。 藉由使用 Docker �
 
    ![[在 Azure 上部署 Docker 容器] 精靈][PUB03]
 
-3. 在 [輸入映像名稱、選取成品路徑並確認要使用的 Docker 主機]  視窗中，執行下列動作︰ 
+3. 在 [輸入映像名稱、選取構件路徑並確認要使用的 Docker 主機]  視窗中，執行下列動作︰ 
 
    a. 在 [Docker 映像名稱]  方塊中，輸入 Docker 主機的唯一名稱 (精靈會自動建立一個名稱，但您可以修改)。 
 
@@ -161,12 +161,12 @@ Docker 容器是常見的 Web 應用程式部署方法。 藉由使用 Docker �
       * **預先定義的 Docker 映像**：指定 Azure 中的既存 Docker 映像。 
 
         > [!NOTE]
-        > 此方塊中的 Docker 映像清單包含數個映像，而我們已將 Azure 工具組設定為要修補這些映像，因此系統會自動部署您的成品。 
+        > 此方塊中的 Docker 映像清單包含數個映像，而我們已將 Azure 工具組設定為要修補這些映像，因此系統會自動部署您的構件。 
 
       * **自訂 Dockerfile**：指定本機電腦中先前儲存的 Dockerfile。
 
         > [!NOTE]
-        > 這個更進階的功能適用於想要部署專屬 Dockerfile 的開發人員。 不過，這取決於使用此選項來確保已正確建置其 Dockerfile 的開發人員。 Azure 工具組並不會驗證自訂 Dockerfile 中的內容，因此如果 Dockerfile 有問題，則部署可能會失敗。 此外，由於 Azure 工具組預期自訂的 Dockerfile 會包含 Web 應用程式成品，因此會嘗試開啟 HTTP 連線。 如果開發人員發佈不同類型的成品，他們可能會在部署後收到無關緊要的錯誤。
+        > 這個更進階的功能適用於想要部署專屬 Dockerfile 的開發人員。 不過，這取決於使用此選項來確保已正確建置其 Dockerfile 的開發人員。 Azure 工具組並不會驗證自訂 Dockerfile 中的內容，因此如果 Dockerfile 有問題，則部署可能會失敗。 此外，由於 Azure 工具組預期自訂的 Dockerfile 會包含 Web 應用程式構件，因此會嘗試開啟 HTTP 連線。 如果開發人員發佈不同類型的構件，他們可能會在部署後收到無關緊要的錯誤。
 
    c. 在 [通訊埠設定]  方塊中，輸入 Docker 容器的唯一 TCP 通訊埠繫結。 
 
@@ -177,9 +177,9 @@ Azure 工具組會開始將您的 Web 應用程式部署至 Azure 中的 Docker 
 ![部署進度列][PUB09]
 
 <a name="artifacts"></a>
-## <a name="additional-information-about-creating-artifacts"></a>建立成品的其他資訊
+## <a name="additional-information-about-creating-artifacts"></a>建立構件的其他資訊
 
-若要建立已可供部署的成品，請執行下列步驟︰
+若要建立已可供部署的構件，請執行下列步驟︰
 
 1. 在 IntelliJ 中開啟 web 應用程式專案。
 
@@ -191,11 +191,11 @@ Azure 工具組會開始將您的 Web 應用程式部署至 Azure 中的 Docker 
 
    ![[Web 應用程式:封存] 命令][ART02]
 
-4. 在 [名稱]  方塊中，輸入成品的名稱 (請勿加上「.war」  副檔名)，然後按一下 [確定]  。
+4. 在 [名稱]  方塊中，輸入構件的名稱 (請勿加上「.war」  副檔名)，然後按一下 [確定]  。
 
-   ![成品的 [名稱] 方塊][ART03]
+   ![構件的 [名稱] 方塊][ART03]
 
-如需在 IntelliJ 中建立成品的詳細資訊，請參閱 JetBrains 網站上的[設定成品]。
+如需在 IntelliJ 中建立構件的詳細資訊，請參閱 JetBrains 網站上的[設定構件]。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -206,7 +206,7 @@ Azure 工具組會開始將您的 Web 應用程式部署至 Azure 中的 Docker 
 <!-- URL List -->
 
 [Docker 的官方網站]: https://www.docker.com/
-[設定成品]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html
+[設定構件]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html
 
 <!-- IMG List -->
 
