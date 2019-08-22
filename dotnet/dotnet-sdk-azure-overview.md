@@ -2,13 +2,15 @@
 title: Azure .NET API
 description: 適用於 .NET 的 Azure API 概觀
 ms.date: 10/19/2017
+author: CamSoper
+ms.author: casoper
 ms.topic: conceptual
-ms.openlocfilehash: 7b7a3dacec2a6ee706baa545621b4d6609a43ebf
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 029ca917bcdb08a64d2604b35545fe6ea70f4855
+ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691398"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69633057"
 ---
 # <a name="azure-net-apis"></a>Azure .NET API
 

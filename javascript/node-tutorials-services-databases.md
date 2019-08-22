@@ -1,19 +1,19 @@
 ---
 title: 使用 Node.js 的 Azure 資料庫教學課程
 description: 可供連線至 Azure 資料庫並使用它搭配 Node.js 的教學課程。
-author: karlerickson
-manager: douge
+author: kraigb
+manager: barbkess
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
-ms.author: karler
-ms.openlocfilehash: 961e070d096f9e72972e3b4022da23d27f0cce4b
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.author: kraigb
+ms.openlocfilehash: deda55e5d547293cb83640608ce96cf48f1c131f
+ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68690682"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69889742"
 ---
 # <a name="tutorials-for-using-azure-databases-with-nodejs"></a>使用 Azure 資料庫搭配 Node.js 的教學課程
 

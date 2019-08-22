@@ -2,13 +2,15 @@
 title: 從 Visual Studio 部署至 Azure
 description: 本教學課程將逐步引導您使用 Visual Studio 和 .NET 來建置及部署 Microsoft Azure 應用程式。
 ms.date: 06/20/2017
+author: CamSoper
+ms.author: casoper
 ms.topic: quickstart
-ms.openlocfilehash: 60dbdedca91c972b68298ad94b5a8b373a37c561
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 8211d1473c7ee658701f25da1313934b41eddc86
+ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691236"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69633130"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>從 Visual Studio 部署至 Azure
 

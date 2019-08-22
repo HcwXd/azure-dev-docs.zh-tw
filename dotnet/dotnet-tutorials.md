@@ -2,13 +2,15 @@
 title: Azure 中的 .NET 和 .NET Core 應用程式教學課程
 description: 使用 Azure 服務與 .NET、.NET Core、ASP.NET 和 ASP.NET Core 建置功能，並將其新增至 Web 與行動裝置應用程式的教學課程。
 ms.date: 07/17/2018
+author: CamSoper
+ms.author: casoper
 ms.topic: conceptual
-ms.openlocfilehash: 5dffb29792fd38fbf7a6983d885156ca241d0d05
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: e4bca646504836c65323a0ee715329baf50afa3b
+ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691301"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69633049"
 ---
 # <a name="tutorials-for-building-net-and-net-core-apps-in-azure"></a>在 Azure 中建置 .NET 和 .NET Core 應用程式的教學課程
 

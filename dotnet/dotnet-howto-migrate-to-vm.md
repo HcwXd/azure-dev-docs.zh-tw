@@ -2,14 +2,16 @@
 title: 將 ASP.NET Web 應用程式移轉至 Azure 虛擬機器
 description: 了解如何從內部部署將 ASP.NET Web 應用程式移轉至 Azure 虛擬機器。
 ms.date: 11/15/2017
+author: CamSoper
+ms.author: casoper
 ms.service: virtual-machines
 ms.topic: conceptual
-ms.openlocfilehash: a3a60e788d578f8f3a94283b1f323ce0c943796a
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: a2f110012fa986feedbc5d864a2930656c35c135
+ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691253"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69633156"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>將 ASP.NET Web 應用程式移轉至 Azure 虛擬機器
 

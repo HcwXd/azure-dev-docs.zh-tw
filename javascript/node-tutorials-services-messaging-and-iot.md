@@ -1,19 +1,19 @@
 ---
 title: 使用 Node.js 的 Azure 傳訊和物聯網 (IoT) 教學課程
 description: 使用 Azure 傳訊和物聯網 (IoT) 搭配 Node.js 的教學課程。
-author: karlerickson
-manager: douge
+author: kraigb
+manager: barbkess
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
-ms.author: karler
-ms.openlocfilehash: d13c6615fc4db2ac9c7582aef3fc8d29b540c942
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.author: kraigb
+ms.openlocfilehash: 45da48c31f6c74e9b2b3cca6f073c5078bd8798a
+ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68690750"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69889738"
 ---
 # <a name="azure-messaging-and-internet-of-things-iot-with-nodejs-tutorials"></a>使用 Node.js 的 Azure 傳訊和物聯網 (IoT) 教學課程
 

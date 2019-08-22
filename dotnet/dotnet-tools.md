@@ -2,14 +2,16 @@
 title: 適用於 Azure .NET 和 .NET Core 開發人員的工具
 description: 取得工具，開始在 Windows、Linux 和 Mac 環境使用 Azure .NET 程式庫。
 ms.date: 08/11/2018
+author: CamSoper
+ms.author: casoper
 ms.custom: azure-dotnet-devcenter, azure-dotnet-devcenter-authored, azure-dotnet-devcenter-conceptual, vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 5f28c6e9cff45db78cfea845ee28180b27028037
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: be98ecf16fc592284209d10eba4ada53f49cfb6a
+ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691352"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69633088"
 ---
 # <a name="tools-for-net-and-net-core-azure-developers"></a>適用於 .NET 和 .NET Core Azure 開發人員的工具
 
