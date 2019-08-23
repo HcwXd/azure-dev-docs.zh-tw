@@ -88,8 +88,22 @@
               href: /azure/cognitive-services/speech-service/get-started?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
     - name: 使用說明指南
       items:
-        - name: 透過 Visual Studio Code 部署
+        - name: 使用 VS Code 的端對端 Node.js
           href: node-howto-e2e.md
+        - name: 部署 Web 應用程式
+          href: node-howto-deploy-web-app.md
+        - name: 部署容器
+          href: node-howto-deploy-containers.md
+        - name: 透過持續傳遞部署
+          href: /azure/devops/pipelines/languages/javascript?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+        - name: 與資料庫整合
+          href: node-howto-integrate-databases.md
+        - name: 寫入無伺服器程式碼
+          href: node-howto-write-serverless-code.md
+        - name: 建立靜態 (JAMstack) 網站
+          href: node-howto-create-static-site-jamstack.md
+        - name: 自動監視
+          href: /azure/azure-monitor/learn/nodejs-quick-start?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
         - name: 建立 REST API
           href: /azure/app-service/app-service-web-tutorial-rest-api?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
     - name: 範例
