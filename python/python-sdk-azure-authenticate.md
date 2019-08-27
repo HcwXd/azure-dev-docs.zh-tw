@@ -7,12 +7,12 @@ manager: carmonm
 ms.date: 04/11/2019
 ms.topic: conceptual
 ms.devlang: python
-ms.openlocfilehash: e25a6849bd2392253ece66ba46e682cf63417886
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: c114fa9aa360f58f5688f8b70685402ba0c12db7
+ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284859"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69889726"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>使用適用於 Python 的 Azure 管理程式庫來進行驗證
 
@@ -52,7 +52,8 @@ credentials = ServicePrincipalCredentials(
 )
 ```
 
-> [注意！] 若要連線到其中一個 Azure Sovereign Cloud，請使用 `cloud_environment` 參數。
+> [!NOTE]
+> 若要連線到其中一個 Azure Sovereign Cloud，請使用 `cloud_environment` 參數。
 >
 > ```python
 > from azure.common.credentials import ServicePrincipalCredentials
@@ -116,7 +117,8 @@ subscription_id = '33333333-3333-3333-3333-333333333333'
 client = ComputeManagementClient(credentials, subscription_id)
 ```
 
-> [注意！] 使用 Azure Sovereign Cloud 時，也必須在建立管理用戶端時指定適當的基底 URL (透過 `msrestazure.azure_cloud` 中的常數)。 對於 Azure China Cloud 的範例：
+> [!NOTE]
+> 使用 Azure Sovereign Cloud 時，也必須在建立管理用戶端時指定適當的基底 URL (透過 `msrestazure.azure_cloud` 中的常數)。 對於 Azure China Cloud 的範例：
 > ```python
 > client = ComputeManagementClient(credentials, subscription_id,
 >     base_url=AZURE_CHINA_CLOUD.endpoints.resource_manager)
