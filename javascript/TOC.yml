@@ -31,13 +31,11 @@
             - name: 配有 Azure 監視器的 Log Analytics
               href: /azure/azure-monitor/learn/quick-collect-linux-computer?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             - name: GitHub 動作
-              href: 'https://css-tricks.com/introducing-github-actions/'
+              href: 'https://azure.microsoft.com/resources/videos/azure-friday-deploy-to-azure-using-github-actions'
         - name: 偵錯與診斷
           items:
             - name: Azure App Service 遠端偵錯
               href: 'https://code.visualstudio.com/docs/azure/remote-debugging'
-            - name: 針對 Azure App Service 以 VS Code 記錄點
-              href: 'https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach'
             - name: 以 VS Code 偵錯本機 Node.js 應用程式
               href: 'https://code.visualstudio.com/docs/nodejs/nodejs-debugging'
         - name: 工具和擴充功能
