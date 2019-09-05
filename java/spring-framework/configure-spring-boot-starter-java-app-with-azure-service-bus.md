@@ -8,12 +8,12 @@ ms.date: 08/21/2019
 ms.devlang: java
 ms.service: azure-java
 ms.topic: article
-ms.openlocfilehash: f41486c7063a6b0fa26ca4055d5f10e625676e8a
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: 58d8dd00deeb90b1a1b8935bcbbab471255328d4
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892372"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70181983"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-service-bus-jms"></a>如何對 Azure 服務匯流排 JMS 使用 Spring Boot Starter
 
@@ -24,9 +24,6 @@ Azure 提供名為 [Azure 服務匯流排](https://docs.microsoft.com/azure/serv
 適用於 Azure 服務匯流排 JMS 的 Spring Boot Starter 提供與服務匯流排的 Spring 整合。
 
 本文示範如何使用適用於 Azure 服務匯流排 JMS 的 Spring Boot Starter，在服務匯流排 `queues` 和 `topics` 之間傳送和接收訊息。
-
-> [!NOTE]
-> 本文目前會使用 `SNAPSHOT` 版本的 Starter。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -66,28 +63,11 @@ Azure 提供名為 [Azure 服務匯流排](https://docs.microsoft.com/azure/serv
     <dependency>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-servicebus-jms-spring-boot-starter</artifactId>
-        <version>2.1.7-SNAPSHOT</version>
+        <version>2.1.7</version>
     </dependency>
     ```
 
-    ![將相依性區段新增至 pom.xml 檔案。](./media/configure-spring-boot-starter-java-app-with-azure-service-bus/add-dependency-section.png)
-
-1. 新增 [Maven 存放庫](https://maven.apache.org/settings.html#Repositories)設定以使用快照集版本：
-
-    ```xml
-    <repositories>
-        <repository>
-            <id>nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-    ```
-
-    ![將存放庫區段新增至 pom.xml 檔案。](./media/configure-spring-boot-starter-java-app-with-azure-service-bus/add-repository-section.png)
+    ![將相依性區段新增至 pom.xml 檔案。](./media/configure-spring-boot-starter-java-app-with-azure-service-bus/add-dependency-section-new.png)
 
 1. 儲存並關閉 *pom.xml* 檔案。
 
@@ -121,7 +101,7 @@ Azure 提供名為 [Azure 服務匯流排](https://docs.microsoft.com/azure/serv
     | `spring.jms.servicebus.connection-string` | 指定您在服務匯流排命名空間中從 Azure 入口網站取得的連接字串。 |
     | `spring.jms.servicebus.idle-timeout`      | 指定閒置逾時 (以毫秒為單位)。 本教學課程的建議值為 1800000。   |
 
-3. 儲存並關閉 *application.properties* 檔案。
+1. 儲存並關閉 *application.properties* 檔案。
 
 ### <a name="use-service-bus-topic"></a>使用服務匯流排主題
 
@@ -353,7 +333,7 @@ Azure 提供名為 [Azure 服務匯流排](https://docs.microsoft.com/azure/serv
     mvn clean spring-boot:run
     ```
 
-3. 當您的應用程式執行時，可以使用 cURL  來測試您的應用程式：
+1. 當您的應用程式執行時，可以使用 cURL  來測試您的應用程式：
 
     ```shell
     curl -X POST localhost:8080/messages?message=hello
