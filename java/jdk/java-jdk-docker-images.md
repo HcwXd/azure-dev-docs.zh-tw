@@ -8,14 +8,15 @@ ms.date: 04/09/2019
 ms.devlang: java
 ms.topic: conceptual
 ms.service: azure
-ms.openlocfilehash: aeda2d210e2e5d78de53b3f88a469b9a93bb8739
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.custom: seo-java-august2019
+ms.openlocfilehash: b91da6ad547743a31967838786a52ce4303fff1e
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691746"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70181932"
 ---
-# <a name="use-docker-with-a-jdk-for-azure"></a>搭配使用 Docker 與適用於 Azure 的 JDK 
+# <a name="use-docker-with-a-java-development-kit-jdk-for-azure"></a>搭配使用 Docker 與適用於 Azure 的 Java 開發套件 (JDK) 
 
 針對 Java 7、8 和 11 預先建置的 Docker 映像可透過 [Docker Hub](https://hub.docker.com/_/microsoft-java-se) 取得。
 

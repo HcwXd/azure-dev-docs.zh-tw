@@ -14,23 +14,23 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.custom: seo-java-july2019
-ms.openlocfilehash: c2622da604e31b5cf2a2f1e7b3344b21338aa56d
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.custom: seo-java-july2019, seo-java-august2019
+ms.openlocfilehash: a281a33958f33b37f205dc9642f1bce714725923
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691128"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70182011"
 ---
-# <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>如何使用適用於 Azure Web 應用程式的 Maven 外掛程式，將 Azure Container Registry 中的 Spring Boot 應用程式部署至 Azure App Service
+# <a name="use-maven-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>使用適用於 Azure Web Apps 的 Maven，將 Azure Container Registry 中的 Spring Boot 應用程式部署至 Azure App Service
 
-本文示範如何將範例 [Spring Boot] 應用程式部署至 Azure Container Registry，然後使用適用於 Azure Web 應用程式的 Maven 外掛程式，將應用程式部署至 Azure App Services。
+本文示範如何將範例 [Spring Boot] 應用程式部署至 Azure Container Registry，然後使用適用於 Azure Web Apps 的 Maven 外掛程式，將應用程式部署至 Azure App Services。
 
 > [!NOTE]
 > 
-> 針對 [Apache Maven](https://maven.apache.org/) 的適用於 Azure Web 應用程式的 Maven 外掛程式提供 Azure App Service 到 Maven 專案的緊密整合，並且簡化開發人員將 Web 應用程式部署至 Azure App Service 的程序。
+> 針對 [Apache Maven](https://maven.apache.org/) 的適用於 Azure Web Apps 的 Maven 外掛程式提供 Azure App Service 到 Maven 專案的緊密整合，並且簡化開發人員將 Web 應用程式部署至 Azure App Service 的程序。
 > 
-> 適用於 Azure Web 應用程式的 Maven 外掛程式目前可供預覽。 雖然未來計劃有額外功能，但是現在僅支援 FTP 發佈。
+> 適用於 Azure Web Apps 的 Maven 外掛程式目前可供預覽。 雖然未來計劃有額外功能，但是現在僅支援 FTP 發佈。
 > 
 
 ## <a name="prerequisites"></a>必要條件
@@ -223,7 +223,7 @@ ms.locfileid: "68691128"
    |   `<client>`    |                                                             包含服務主體的 `appId` 值。                                                             |
    |   `<tenant>`    |                                                            包含服務主體的 `tenant` 值。                                                             |
    |     `<key>`     |                                                           包含服務主體的 `password` 值。                                                            |
-   | `<environment>` | 定義目標 Azure 雲端環境，也就是此範例中的 `AZURE`。 (環境的完整清單可於[適用於 Azure Web 應用程式的 Maven 外掛程式]文件中取得) |
+   | `<environment>` | 定義目標 Azure 雲端環境，也就是此範例中的 `AZURE`。 (環境的完整清單可於[適用於 Azure Web Apps 的 Maven 外掛程式]文件中取得) |
 
 
 4. 儲存並關閉 settings.xml  檔案。
@@ -321,15 +321,15 @@ ms.locfileid: "68691128"
    </plugin>
    ```
 
-您可以為 Maven 外掛程式修改數個值，這些元素的詳細描述可於[適用於 Azure Web 應用程式的 Maven 外掛程式]文件中取得。 也就是說，有數個值值得在這篇文章中反白顯示：
+您可以為 Maven 外掛程式修改數個值，這些元素的詳細描述可於[適用於 Azure Web Apps 的 Maven 外掛程式]文件中取得。 也就是說，有數個值值得在這篇文章中反白顯示：
 
 | 元素 | 說明 |
 |---|---|
-| `<version>` | 指定[適用於 Azure Web 應用程式的 Maven 外掛程式]版本。 您應該檢查 [Maven 中央存放庫](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22)中所列的版本，確定您使用最新版本。 |
+| `<version>` | 指定[適用於 Azure Web Apps 的 Maven 外掛程式]版本。 您應該檢查 [Maven 中央存放庫](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22)中所列的版本，確定您使用最新版本。 |
 | `<authentication>` | 指定 Azure 的驗證資訊，在此範例中包含 `<serverId>` 元素，其中包含 `azure-auth`，Maven 使用該值來查閱 Maven settings.xml  檔案 (您在本文稍早章節中定義) 中的 Azure 服務主體值。 |
 | `<resourceGroup>` | 指定目標資源群組，也就是此範例中的 `wingtiptoysresources`。 如果該資源群組不存在，則系統會在部署期間建立它。 |
 | `<appName>` | 指定 Web 應用程式的目標名稱。 在此範例中，目標名稱是 `maven-linux-app-${maven.build.timestamp}`，在此範例中會附加 `${maven.build.timestamp}` 尾碼以避免發生衝突。 (時間戳記是選擇性的；您可以為應用程式名稱指定任何唯一的字串。) |
-| `<region>` | 指定目標區域，在此範例中是 `westus`。 (完整清單位於[適用於 Azure Web 應用程式的 Maven 外掛程式]文件。) |
+| `<region>` | 指定目標區域，在此範例中是 `westus`。 (完整清單位於[適用於 Azure Web Apps 的 Maven 外掛程式]文件。) |
 | `<containerSettings>` | 指定屬性，該屬性包含容器的名稱和 URL。 |
 | `<appSettings>` | 指定將您的 Web 應用程式部署至 Azure 時，Maven 使用的任何唯一設定。 在此範例中，`<property>` 元素包含子元素的名稱/值組，指定應用程式的連接埠。 |
 
@@ -391,7 +391,7 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式不�
 
 如需本文所討論之各種技術的詳細資訊，請參閱下列文章：
 
-* [適用於 Azure Web 應用程式的 Maven 外掛程式]
+* [適用於 Azure Web Apps 的 Maven 外掛程式]
 
 * [從 Azure CLI 登入 Azure](/azure/xplat-cli-connect)
 
@@ -409,7 +409,7 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式不�
 [Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
 [適用於 Java 開發人員的 Azure]: /azure/java/
 [Azure 入口網站]: https://portal.azure.com/
-[適用於 Azure Web 應用程式的 Maven 外掛程式]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
+[適用於 Azure Web Apps 的 Maven 外掛程式]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal
 [Using a custom Docker image for Azure Web App on Linux]: /azure/app-service/containers/tutorial-custom-docker-image
 [Docker]: https://www.docker.com/

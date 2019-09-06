@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: azure-nodejs
 ms.date: 08/19/2019
 ms.author: kraigb
-ms.openlocfilehash: 0917da975f29d392944ba2351e894de640182eb9
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: a5ed7d5d99009593845966969217f8a5081da4c4
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892492"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70181951"
 ---
 # <a name="how-to-write-serverless-nodejs-code-on-azure"></a>如何在 Azure 上撰寫無伺服器 Node.js 程式碼
 
@@ -45,7 +45,9 @@ ms.locfileid: "69892492"
 
 - [使用 Azure Functions 和 Azure Cosmos DB 儲存非結構化資料](/azure/azure-functions/functions-integrate-store-unstructured-data-cosmosdb.md?tabs=javascript)。 如需其他資料庫的詳細資訊，請參閱[如何在 Node.js 程式碼中整合 Azure 資料庫](node-howto-integrate-databases.md)
 
-- [在本機撰寫程式碼和測試 Azure Functions](/azure/azure-functions/functions-develop-local)，以及[在 Azure Functions 中制訂程式碼策略及進行測試](/azure/azure-functions/functions-test-a-function)，以及[錯誤處理](/azure/azure-functions/functions-bindings-error-pages)
+- [撰寫 Azure Functions 並在本機進行測試](/azure/azure-functions/functions-develop-local)
+
+- [在 Azure Functions 中測試程式碼的策略](/azure/azure-functions/functions-test-a-function)和[錯誤處理](/azure/azure-functions/functions-bindings-error-pages)
 
 - [使用 Azure Active Directory 設定驗證](/azure/app-service/configure-authentication-provider-aad.md?toc=%2fazure%2fazure-functions%2ftoc.json)
 

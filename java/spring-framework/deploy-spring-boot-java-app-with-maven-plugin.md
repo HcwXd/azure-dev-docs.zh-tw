@@ -12,19 +12,19 @@ ms.devlang: java
 ms.service: app-service
 ms.topic: article
 ms.custom: seo-java-july2019, seo-java-august2019
-ms.openlocfilehash: 05d9fb7817eafea56e095667c260075c5e02c6da
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: 415c0447cbe02a9514d38e3b79bbd57fad91a485
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69889814"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70181962"
 ---
-# <a name="deploy-a-spring-boot-web-app-to-azure-app-service-on-linux"></a>將 Spring Boot Web 應用程式部署至 Linux 上的 Azure App Service
+# <a name="deploy-a-spring-boot-jar-file-app-to-azure-app-service-with-maven-and-azure-on-linux"></a>透過 Linux 上的 Maven 和 Azure 將 Spring Boot JAR 檔案應用程式部署至 Azure App Service
 
 本文示範如何使用[適用於 App Service Web Apps 的 Maven 外掛程式](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme)，將 Spring Boot 應用程式封裝成 Java SE JAR，並部署至 [Linux 上的 Azure App Service](/azure/app-service/containers/)。 若要將應用程式相依性、執行階段及組態合併至單一可部署成品，請從 [Tomcat 與 WAR 檔案](/azure/app-service/containers/quickstart-java)中選擇 Java SE 部署。
 
 
-如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
+如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) 。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -222,9 +222,9 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 
 
 如需本文所討論之各種技術的詳細資訊，請參閱下列文章：
 
-* [適用於 Azure Web 應用程式的 Maven 外掛程式]
+* [適用於 Azure Web Apps 的 Maven 外掛程式]
 
-* [如何使用適用於 Azure Web 應用程式的 Maven 外掛程式，將容器化 Spring Boot 應用程式部署至 Azure](deploy-containerized-spring-boot-java-app-with-maven-plugin.md)
+* [如何使用適用於 Azure Web Apps 的 Maven 外掛程式，將容器化 Spring Boot 應用程式部署至 Azure](deploy-containerized-spring-boot-java-app-with-maven-plugin.md)
 
 * [使用 Azure CLI 2.0 來建立 Azure 服務主體](/cli/azure/create-an-azure-service-principal-azure-cli)
 
@@ -243,7 +243,7 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Boot Getting Started]: https://github.com/spring-guides/gs-spring-boot
 [Spring Framework]: https://spring.io/
-[適用於 Azure Web 應用程式的 Maven 外掛程式]: /java/api/overview/azure/maven/azure-webapp-maven-plugin/readme
+[適用於 Azure Web Apps 的 Maven 外掛程式]: /java/api/overview/azure/maven/azure-webapp-maven-plugin/readme
 
 [Java Development Kit (JDK)]: https://aka.ms/azure-jdks
 <!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
