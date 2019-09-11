@@ -1,70 +1,54 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: 適用於 Go 雲端開發人員的 Azure
+### YamlMime:Landing
+title: Azure SDK for Go
+summary: >
+  深入瞭解如何使用 Azure SDK for Go、SDK 所提供的功能，以及可讓您輕鬆使用 Azure 的開發工具。
 metadata:
-  title: Azure for Go 開發人員 - 教學課程、API 參考
+  title: Azure for Go 開發人員
   description: 利用下列開發人員資源，開始使用 Azure SDK for Go 進行開發。
   author: sptramer
   ms.author: sttramer
-  manager: carmonm
-  ms.date: 01/30/2018
+  ms.date: 09/09/2019
   ms.topic: landing-page
-  featureFlags:
-    - clicktale
+  ms.collection: collection
   ms.devlang: golang
-sections:
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - title: 開始使用
-            html: <p>安裝 Azure SDK for Go</p>
-            href: 'https://docs.microsoft.com/azure/go/azure-sdk-go-install'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-          - title: 程式碼範例
-            html: <p>使用 Go 的 Azure 程式碼範例</p>
-            image:
-              src: 'https://docs.microsoft.com//media/common/i_code-samples.svg'
-            href: 'https://github.com/azure-samples/azure-sdk-for-go-samples'
-          - title: SDK &amp; 工具
-            html: <p>開發人員工具</p>
-            href: 'https://docs.microsoft.com/azure/go/azure-sdk-go-tools'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
-          - title: API 參考
-            html: <p>適用於 Azure SDK for Go 的 GoDoc</p>
-            href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
-  - title: Go SDK 快速入門
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - title: 使用 Go 從 Azure 資源範本部署虛擬機器
-            href: 'https://docs.microsoft.com/azure/go/azure-sdk-go-qs-vm'
-            image:
-              src: 'https://docs.microsoft.com/azure/virtual-machines/media/index/virtualmachine.svg'
-          - title: 使用 Azure Storage SDK for Go 將物件傳送至 Azure Blob 儲存體
-            href: /azure/storage/blobs/storage-quickstart-blobs-go?toc=/azure/go/toc.json&bc=/azure/go/breadcrumb/toc.json
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/logo_azure-blob-storage.svg'
-          - title: 使用 Go 連線至適用於 PostgreSQL 的 Azure 資料庫
-            href: /azure/postgresql/connect-go?toc=/azure/go/toc.json&bc=/azure/go/breadcrumb/toc.json
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
-  - title: 範例
-    items:
-      - type: list
-        style: unordered
-        items:
-          - html: '<a href="https://github.com/Azure-Samples/azure-sdk-for-go-samples/tree/master/internal/iam">使用 Azure 服務進行驗證</a>'
-          - html: '<a href="https://github.com/Azure-Samples/azure-sdk-for-go-samples/tree/master/compute">建立新的虛擬機器</a>'
-          - html: '<a href="https://github.com/Azure-Samples/azure-sdk-for-go-samples/tree/master/containerinstance">將容器部署至 Azure 容器執行個體</a>'
-          - html: '<a href="https://github.com/Azure-Samples/azure-sdk-for-go-samples/tree/master/containerservice">在 Azure Kubernetes 服務中建立叢集</a>'
-          - html: '<a href="https://github.com/Azure-Samples/azure-sdk-for-go-samples/tree/master/storage">使用 Azure 儲存體服務</a>'
+  ms.openlocfilehash: 68af188ce8193241127b418df00352481151ce4e
+  ms.sourcegitcommit: e1204a575c95672b6ba369d12bc7d86d4e2acc52
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 09/10/2019
+  ms.locfileid: "70864361"
+landingContent:
+- title: 開始使用 Azure SDK for Go
+  linkLists:
+  - linkListType: download
+    links:
+    - text: 安裝 Azure SDK for Go
+      url: azure-sdk-go-install.md
+    - text: 開發人員工具
+      url: azure-sdk-go-tools.md
+  - linkListType: how-to-guide
+    links:
+    - text: 驗證您的應用程式
+      url: azure-sdk-go-authorization.md
+- title: Azure SDK for Go 範例
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 從範本部署虛擬機器
+      url: azure-sdk-go-qs-vm.md
+    - text: 搭配使用 Blob 儲存體與 Go
+      url: /azure/storage/blobs/storage-quickstart-blobs-go?toc=%2Fazure%2Fgo%2Ftoc.json&bc=%2Fazure%2Fgo%2Fbreadcrumb%2Ftoc.json
+    - text: 連線至適用於 PostgreSQL 的 Azure 資料庫
+      url: /azure/postgresql/connect-go?toc=%2Fazure%2Fgo%2Ftoc.json&bc=%2Fazure%2Fgo%2Fbreadcrumb%2Ftoc.json
+    - text: 連線到適用於 MySQL 的 Azure 資料庫
+      url: /azure/mysql/connect-go?toc=%2Fazure%2Fgo%2Ftoc.json&bc=%2Fazure%2Fgo%2Fbreadcrumb%2Ftoc.json
+    - text: 查詢 Azure SQL 資料庫
+      url: /azure/sql-database/sql-database-connect-query-go?toc=%2Fazure%2Fgo%2Ftoc.json&bc=%2Fazure%2Fgo%2Fbreadcrumb%2Ftoc.json
+- title: Azure SDK for Go 參考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Azure SDK for Go 程式碼範例
+      url: https://github.com/azure-samples/azure-sdk-for-go-samples
+    - text: Azure SDK for Go API 參考
+      url: https://godoc.org/github.com/Azure/azure-sdk-for-go
