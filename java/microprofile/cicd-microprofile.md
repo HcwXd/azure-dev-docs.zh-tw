@@ -77,7 +77,7 @@ EXPOSE 8080
 
 Azure Pipelines 會使用 Dockerfile 搭配來自 Payara Micro 的基礎映像，建立 Docker 映像。  
 
-1. 選取 [工作]  索引標籤，然後選取 [代理程式作業 1 ]**** 旁的加號 **+** 來新增工作。
+1. 選取 [工作]  索引標籤，然後選取 [代理程式作業 1 ] 旁的加號 **+** 來新增工作。 
    
    ![新增工作](media/cicd-microprofile/add-task.png)
    
@@ -85,7 +85,7 @@ Azure Pipelines 會使用 Dockerfile 搭配來自 Payara Micro 的基礎映像�
    
 1. 在左窗格中選取 [buildAndPush]  ，然後在右窗格的 [顯示名稱]  欄位中輸入描述。
    
-1. 在 [容器存放庫]  底下，選取 [Container Registry] ****欄位旁的 [新增]**** 。 
+1. 在 [容器存放庫]  底下，選取 [Container Registry] 欄位旁的 [新增]。   
    
 1. 填寫 [新增 Docker Registry 服務連線]  對話方塊，如下所示：
    
