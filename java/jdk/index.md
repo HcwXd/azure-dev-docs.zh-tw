@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: brendm
 ms.service: azure
-ms.openlocfilehash: 83dbef306087f63670c2567231eca1c4b9e5dd7f
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 6c28a599180301ac19f114f467868b5f0e46cbd1
+ms.sourcegitcommit: 4a95777874ae3a3c760365148de868f937fdfd2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691793"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094885"
 ---
 # <a name="java-long-term-support-for-azure-and-azure-stack"></a>Java 對於 Azure 和 Azure Stack 的長期支援
 
-在 Azure 和 Azure Stack 上的 Java 開發人員可以使用 [Azul Zulu Enterprise for Azure](https://www.azul.com/downloads/azure-only/zulu/) 建置及執行生產環境使用的 Java 應用程式，而不會產生額外的支援成本。 您可以在 Azure 上使用任何想要的 Java 執行階段，但在使用 Zulu 時，您可以取得免費的維護更新，並且可建立 Microsoft 支援問題。
+在 Azure 和 Azure Stack 上的 Java 開發人員可以使用[適用於 Azure 的 Azul Zulu - 企業版](https://www.azul.com/downloads/azure-only/zulu/)JDK 組建來建置及執行生產環境 Java 應用程式，而不會產生額外的支援成本。 您可以在 Azure 上使用任何想要的 Java 執行階段，但在使用 Zulu 時，您可以取得免費的維護更新，並且可建立 Microsoft 支援問題。
 
 > [!div class="nextstepaction"]
 > [下載並安裝 Java](java-jdk-install.md)
@@ -34,7 +34,7 @@ ms.locfileid: "68691793"
 
 ## <a name="what-is-the-zulu-openjdk-for-azure"></a>什麼是適用於 Azure 的 Zulu OpenJDK？
 
-OpenJDK 的 Azul Zulu Enterprise 組建是免費、多平台、可實際執行的 OpenJDK 散發套件，適用於 Azure 和 Azure Stack，由 Microsoft 與 Azul Systems 提供支援。 這些散發套件：
+適用於 Azure 的 Azul Zulu - 企業版的 OpenJDK 組建是免費、多平台、可實際執行的 OpenJDK 散發套件，適用於 Azure 和 Azure Stack，由 Microsoft 與 Azul Systems 提供支援。 這些散發套件：
 
 * 是封裝為 Java Development Kit (JDK)、Java Runtime Environment (JRE) 和無周邊 JRE 的純開放原始碼 OpenJDK 組建。 這些二進位檔是完全相容且符合規範的商業 Java Standard Edition (SE) 組建，可與 Azure 和 Azure Stack 上的 Java 應用程式或元件搭配使用。
 * 具備長期支援，包括錯誤修正、效能增強和安全性修補程式。
@@ -52,7 +52,7 @@ OpenJDK 的 Azul Zulu Enterprise 組建是免費、多平台、可實際執行�
 
 ## <a name="supported-java-versions-and-update-schedule"></a>支援的 Java 版本及更新排程
 
-Azul Systems 提供完整支援的[適用於 Microsoft Azure 的 OpenJDK Zulu Enterprise 組建](https://www.azul.com/downloads/azure-only/zulu/)，用於所有長期支援 (LTS) 版本的 Java，從 Java SE 7、8 和 11 開始。 [Azul 新聞稿](https://www.azul.com/press_release/free-java-production-support-for-microsoft-azure-azure-stack)中可找到詳細資訊。
+Azul Systems 提供完整支援的[適用於 Azure 的 Azul Zulu - 企業版](https://www.azul.com/downloads/azure-only/zulu/)組建，用於所有長期支援 (LTS) 版本的 Java，從 Java SE 7、8 和 11 開始。 [Azul 新聞稿](https://www.azul.com/press_release/free-java-production-support-for-microsoft-azure-azure-stack)中可找到詳細資訊。
 
 |Java SE LTS  |支援期限  |
 |---------|----------|
@@ -67,7 +67,7 @@ Azul Systems 可維護這些版本的 [Java SE 藍圖](https://www.azul.com/prod
 
 ## <a name="benefits-for-developers"></a>對開發人員的好處
 
-Azul Zulu JDK 版本：
+適用於 Azure 的 Azul Zulu - 企業版 JDK 版本如下：
 
 1. 同時受到 Microsoft 和 Azul Systems 的支援
 
