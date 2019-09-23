@@ -1,5 +1,5 @@
 ---
-title: Azure 上適用於 JavaScript 開發人員的工具 | Microsoft Docs
+title: Azure 上適用於 JavaScript 開發人員的工具
 description: 在 Azure 上安裝適用於 JavaScript 開發的個別工具
 services: multiple
 author: karlerickson
@@ -10,12 +10,13 @@ ms.devlang: nodejs
 ms.topic: article
 ms.date: 11/07/2017
 ms.author: karler
-ms.openlocfilehash: 801b4ee3b56a04ed9b9bfd0e234bca3ae9d316fd
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.custom: seo-javascript-september2019
+ms.openlocfilehash: 462dca51a703c33f327a7a3c85a87edbce929e07
+ms.sourcegitcommit: d3349f1a2a8a7eab1ffe2fcb1d05f22cac91dffb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691132"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923107"
 ---
 # <a name="azure-tools-for-javascript-developers"></a>適用於 JavaScript 開發人員的 Azure 工具
 建議使用下列工具，在 Azure 上開發 JavaScript 應用程式。

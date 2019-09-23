@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio Code 和 Azure 進行 Node.js 開發
+title: 利用 VS Code 和 Azure 部署容器化 Node.js 應用程式
 description: 完整的端對端教學課程說明如何建立 Node.js 應用程式、將其 Docker 化及部署到 Azure
 services: multiple
 author: karlerickson
@@ -10,12 +10,13 @@ ms.devlang: nodejs
 ms.topic: article
 ms.date: 06/25/2017
 ms.author: karler
-ms.openlocfilehash: 45a908e17db9099ae73e9b681f277a1da0b3e5ef
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.custom: seo-javascript-september2019
+ms.openlocfilehash: da1436106b681508ef226ad33ccfc10160485d42
+ms.sourcegitcommit: d3349f1a2a8a7eab1ffe2fcb1d05f22cac91dffb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691304"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923115"
 ---
 # <a name="nodejs-development-with-visual-studio-code-and-azure"></a>使用 Visual Studio Code 和 Azure 進行 Node.js 開發
 
@@ -34,7 +35,7 @@ ms.locfileid: "68691304"
 - [Azure 帳戶](https://azure.microsoft.com/free/)
 - [Yarn](https://yarnpkg.com/en/docs/install)
 - [Chrome](https://www.google.com/chrome/browser/desktop/) - 用於對示範應用程式的前端進行偵錯。
-- MongoDB - 由於示範應用程式會使用 MongoDB，所以您必須有在本機執行並接聽標準 `27017` 連接埠的 MongoDB 執行個體。 安裝 Docker 之後，執行下列兩個命令是達成此目的的最簡單方式：依序執行 `docker pull mongo` 和 `docker run -it -p 27017:27017 mongo`。
+- MongoDB - 由於示範應用程式會使用 MongoDB，所以您必須有在本機執行並接聽標準 `27017` 連接埠的 MongoDB 執行個體。 安裝 Docker 之後，執行下列兩個命令是達成此目的最簡單的方式：依序執行 `docker pull mongo` 和 `docker run -it -p 27017:27017 mongo`。
 
 ## <a name="project-setup"></a>專案設定
 
@@ -423,7 +424,7 @@ FROM mhart
 
 DockerHub 針對散佈容器映像提供令人讚嘆的經驗，但有些情況下您寧可裝載自己的私人 Docker 登錄 - 例如為了安全性/控管或效能優勢。 基於此目的，Azure 提供可讓您加速自有 Docker 登錄的 [Azure Container Registry](https://azure.microsoft.com/services/container-registry/) (ACR)，其支援儲存體位於與您的 Web 應用程式相同的資料中心 (讓提取更加快速)。 ACR 也為您提供完整的內容和存取控制權 - 例如誰可以推送或提取映像。 
 
-執行下列命令即可完成自訂登錄的佈建。 (以全域唯一的值取代 **<NAME>** 預留位置，因為 ACE 會使用指定的值來產生登錄的登入伺服器 URL。
+執行下列命令即可完成自訂登錄的佈建。 (以全域唯一的值取代 **<NAME>** 預留位置，因為 ACR 會使用指定的值來產生登錄的登入伺服器 URL。
 
 ```shell
 ACR_NAME=<NAME>
