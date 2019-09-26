@@ -8,12 +8,13 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: brendm
 ms.service: azure
-ms.openlocfilehash: 6c28a599180301ac19f114f467868b5f0e46cbd1
-ms.sourcegitcommit: 4a95777874ae3a3c760365148de868f937fdfd2e
+ms.custom: seo-java-september2019
+ms.openlocfilehash: 51dbbc70239744c0de7a96c0545cef15bfd4013a
+ms.sourcegitcommit: 50fbde9a640468147953d62f7ae0fca4685ed5e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71094885"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71225248"
 ---
 # <a name="java-long-term-support-for-azure-and-azure-stack"></a>Java 對於 Azure 和 Azure Stack 的長期支援
 
@@ -56,10 +57,10 @@ Azul Systems 提供完整支援的[適用於 Azure 的 Azul Zulu - 企業版](ht
 
 |Java SE LTS  |支援期限  |
 |---------|----------|
-|[![Java 7](../media/jdk/java-7.png)](https://www.azul.com/downloads/azure-only/zulu/#java7) |2023 年 7 月 |
-|[![Java 8](../media/jdk/java-8.png)](https://www.azul.com/downloads/azure-only/zulu/#java8) |2025 年 3 月|
-|[![Java 11](../media/jdk/java-11.png)](https://www.azul.com/downloads/azure-only/zulu/#java11) |2026 年 9 月|
-|[![Java 12](../media/jdk/java-12.png)]() |**預覽**|
+|[![支援的 Java 版本 - Java 7](../media/jdk/supported-java-versions-java-7.png)](https://www.azul.com/downloads/azure-only/zulu/#java7) |2023 年 7 月 |
+|[![支援的 Java 版本 - Java 8](../media/jdk/supported-java-versions-java-8.png)](https://www.azul.com/downloads/azure-only/zulu/#java8) |2025 年 3 月|
+|[![支援的 Java 版本 - Java 11](../media/jdk/supported-java-versions-java-11.png)](https://www.azul.com/downloads/azure-only/zulu/#java11) |2026 年 9 月|
+|[![支援的 Java 版本 - Java 12](../media/jdk/supported-java-versions-java-12.png)]() |**預覽**|
 
 這些 JDK 版本會有每季的安全性更新和錯誤修正，並視需要提供頻外的重大更新和修補程式。  這項支援包括可回移將在較新版本的 Java (如 Java 11) 中報告的 Java 7 和 8 安全性更新和錯誤修正，以確保較舊的 Java 版本維持穩定性和安全性。  Azure 客戶可取得這些安全性更新與平台錯誤修正，而不會造成任何非計劃的 Java SE 訂用帳戶費用。
 

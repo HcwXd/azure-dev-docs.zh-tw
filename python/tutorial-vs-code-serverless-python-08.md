@@ -8,12 +8,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 9c0b3b8b4a21975a849531d5c6560a291ed4b7f2
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 6996121fc8ecba4489e2ec920de35574f6d1c5d8
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019886"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186171"
 ---
 # <a name="clean-up-resources"></a>清除資源
 
@@ -29,7 +29,7 @@ ms.locfileid: "71019886"
 
 如先前提到，您可以深入了解 Functions 擴充功能，方法為造訪其 GitHub 存放庫：[vscode-azurefunctions](https://github.com/Microsoft/vscode-azurefunctions)。 問題與投稿也一樣歡迎。
 
-閱讀 [Azure Functions 概觀](/azure/azure-functions/functions-overview.md)，以探索您可以使用的不同觸發程序。
+閱讀 [Azure Functions 概觀](/azure/azure-functions/functions-overview)，以探索您可以使用的不同觸發程序。
 
 若要深入了解您可以從 Python 使用的 Azure 服務，包括資料儲存體以及 AI 和 Machine Learning 服務，請造訪 [Azure Python 開發人員中心](/azure/python/?view=azure-python)。
 

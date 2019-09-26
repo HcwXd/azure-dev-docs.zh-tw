@@ -8,18 +8,18 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 8fdb78024cc6ac1df0ee961fc424878f5f634cf2
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 4595b6a60aa83d3818b41ddd1e4f06a44bb1eec1
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019936"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186118"
 ---
 # <a name="add-a-binding-to-write-messages-to-azure-storage"></a>新增繫結以將訊息寫入至 Azure 儲存體
 
 [上一個步驟：部署第二個函式](tutorial-vs-code-serverless-python-06.md)
 
-_繫結_可讓您將函式程式碼連接至資源 (例如 Azure 儲存體)，而不需要撰寫任何資料存取程式碼。 繫結定義在函式 *function json* 檔案中，而且可以同時代表輸入和輸出。 一個函式可以使用多個輸入和輸出繫結，但只有一個觸發程序。 若要深入了解，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings.md)。
+_繫結_可讓您將函式程式碼連接至資源 (例如 Azure 儲存體)，而不需要撰寫任何資料存取程式碼。 繫結定義在函式 *function json* 檔案中，而且可以同時代表輸入和輸出。 一個函式可以使用多個輸入和輸出繫結，但只有一個觸發程序。 若要深入了解，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings)。
 
 在本節中，您會將儲存體繫結新增至稍早在本教學課程中建立的 HttpExample 函式。 函式會使用此繫結，在每次要求時將訊息寫入至儲存體。 有問題的儲存體會使用函式應用程式所使用的相同預設儲存體帳戶。 不過，如果打算重度使用儲存體，您會想要考慮建立個別帳戶。
 
@@ -92,9 +92,9 @@ _繫結_可讓您將函式程式碼連接至資源 (例如 Azure 儲存體)，�
 
     1. 登入 [Azure portal](https://portal.azure.com)，瀏覽至包含您函式專案的資源群組。 在該資源群組內，請尋找並瀏覽至專案的儲存體帳戶，然後瀏覽至 [佇列]  。 在該頁面上，瀏覽至 "outqueue"，這應該會顯示所有已記錄的訊息。
 
-    1. 如[使用 Visual Studio Code 將 Functions 連接至 Azure 儲存體](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code.md)所述 (特別是[檢查輸出佇列](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code.md#examine-the-output-queue)一節)，使用與 Visual Studio 整合的 Microsoft Azure 儲存體總管瀏覽和檢查佇列。
+    1. 如[使用 Visual Studio Code 將 Functions 連接至 Azure 儲存體](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code)所述 (特別是[檢查輸出佇列](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code#examine-the-output-queue)一節)，使用與 Visual Studio 整合的 Microsoft Azure 儲存體總管瀏覽和檢查佇列。
 
-    1. 如[查詢儲存體佇列](/azure/azure-functions/functions-add-output-binding-storage-queue-python.md#query-the-storage-queue)所述，使用 Azure CLI 來查詢儲存體佇列。
+    1. 如[查詢儲存體佇列](/azure/azure-functions/functions-add-output-binding-storage-queue-python#query-the-storage-queue)所述，使用 Azure CLI 來查詢儲存體佇列。
 
 1. 若要在雲端中進行測試，請重新部署程式碼，方法為使用 [Azure：函式]  總管中的 [部署至函式應用程式]  。 若出現提示，請選取先前建立的函式應用程式。 一旦部署完成 (需要幾分鐘的時間！)，[輸出]  視窗就會再次顯示您可以重複測試的公用端點。
 

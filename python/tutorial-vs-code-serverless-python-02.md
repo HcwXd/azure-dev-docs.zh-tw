@@ -8,12 +8,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 4427137000e7fca7706b782a73a45db03782872f
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 9af09298c479f7584ffaece422c135e75138f0fc
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019556"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186161"
 ---
 # <a name="create-the-python-function"></a>建立 Python 函式
 
@@ -29,7 +29,7 @@ ms.locfileid: "71019556"
     | --- | --- | --- |
     | 指定專案的資料夾 | 目前開啟的資料夾 | 要在其中建立專案的資料夾。 您可能想要在子資料夾中建立專案。 |
     | 為您的函式應用程式專案選取語言 | **Python** | 用於函式的語言，可決定用於程式碼的範本。 |
-    | 選取您專案第一個函式的範本 | **HTTP 觸發程序** | 每當對函式端點提出 HTTP 要求，就會執行一個使用 HTTP 觸發程序的函式。 (Azure Functions 有各種不同的觸發程序。 若要深入了解，請參閱[我可以用 Functions 來做什麼？](/azure/azure-functions/functions-overview.md#what-can-i-do-with-functions)。) |
+    | 選取您專案第一個函式的範本 | **HTTP 觸發程序** | 每當對函式端點提出 HTTP 要求，就會執行一個使用 HTTP 觸發程序的函式。 (Azure Functions 有各種不同的觸發程序。 若要深入了解，請參閱[我可以用 Functions 來做什麼？](/azure/azure-functions/functions-overview#what-can-i-do-with-functions)。) |
     | 提供函式名稱 | HttpExample | 此名稱用於子資料夾，其中包含函式程式碼以及設定資料，而且也會定義 HTTP 端點的名稱。 使用 "HttpExample"，而不是接受預設 "HTTPTrigger"，以區別函式本身與觸發程序。 |
     | 授權層級 | **匿名** | 匿名授權可讓任何人都能公開存取函式。 |
     | 選取您要如何開啟專案 | **在目前視窗中開啟** | 在目前 Visual Studio Code 視窗中開啟專案。 |

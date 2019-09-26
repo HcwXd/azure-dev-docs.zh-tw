@@ -8,18 +8,18 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 0bf24a900eb0c501443b8ff353c8b07529f840be
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: da7761f568849537ac3ee06cf6ef2c4cc521b452
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019956"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186156"
 ---
 # <a name="deploy-to-azure-functions"></a>部署至 Azure Functions
 
 [上一個步驟：在本機進行偵錯](tutorial-vs-code-serverless-python-04.md)
 
-在這些步驟中，您會使用函式擴充功能，在 Azure 中建立函式應用程式，以及其他必要的 Azure 資源。 函式應用程式可讓您將多個函式群組為邏輯單位，以方便您管理、部署和共用資源。 對於資料和[主控方案](/azure/azure-functions/functions-scale.md#hosting-plan-support)，它也需要 Azure 儲存體帳戶。 所有這些資源都組織在單一資源群組內。
+在這些步驟中，您會使用函式擴充功能，在 Azure 中建立函式應用程式，以及其他必要的 Azure 資源。 函式應用程式可讓您將多個函式群組為邏輯單位，以方便您管理、部署和共用資源。 對於資料和[主控方案](/azure/azure-functions/functions-scale#hosting-plan-support)，它也需要 Azure 儲存體帳戶。 所有這些資源都組織在單一資源群組內。
 
 1. 在 [Azure：  函式] 總管中，選取 [部署至函式應用程式]  命令，或開啟 [命令選擇區] (**F1**)，然後選取 [Azure Functions：  部署至函式應用程式] 命令。 函式應用程式再次為 Python 專案在 Azure 執行的所在。
 
@@ -30,7 +30,7 @@ ms.locfileid: "71019956"
 1. 擴充功能會執行下列動作，您可以在 Visual Studio Code 快顯訊息和 [輸出]  視窗中觀察這些動作 (此程序需要幾分鐘的時間)：
 
     - 使用您所提供的名稱 (移除連字號) 來建立資源群組。
-    - 在該資源群組中，建立儲存體帳戶、主控方案和函式應用程式。 根據預設，會建立[取用方案](/azure/azure-functions/functions-scale.md#consumption-plan)。 若要在專屬方案中執行您的函式，您需要[使用進階建立選項來啟用發佈功能](/azure/azure-functions/functions-develop-vs-code.md)。
+    - 在該資源群組中，建立儲存體帳戶、主控方案和函式應用程式。 根據預設，會建立[取用方案](/azure/azure-functions/functions-scale#consumption-plan)。 若要在專屬方案中執行您的函式，您需要[使用進階建立選項來啟用發佈功能](/azure/azure-functions/functions-develop-vs-code)。
     - 將您的程式碼部署至函式應用程式。
 
     [Azure：  函式] 總管也會顯示進度：

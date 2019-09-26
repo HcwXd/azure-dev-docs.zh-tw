@@ -8,12 +8,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 06e09ee8dd8128fe3ea65b7004a775c4dabbe161
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 28df4c9a8a8b3a6ab6308449e9ae2e1ebd2cc6e4
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019626"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186146"
 ---
 # <a name="debug-the-function-code-locally"></a>在本機偵錯函式程式碼
 
@@ -52,7 +52,7 @@ ms.locfileid: "71019626"
 
     或者，建立像是 *data.json* 的檔案 (其中包含 `{"name":"Visual Studio Code"}`)，並使用 `curl --header "Content-Type: application/json" --request POST --data @data.json http://localhost:7071/api/HttpExample` 命令。
 
-1. 若要測試偵錯函式，請在標明 `name = req.params.get('name')` 的那一行上設定中斷點，並再次對 URL 提出要求。 Visual Studio Code 偵錯工具應該會在該行停止，讓您可以檢查變數並逐步執行程式碼。 (如需基本偵錯工具的簡短逐步解說，請參閱 [Visual Studio Code 教學課程 - 設定和執行偵錯工具](https://code.visualstudio.com/docs/python/python-tutorial.md#configure-and-run-the-debugger))。
+1. 若要測試偵錯函式，請在標明 `name = req.params.get('name')` 的那一行上設定中斷點，並再次對 URL 提出要求。 Visual Studio Code 偵錯工具應該會在該行停止，讓您可以檢查變數並逐步執行程式碼。 (如需基本偵錯工具的簡短逐步解說，請參閱 [Visual Studio Code 教學課程 - 設定和執行偵錯工具](https://code.visualstudio.com/docs/python/python-tutorial#configure-and-run-the-debugger))。
 
 1. 當您滿意已在本機徹底測試函式時，請停止偵錯工具 (使用 [偵錯]   > [停止偵錯]  功能表命令，或偵錯工具列上的 [中斷連線]  命令)。
 

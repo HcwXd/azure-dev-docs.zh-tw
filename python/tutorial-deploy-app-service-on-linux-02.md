@@ -8,12 +8,12 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: a398b5483f9cbe11768752551e11be430a3b3467
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: ab1609d6d0940172d61a61a31f4dbfabc868c023
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019996"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186135"
 ---
 # <a name="prepare-your-app"></a>準備您的應用程式
 
@@ -44,7 +44,7 @@ ms.locfileid: "71019996"
     Flask==1.1.1
     ```
 
-1. 遵循 [Flask 教學課程 - 建立 Flask 的專案環境](/docs/python/tutorial-flask.md#create-a-project-environment-for-flask)中的指示來建立虛擬環境，其中會安裝 Flask，讓您可以在本機執行應用程式。
+1. 遵循 [Flask 教學課程 - 建立 Flask 的專案環境](https://code.visualstudio.com/docs/python/tutorial-flask#create-a-project-environment-for-flask)中的指示來建立虛擬環境，其中會安裝 Flask，讓您可以在本機執行應用程式。
 
 1. 若要執行此應用程式，請使用下列命令 (視您的作業系統而定)。 FLASK_APP 環境變數會告訴 Flask 哪裡可以找到應用程式物件。
 
@@ -62,11 +62,11 @@ ms.locfileid: "71019996"
 
 ## <a name="vs-code-flask-tutorial-sample"></a>VS Code Flask 教學課程範例
 
-下載或複製 [python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial)，這是遵循 [Flask 教學課程](/docs/python/tutorial-flask.md)的結果。
+下載或複製 [python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial)，這是遵循 [Flask 教學課程](https://code.visualstudio.com/docs/python/tutorial-flask)的結果。
 
 ## <a name="vs-code-django-tutorial-sample"></a>VS Code Django 教學課程範例
 
-下載或複製 [python-sample-vscode-django-tutorial](https://github.com/Microsoft/python-sample-vscode-django-tutorial)，這是遵循 [Django 教學課程](/docs/python/tutorial-django.md)的結果。
+下載或複製 [python-sample-vscode-django-tutorial](https://github.com/Microsoft/python-sample-vscode-django-tutorial)，這是遵循 [Django 教學課程](https://code.visualstudio.com/docs/python/tutorial-django)的結果。
 
 如果您的 Django 應用程式使用類似此範例的本機 SQLite 資料庫，則您需要在存放庫中包含預先初始化和預先填入的 *db.sqlite3* 檔案複本。 原因是 Linux 的 App Service 目前沒有辦法在部署過程中執行 Django 的 `migrate` 命令，因此您必須部署預先製作的資料庫。 就算如此，資料庫實際上還是唯讀的；寫入至資料庫也會造成錯誤。
 

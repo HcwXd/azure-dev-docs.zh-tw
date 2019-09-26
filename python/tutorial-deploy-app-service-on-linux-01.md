@@ -8,12 +8,12 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 2007be8b9799df1b15cff76b3ef4aa1ad96cae44
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 1b1e3d7fa1daa408584e4caf22c553d7f47bccea
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019876"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186189"
 ---
 # <a name="deploy-to-azure-app-service-on-linux"></a>部署至 Linux 上的 Azure App Service
 
@@ -39,7 +39,7 @@ ms.locfileid: "71019876"
 請安裝下列軟體：
 
 - [Visual Studio Code](https://code.visualstudio.com/)。
-- Python 和 [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 擴充功能，如 [VS Code Python 教學課程 - 必要條件](https://code.visualstudio.com/docs/python/python-tutorial.md)所述。
+- Python 和 [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 擴充功能，如 [VS Code Python 教學課程 - 必要條件](https://code.visualstudio.com/docs/python/python-tutorial)所述。
 - [Azure App Service](vscode:extension/ms-azuretools.vscode-azureappservice) 擴充功能，可從 VS Code 內提供與 Azure App Service 的互動。 如需一般資訊，請瀏覽 [App Service 擴充功能教學課程](https://code.visualstudio.com/tutorials/app-service-extension/getting-started)，並造訪 [vscode-azureappservice GitHub 存放庫](https://github.com/Microsoft/vscode-azureappservice)。
 
 ## <a name="sign-in-to-azure"></a>登入 Azure
