@@ -9,12 +9,12 @@ ms.devlang: java
 ms.topic: conceptual
 ms.service: azure
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019
-ms.openlocfilehash: 02c8a59849ff24058a1d9d0727842c41e993711c
-ms.sourcegitcommit: cf5881235569c754c829a8f819642a6f5aed30be
+ms.openlocfilehash: c33b4586b801bda58493efdebc6e6fb6b8136992
+ms.sourcegitcommit: 50fbde9a640468147953d62f7ae0fca4685ed5e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904868"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71225239"
 ---
 # <a name="monitor-and-manage-java-workloads-with-java-flight-recorder-jfr-and-zulu-mission-control"></a>使用 Java Flight Recorder (JFR) 和 Zulu Mission Control 來監視和管理 Java 工作負載
 
@@ -88,7 +88,7 @@ Zulu Mission Control 與下列 JDK/JRE 相容：
     在 Windows 上，*zmc.exe* 會使用在登錄中設定的預設 JVM 安裝。 Zulu Mission Control 必須從完整的 JDK 啟動，才能自動偵測本機 JVM 執行個體。 如果這是 JRE，您將看到下列警告：
 
     > [!div class="mx-imgBorder"]
-    ![JDK 安裝為僅限 JRE 時出現的警告](../media/jdk/azul-jfr-1.png)
+    ![JDK 安裝為僅限 JRE 時出現的警告](../media/jdk/jfr-jre-warning-message.png)
 
     若要變更 Mission Control 所使用的 JVM，請遵循下列步驟： 
     1.  開啟 *zmc.ini* 組態檔，此檔案與 *zmc.exe* 位於相同的目錄中
@@ -101,7 +101,7 @@ Zulu Mission Control 與下列 JDK/JRE 相容：
     2.  針對執行應用程式的 JVM 執行個體，選取並展開左上方的清單項目。
 
     > [!div class="mx-imgBorder"]
-    ![為您的 JVM 執行個體展開左上方的清單項目](../media/jdk/azul-jfr-2.png)
+    ![為您的 JVM 執行個體展開左上方的清單項目](../media/jdk/jfr-jvm-instance-dashboard.png)
 
 
 8.  視需要啟動飛行記錄
@@ -109,7 +109,7 @@ Zulu Mission Control 與下列 JDK/JRE 相容：
     2.  選取固定的持續時間記錄或連續記錄，以及分析組態 (細部) 或連續組態 (較低的額外負荷)，然後選取 [完成]  。
 
     > [!div class="mx-imgBorder"]
-    ![啟動飛行記錄](../media/jdk/azul-jfr-3.png)
+    ![啟動飛行記錄](../media/jdk/jfr-start-flight-recording.png)
 
 9.  傾印飛行記錄
     1.  飛行記錄應該會出現在 JVM 瀏覽器中的 Flight Recorder 這一行下方。 以滑鼠右鍵按一下代表飛行記錄的這一行，然後選取 [傾印整個記錄]  。
@@ -119,7 +119,7 @@ Zulu Mission Control 與下列 JDK/JRE 相容：
     1.  在 Zulu Mission Control 視窗的左側窗格中，選取標示為「大綱」  的索引標籤 (如果尚未啟用)。 此索引標籤包含不同的檢視，分別顯示在飛行記錄中收集到的資料。
  
     > [!div class="mx-imgBorder"]
-    ![檢閱飛行記錄](../media/jdk/azul-jfr-4.png)
+    ![檢閱飛行記錄](../media/jdk/jfr-zulu-mission-control-data.png)
 
 ## <a name="resources"></a>資源
 

@@ -12,12 +12,12 @@ ms.devlang: java
 ms.service: app-service
 ms.topic: article
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019
-ms.openlocfilehash: 9adb83a74c569fd17b9ce1435064ed745487d39b
-ms.sourcegitcommit: cf5881235569c754c829a8f819642a6f5aed30be
+ms.openlocfilehash: 0993634d87dd321f7322cbdbebd57ec880abcbff
+ms.sourcegitcommit: 76d0783395cbcf6ec1784b5aed368cab7058f8b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904932"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71270015"
 ---
 # <a name="deploy-a-spring-boot-jar-file-app-to-azure-app-service-with-maven-and-azure-on-linux"></a>透過 Linux 上的 Maven 和 Azure 將 Spring Boot JAR 檔案應用程式部署至 Azure App Service
 
@@ -198,7 +198,7 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 
 
 * Web 應用程式的 URL 會列在 Web 應用程式的 [概觀]  中：
 
-   ![決定 Web 應用程式的 URL][AP02]
+   ![在 Azure 入口網站應用程式服務中尋找 Web 應用程式的 URL][AP02]
 
 使用與之前相同的 cURL 命令來確認部署是否成功；請使用入口網站中的 Web 應用程式 URL，不要使用 `localhost`。 您應該會看到下列訊息：**Greetings from Spring Boot!** 
 
@@ -249,5 +249,6 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 
 
 <!-- IMG List -->
 
-[AP01]: ./media/deploy-spring-boot-java-app-with-maven-plugin/AP01.png
-[AP02]: ./media/deploy-spring-boot-java-app-with-maven-plugin/AP02.png
+
+[AP01]: ./media/deploy-spring-boot-java-app-with-maven-plugin/web-app-listed-azure-portal.png
+[AP02]: ./media/deploy-spring-boot-java-app-with-maven-plugin/determine-web-app-url.png
