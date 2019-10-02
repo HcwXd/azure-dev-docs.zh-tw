@@ -84,6 +84,78 @@
               href: /azure/cognitive-services/Computer-vision/Quickstarts/node-analyze?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             - name: 語音辨識
               href: /azure/cognitive-services/speech-service/get-started?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+    - name: 教學課程
+      items:
+        - name: 使用 VS Code 部署 Azure Functions
+          items:
+            - name: 簡介和必要條件
+              href: tutorial-vscode-serverless-node-01.md
+            - name: 建立 Functions 應用程式
+              href: tutorial-vscode-serverless-node-02.md
+            - name: 在本機測試函式
+              href: tutorial-vscode-serverless-node-03.md
+            - name: 部署 Functions 應用程式
+              href: tutorial-vscode-serverless-node-04.md
+            - name: 清除資源
+              href: tutorial-vscode-serverless-node-05.md
+        - name: 使用 VS Code 部署到 App Service
+          items:
+            - name: 簡介和必要條件
+              href: tutorial-vscode-azure-app-service-node-01.md
+            - name: 建立應用程式
+              href: tutorial-vscode-azure-app-service-node-02.md
+            - name: 部署網站
+              href: tutorial-vscode-azure-app-service-node-03.md
+            - name: 串流記錄
+              href: tutorial-vscode-azure-app-service-node-04.md
+            - name: 清除資源
+              href: tutorial-vscode-azure-app-service-node-05.md
+        - name: 部署具有 VS Code 的容器
+          items:
+            - name: 簡介和必要條件
+              href: tutorial-vscode-docker-node-01.md
+            - name: 使用容器登錄
+              href: tutorial-vscode-docker-node-02.md
+            - name: 建立應用程式映像
+              href: tutorial-vscode-docker-node-03.md
+            - name: 部署應用程式映像
+              href: tutorial-vscode-docker-node-04.md
+            - name: 進行變更並重新部署
+              href: tutorial-vscode-docker-node-05.md
+            - name: 串流記錄
+              href: tutorial-vscode-docker-node-06.md
+            - name: 清除資源
+              href: tutorial-vscode-docker-node-07.md
+        - name: 使用 Azure CLI 部署到 App Service
+          items:
+            - name: 簡介和必要條件
+              href: tutorial-vscode-azure-cli-node-01.md
+            - name: 建立應用程式
+              href: tutorial-vscode-azure-cli-node-02.md
+            - name: 建立 App Service
+              href: tutorial-vscode-azure-cli-node-03.md
+            - name: 部署應用程式
+              href: tutorial-vscode-azure-cli-node-04.md
+            - name: 串流記錄
+              href: tutorial-vscode-azure-cli-node-05.md
+            - name: 進行變更並重新部署
+              href: tutorial-vscode-azure-cli-node-06.md
+            - name: 清除資源
+              href: tutorial-vscode-azure-cli-node-07.md
+        - name: 使用 VS Code 建立靜態網站
+          items:
+            - name: 簡介和必要條件
+              href: tutorial-vscode-static-website-node-01.md
+            - name: 建立應用程式代碼
+              href: tutorial-vscode-static-website-node-02.md
+            - name: 建立儲存體帳戶
+              href: tutorial-vscode-static-website-node-03.md
+            - name: 部署至 Azure 儲存體
+              href: tutorial-vscode-static-website-node-04.md
+            - name: 進行變更並重新部署
+              href: tutorial-vscode-static-website-node-05.md
+            - name: 清除資源
+              href: tutorial-vscode-static-website-node-06.md
     - name: 使用說明指南
       items:
         - name: 使用 VS Code 的端對端 Node.js
