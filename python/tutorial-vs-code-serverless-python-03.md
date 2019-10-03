@@ -6,14 +6,14 @@ author: kraigb
 manager: barbkess
 ms.service: azure-functions
 ms.topic: conceptual
-ms.date: 00/02/2019
+ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 10deffd63eeae22155f070e117e8f935990bcf93
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: b1ed7f69656797822b17c11bcf0f2ece0caa09e2
+ms.sourcegitcommit: 86aec15e2d25b5b706092feb4271fb958c29d5fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020006"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71707346"
 ---
 # <a name="examine-the-code-files"></a>檢查程式碼檔案
 
@@ -88,7 +88,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 程式碼的重要部分如下：
 
 - 您必須從 `azure.functions` 匯入 `func`；匯入記錄模組是選擇性的，但建議匯入。
-- 必要的 `main` Python 函式會接收名為 `req` 的 `func.request` 物件，並傳回類型 `func.HttpResponse` 的值。 您可以在 [func.HttpRequest](/python/api/azure-functions/azure.functions.httprequest?view=azure-python) 和 [func.HttpResponse](/python/api/azure-functions/azure.functions.httpresponse?view=azure-python) 參考中深入了解這些物件的功能。
+- 必要的 `main` Python 函式會接收名為 `req` 的 `func.HttpRequest` 物件，並傳回類型 `func.HttpResponse` 的值。 您可以在 [func.HttpRequest](/python/api/azure-functions/azure.functions.httprequest?view=azure-python) 和 [func.HttpResponse](/python/api/azure-functions/azure.functions.httpresponse?view=azure-python) 參考中深入了解這些物件的功能。
 - 然後，`main` 的本文會處理要求並產生回應。 在此情況下，程式碼會在 URL 中尋找 `name` 參數。 若失敗，它會檢查要求本文是否包含 JSON (使用 `func.HttpRequest.get_json`)，以及 JSON 是否包含 `name` 值 (使用 `get_json` 所傳回 JSON 物件的 `get` 方法)。
 - 如果找到名稱，則程式碼會傳回附加名稱的字串 "Hello"，否則它會傳回錯誤訊息。
 
