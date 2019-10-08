@@ -9,14 +9,14 @@ ms.service: azure-nodejs
 ms.date: 08/20/2019
 ms.author: kraigb
 ms.custom: seo-javascript-september2019
-ms.openlocfilehash: dc1d376be0f57d7d79a7a67d43dca49c30163c90
-ms.sourcegitcommit: 52fa18873a6a8dc7f28c063cca0175bae2720b2a
+ms.openlocfilehash: 5fae0fb9e7d76d33e39ec85a27c46c339b4b38f4
+ms.sourcegitcommit: 945e92dae2fa4521eebdc049c65273ae6b5470ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808461"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71813702"
 ---
-# <a name="how-to-build-jamstack-static-site-web-apps-with-azure"></a>如何使用 Azure 建置 JAMstack (靜態網站) Web 應用程式
+# <a name="build-jamstack-static-site-web-apps-on-azure-with-nodejs"></a>使用 Node.js 在 Azure 上建置 JAMstack (靜態網站) Web 應用程式
 
 使用 JavaScript  前端、API  (以無伺服器程式碼建置的第三方或自訂 API) 的組合，以及可作為靜態頁面的樣板化標記  (HTML 和 CSS)，可以有效率地建置及維護絕佳的 Web 應用程式。 使用這種組合 (也稱為 JAMstack)，您可以避免撰寫複雜的後端程式碼來提供網頁。 相反地，系統只會服務靜態頁面 (HTML、CSS 和 JavaScript)，而這些頁面會在您的 API 上呼叫以進行伺服器端工作。 由於您可以利用自動調整無伺服器技術來撰寫這些 API，因此您可以完全避免使用一般永遠開啟伺服器或 Web 主機的成本和安全性考量。 (如需詳細資訊，請參閱 [jamstack.org](https://jamstack.org/)。)
 
@@ -31,7 +31,7 @@ ms.locfileid: "70808461"
 
 > [!VIDEO https://medius.studios.ms/Embed/Video-nc/B19-BRK3021?latestplayer=true]
 
-如需逐步教學課程，請參閱 Visual Studio Code 文件中的[將靜態網站部署至 Azure](https://code.visualstudio.com/tutorials/static-website/getting-started)。
+如需逐步教學課程，請參閱[將靜態網站部署至 Azure](tutorial-vscode-static-website-node-01.md)。
 
 下列文章也會說明進一步的詳細資料：
 
@@ -39,7 +39,7 @@ ms.locfileid: "70808461"
   
 - **無伺服器 API**：
 
-  - 首先，[使用 Visual Studio Code 建立您的第一個函式](/azure/azure-functions/functions-create-first-function-vs-code)，這會為您在 Visual Studio Code 內容中導入 Azure Functions，可簡化許多詳細資料。
+  - 首先，[從 Visual Studio Code 部署 Azure Functions](tutorial-vscode-serverless-node-01.md)，這會為您在 Visual Studio Code 內容中導入 Azure Functions，可簡化許多詳細資料。
   - 當您完成本文時，您會有一個 Azure Functions 專案 (資料夾)，其中包含針對函式命名的子資料夾，它與 HTTP 端點相同。 該函式資料夾包含具有程式碼的 index.js  檔案。
   - 您可以視需要修改該函式，並在專案中新增更多函式，然後再次將其部署至 Azure，以供公開使用。
   - 如需無伺服器開發的其他資源，請參閱[如何在 Azure 上撰寫無伺服器 Node.js 程式碼](node-howto-write-serverless-code.md)

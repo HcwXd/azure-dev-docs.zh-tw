@@ -11,14 +11,14 @@ ms.topic: article
 ms.date: 06/25/2017
 ms.author: karler
 ms.custom: seo-javascript-september2019
-ms.openlocfilehash: da1436106b681508ef226ad33ccfc10160485d42
-ms.sourcegitcommit: d3349f1a2a8a7eab1ffe2fcb1d05f22cac91dffb
+ms.openlocfilehash: 51ed46032d0cff0f2e35c0a69e9b339158bad867
+ms.sourcegitcommit: 86aec15e2d25b5b706092feb4271fb958c29d5fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923115"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71710261"
 ---
-# <a name="nodejs-development-with-visual-studio-code-and-azure"></a>使用 Visual Studio Code 和 Azure 進行 Node.js 開發
+# <a name="develop-and-deploy-a-containerized-nodejs-app-with-visual-studio-code-and-azure"></a>利用 Visual Studio Code 和 Azure 開發及部署容器化 Node.js 應用程式
 
 本教學課程說明如何採用現有的 Node.js 應用程式，將它「容器化」 (使用 Docker)，然後使用 Visual Studio Code 將應用程式部署至 Azure。
 
@@ -424,7 +424,7 @@ FROM mhart
 
 DockerHub 針對散佈容器映像提供令人讚嘆的經驗，但有些情況下您寧可裝載自己的私人 Docker 登錄 - 例如為了安全性/控管或效能優勢。 基於此目的，Azure 提供可讓您加速自有 Docker 登錄的 [Azure Container Registry](https://azure.microsoft.com/services/container-registry/) (ACR)，其支援儲存體位於與您的 Web 應用程式相同的資料中心 (讓提取更加快速)。 ACR 也為您提供完整的內容和存取控制權 - 例如誰可以推送或提取映像。 
 
-執行下列命令即可完成自訂登錄的佈建。 (以全域唯一的值取代 **<NAME>** 預留位置，因為 ACR 會使用指定的值來產生登錄的登入伺服器 URL。
+執行下列命令即可完成自訂登錄的佈建。 (以全域唯一的值取代 **<NAME>** 預留位置，因為 ACE 會使用指定的值來產生登錄的登入伺服器 URL。
 
 ```shell
 ACR_NAME=<NAME>
