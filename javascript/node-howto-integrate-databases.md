@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: azure-nodejs
 ms.date: 08/20/2019
 ms.author: kraigb
-ms.openlocfilehash: 736797aa4287909646b7dcaca430fc5b7c9f3b66
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: 1861b5df8cc9a54379762fac001c5cecc2f89b1f
+ms.sourcegitcommit: 60c41faa59dbb59406eb7c1715f5708b5ed892c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892352"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036077"
 ---
 # <a name="how-to-integrate-azure-databases-in-nodejs-apps"></a>如何在 Node.js 應用程式中整合 Azure 資料庫
 
@@ -25,7 +25,7 @@ ms.locfileid: "69892352"
 | **MongoDB** | [建立 Node.js 和 MongoDB Web 應用程式](/azure/app-service-web/app-service-web-tutorial-nodejs-mongodb-app) | [範例](https://docs.microsoft.com/samples/browse/?languages=javascript%2Cnodejs&term=Mongo%20DB) |
 | **Redis 快取** | [建立和取用 Redis 快取](/azure/redis-cache/cache-nodejs-get-started) | |
 | **Azure SQL 資料庫** | [使用 Node.js 查詢 Azure SQL 資料庫](/azure/sql-database/sql-database-connect-query-nodejs) | [範例](https://docs.microsoft.com/samples/browse/?languages=javascript%2Cnodejs&products=azure-sql-database) | |
-| **MySQL** | [使用 Node.js 連線並查詢資料](/azure/mysql/connect-nodejs.md) | |
+| **MySQL** | [使用 Node.js 連線並查詢資料](/azure/mysql/connect-nodejs) | |
 | **PostgreSQL** | [使用 Node.js 連線並查詢資料](/azure/postgresql/connect-nodejs) | |
 
 您也可以針對檔案 (Blob)、資料表和佇列 (訊息) 儲存體使用 Azure 儲存體：

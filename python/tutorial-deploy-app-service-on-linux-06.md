@@ -1,5 +1,5 @@
 ---
-title: 將記錄從 Azure App Service 串流至 VS Code
+title: 教學課程：將記錄從 Azure App Service 串流至 VS Code
 description: 教學課程步驟 6：將應用程式記錄串流至 Visual Studio Code
 services: app-service
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 39ae534580e5057b1ddcf93588be94ad67f2a9b4
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.custom: seo-python-october2019
+ms.openlocfilehash: f4aac132e9c01a0c428e243e06e811357defc2aa
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020166"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172227"
 ---
-# <a name="stream-logs-from-the-running-app"></a>從執行中應用程式串流記錄
+# <a name="tutorial-stream-logs-from-azure-app-service-into-visual-studio-code"></a>教學課程：將 Azure App Service 中的記錄串流至 Visual Studio Code
 
 [上一個步驟：部署應用程式](tutorial-deploy-app-service-on-linux-05.md)
 

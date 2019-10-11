@@ -7,14 +7,15 @@ manager: carmonm
 ms.date: 04/11/2019
 ms.topic: conceptual
 ms.devlang: python
-ms.openlocfilehash: c114fa9aa360f58f5688f8b70685402ba0c12db7
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.custom: seo-python-october2019
+ms.openlocfilehash: cb5881ed9da546d9d9d2b639e475d5fdf815e2cd
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69889726"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172388"
 ---
-# <a name="authenticate-with-the-azure-management-libraries-for-python"></a>使用適用於 Python 的 Azure 管理程式庫來進行驗證
+# <a name="authenticate-with-the-azure--management-libraries-for-python"></a>使用適用於 Python 的 Azure 管理程式庫來進行驗證
 
 在使用 Python 管理程式庫來建立和管理資源時，有多個選項可供您向 Azure 驗證應用程式。
 

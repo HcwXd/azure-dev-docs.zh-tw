@@ -1,5 +1,5 @@
 ---
-title: 從 Visual Studio Code 將 Python 應用程式部署至 Linux 上的 Azure App Service
+title: 教學課程：從 Visual Studio Code 將 Python 應用程式部署至 Linux 上的 Azure App Service
 description: 教學課程步驟 1：簡介、必要條件和登入 Azure。
 services: app-service
 author: kraigb
@@ -8,16 +8,17 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 1b1e3d7fa1daa408584e4caf22c553d7f47bccea
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 24f615f5f456276b1ed78fc431e3cdd929e2d1cd
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186189"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172517"
 ---
-# <a name="deploy-to-azure-app-service-on-linux"></a>部署至 Linux 上的 Azure App Service
+# <a name="tutorial-deploy-python-apps-to-azure-app-service-on-linux-from-visual-studio-code"></a>教學課程：從 Visual Studio Code 將 Python 應用程式部署至 Linux 上的 Azure App Service
 
-本教學課程會逐步引導您使用 Visual Studio Code，搭配 [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) 擴充功能將 Python 應用程式部署至 Linux 上的 Azure App Service。
+本文會逐步引導您使用 Visual Studio Code，搭配 [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) 擴充功能將 Python 應用程式部署至 Linux 上的 Azure App Service。
 
 如果您在本教學課程中的任何步驟遇到問題，我們很樂意聆聽細節。 請使用每篇文章結尾處的 **[我遇到問題]** 連結來提交意見反應。
 

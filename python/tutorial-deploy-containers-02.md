@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio Code 將容器映像部署至 Azure App Service
+title: 教學課程：使用 Visual Studio Code 將容器映像部署至 Azure App Service
 description: 教學課程步驟2：將實際 Docker 映像部署至容器登錄中的 Azure App Service。
 services: app-service
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 27cc6e68892821170c1e438378f8635bd320afe5
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.custom: seo-python-october2019
+ms.openlocfilehash: a099e25134615fc05508cde3c0f128a3be813402
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020086"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172268"
 ---
-# <a name="deploy-the-image-to-azure"></a>將映像部署至 Azure
+# <a name="tutorial-deploy-a-container-image-to-azure-app-service"></a>教學課程：將容器映像部署至 Azure App Service
 
 [上一個步驟：必要條件](tutorial-deploy-containers-01.md)
 

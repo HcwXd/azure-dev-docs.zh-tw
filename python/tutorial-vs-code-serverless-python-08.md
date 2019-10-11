@@ -1,5 +1,5 @@
 ---
-title: 清除 Azure 資源
+title: 教學課程：清除 Azure 資源 - Python 中的 Azure Functions
 description: 教學課程步驟 8：清除 Azure 資源以避免產生持續費用。
 services: functions
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 6996121fc8ecba4489e2ec920de35574f6d1c5d8
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: aac220a57c83b274c46886f4548e41b41ec8327e
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186171"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172425"
 ---
-# <a name="clean-up-resources"></a>清除資源
+# <a name="tutorial-clean-up-azure-resources-for-azure-functions"></a>教學課程：清除適用於 Azure Functions 的 Azure 資源
 
 [上一個步驟：新增儲存體繫結](tutorial-vs-code-serverless-python-07.md)
 

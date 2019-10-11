@@ -1,5 +1,5 @@
 ---
-title: 清除 Azure 資源
+title: 教學課程：清除 Azure 資源
 description: 教學課程步驟 5：清除 Azure 資源以避免產生持續費用。
 services: app-service
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 96db5581b2752e29633412776efdfe9d1328abdb
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 351d7853eb3ebbf5a62e7798eb0696657b0ca216
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019516"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172465"
 ---
-# <a name="clean-up-resources"></a>清除資源
+# <a name="tutorial-clean-up-azure-resources"></a>教學課程：清除 Azure 資源
 
 您在本教學課程中建立的各種 Azure 資源都會產生持續費用。 若要清除它們，最好方法為造訪 [Azure 入口網站](https://portal.azure.com)、從左側瀏覽窗格選取 [資源群組]  、選取您已在本教學課程過程中建立的資源群組，然後使用 [刪除資源群組]  命令。
 

@@ -1,30 +1,26 @@
 ---
-title: 如何搭配使用 Spring Data JDBC 和 Azure MySQL
-description: 了解如何搭配使用 Spring Data JDBC 和 Azure MySQL 資料庫。
-services: mysql
+title: 如何搭配使用 Spring Data JDBC 與適用於 MySQL 的 Azure 資料庫
+description: 了解如何搭配使用 Spring Data JDBC 與適用於 MySQL 的 Azure 資料庫。
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
 ms.date: 12/19/2018
 ms.devlang: java
 ms.service: mysql
 ms.tgt_pltfrm: multiple
-ms.topic: article
-ms.openlocfilehash: 5e9947e3717fda66bab01a3e3d1dd658f1f1c649
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.topic: conceptual
+ms.openlocfilehash: 0fd650caba9ecd1746a18d8696cccc50aca64d82
+ms.sourcegitcommit: 2610f3992cb6d21a3657032074acb981d130fdad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282369"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960792"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-mysql"></a>如何搭配使用 Spring Data JDBC 和 Azure MySQL
 
 ## <a name="overview"></a>概觀
 
-本文示範如何建立使用 [Spring Data] 的應用程式範例，以在 Azure [MySQL](https://www.mysql.com/) 資料庫 中使用 [Java 資料庫連線 (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) 儲存和擷取資訊。
+本文示範如何建立使用 [Spring Data] 的應用程式範例，以在[適用於 MySQL 的 Azure 資料庫](/azure/mysql/)中使用 [Java 資料庫連線 (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) 儲存和擷取資訊。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -37,9 +33,9 @@ ms.locfileid: "68282369"
 * [mysql](https://dev.mysql.com/downloads/) 命令列公用程式。
 * [Git](https://git-scm.com/downloads) 用戶端。
 
-## <a name="create-a-mysql-database-for-azure"></a>建立 Azure MySQL 資料庫
+## <a name="create-an-azure-database-for-mysql"></a>建立適用於 MySQL 的 Azure 資料庫 
 
-### <a name="create-a-mysql-database-server-using-the-azure-portal"></a>使用 Azure 入口網站建立 MySQL 資料庫伺服器
+### <a name="create-a-server-using-the-azure-portal"></a>使用 Azure 入口網站建立伺服器
 
 > [!NOTE]
 > 
@@ -67,11 +63,11 @@ ms.locfileid: "68282369"
 
 1. 上述所有資訊皆輸入完成時，按一下 [建立]  。
 
-### <a name="configure-a-firewall-rule-for-your-mysql-database-server-using-the-azure-portal"></a>使用 Azure 入口網站設定 MySQL 資料庫伺服器的防火牆規則
+### <a name="configure-a-firewall-rule-for-your-server-using-the-azure-portal"></a>使用 Azure 入口網站設定伺服器的防火牆規則
 
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
-1. 按一下 [所有資源]  ，然後按一下您剛才建立的 MySQL 資料庫。
+1. 按一下 [所有資源]  ，然後按一下您剛才所建立的「適用於 MySQL 的 Azure 資料庫」資源。
 
    ![選取 MySQL 資料庫][MYSQL03]
 
@@ -79,11 +75,11 @@ ms.locfileid: "68282369"
 
    ![設定連線安全性][MYSQL04]
 
-### <a name="retrieve-the-connection-string-for-your-mysql-server-using-the-azure-portal"></a>使用 Azure 入口網站擷取 MySQL 伺服器的連接字串
+### <a name="retrieve-the-connection-string-for-your-server-using-the-azure-portal"></a>使用 Azure 入口網站擷取伺服器的連接字串
 
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
-1. 按一下 [所有資源]  ，然後按一下您剛才建立的 MySQL 資料庫。
+1. 按一下 [所有資源]  ，然後選取您剛才所建立的「適用於 MySQL 的 Azure 資料庫」。
 
    ![選取 MySQL 資料庫][MYSQL03]
 
@@ -91,7 +87,7 @@ ms.locfileid: "68282369"
 
    ![擷取 JDBC 連接字串][MYSQL05]
 
-### <a name="create-mysql-database-using-the-mysql-command-line-utility"></a>使用 `mysql` 命令列公用程式建立 MySQL 資料庫
+### <a name="create-a-database-using-the-mysql-command-line-utility"></a>使用 `mysql` 命令列公用程式建立資料庫
 
 1. 開啟命令殼層，然後輸入 `mysql` 命令來連線至 MySQL 伺服器，如下列範例所示：
 
@@ -229,7 +225,7 @@ ms.locfileid: "68282369"
 
 ## <a name="summary"></a>總結
 
-在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在 Azure MySQL 資料庫中使用 JDBC 儲存和擷取資訊。
+在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在適用於 MySQL 的 Azure 資料庫中使用 JDBC 儲存和擷取資訊。
 
 ## <a name="next-steps"></a>後續步驟
 

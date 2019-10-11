@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio Code 將第二個 Python 函式新增至 Azure Functions
+title: 教學課程：使用 Visual Studio Code 將第二個 Python 函式新增至 Azure Functions
 description: 教學課程步驟6：新增第二個函式來擴充 Azure Functions 專案。
 services: functions
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: a55b25326e7a87810ded7af1c375b185b7ef64eb
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 07f806dc58eb5aede65f0dca67e1bc59ce495a25
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019546"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172426"
 ---
-# <a name="add-a-second-function"></a>新增第二個函式
+# <a name="tutorial-add-a-second-python-function-to-azure-functions"></a>教學課程：將第二個 Python 函式新增至 Azure Functions
 
 [上一個步驟：部署 Azure](tutorial-vs-code-serverless-python-05.md)
 

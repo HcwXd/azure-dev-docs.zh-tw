@@ -8,17 +8,17 @@ ms.topic: article
 ms.service: azure-nodejs
 ms.date: 08/19/2019
 ms.author: kraigb
-ms.custom: seo-javascript-september2019
-ms.openlocfilehash: f1cea28186282cc3f72993439f0c3a2ab43885a9
-ms.sourcegitcommit: 945e92dae2fa4521eebdc049c65273ae6b5470ee
+ms.custom: seo-javascript-september2019, seo-javascript-october2019
+ms.openlocfilehash: a985578312a2c7cb722307bf8b291eaf02905e2c
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71813690"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172158"
 ---
 # <a name="use-azure-functions-to-write-serverless-nodejs-code-on-azure"></a>使用 Azure Functions 在 Azure 上撰寫無伺服器 Node.js 程式碼
 
-無伺服器程式碼可讓您在網際網路上建立回應式的隨選端點，而不需擔心佈建或管理基礎結構。 無伺服器程式碼是由執行來回應各種事件的指令碼或其他程式碼所組成。 在 Azure 上，無伺服器供應項目稱為 Azure Functions。
+在 Azure 上，無伺服器供應項目稱為 Azure Functions。 無伺服器程式碼可讓您在網際網路上建立回應式的隨選端點，而不需擔心佈建或管理基礎結構。 無伺服器程式碼是由執行來回應各種事件的指令碼或其他程式碼所組成。 
 
 首先，直接跳至：
 

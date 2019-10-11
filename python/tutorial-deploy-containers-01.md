@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio Code 將 Docker 容器部署至 Azure App Service
+title: 教學課程：使用 Visual Studio Code 將 Docker 容器部署至 Azure App Service
 description: 教學課程步驟 1：簡介和必要條件。
 services: app-service
 author: kraigb
@@ -8,16 +8,17 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 0135761f8294b3fbbb8fe821540b46126c107109
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: f6cdd345fddf0123cb26549ddbc498f156737799
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186187"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172302"
 ---
-# <a name="deploy-containers-to-azure-app-service"></a>將容器部署到 Azure App Service
+# <a name="tutorial-deploy-docker-containers-to-azure-app-service-with-visual-studio-code"></a>教學課程：使用 Visual Studio Code 將 Docker 容器部署至 Azure App Service
 
-本教學課程會逐步解說下列程序：使用 Visual Studio Code 將容器登錄中的容器映像部署至 [Azure App Service](https://azure.microsoft.com/services/app-service/containers/)，全都在 Visual Studio Code 內進行。
+本文會逐步解說下列程序：使用 Visual Studio Code 將容器登錄中的容器映像部署至 [Azure App Service](https://azure.microsoft.com/services/app-service/containers/)，全都在 Visual Studio Code 內進行。
 
 如果您在本教學課程中的任何步驟遇到問題，我們很樂意聆聽細節。 請使用每篇文章結尾處的 **[我遇到問題]** 連結來提交意見反應。
 

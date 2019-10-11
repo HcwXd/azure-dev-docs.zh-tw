@@ -8,17 +8,17 @@ ms.topic: article
 ms.service: azure-nodejs
 ms.date: 08/20/2019
 ms.author: kraigb
-ms.custom: seo-javascript-september2019
-ms.openlocfilehash: 1d9cfc4d58355f374877941747138d8e8f53c8ea
-ms.sourcegitcommit: 945e92dae2fa4521eebdc049c65273ae6b5470ee
+ms.custom: seo-javascript-september2019, seo-javascript-october2019
+ms.openlocfilehash: 89a2ce8214e6e3706b6387f657715fe3ee7f4fbe
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71813698"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172409"
 ---
 # <a name="deploy-nodejs-web-apps-to-azure-app-service"></a>將 Node.js Web 應用程式部署至 Azure App Service
 
-在 Azure 上，您有數個選項可裝載 Web 應用程式：
+在 Azure 上，您有數個選項可部署和裝載 Web 應用程式：
 
 - Web 應用程式的最佳裝載選項是 Azure App Service，這是一個平台即服務 (PaaS) 供應項目。 若要開始使用，請嘗試下列任何一項資源：
 

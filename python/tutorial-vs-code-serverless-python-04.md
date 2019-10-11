@@ -1,5 +1,5 @@
 ---
-title: 在本機使用 Visual Studio Code 偵錯 Azure Functions Python 程式碼
+title: 教學課程：在本機使用 Visual Studio Code 偵錯 Azure Functions Python 程式碼
 description: 教學課程步驟 4：在本機執行 VS Code 偵錯工具，以檢查您的 Python 程式碼。
 services: functions
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 28df4c9a8a8b3a6ab6308449e9ae2e1ebd2cc6e4
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 324a67e5eebfce8fde7a2cf88d40f15864817df5
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186146"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172443"
 ---
-# <a name="debug-the-function-code-locally"></a>在本機偵錯函式程式碼
+# <a name="tutorial-debug-the-azure-functions-python-code-locally"></a>教學課程：在本機上針對 Azure Functions Python 程式碼進行偵錯
 
 [上一個步驟：檢查程式碼檔案](tutorial-vs-code-serverless-python-03.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 適用於 Python 的 Azure SDK 作業組態
+title: 作業設定參數 - 適用於 Python 的 Azure SDK
 description: 適用於 Python 的 Azure SDK 擲回的 C
 author: sptramer
 ms.author: sttramer
@@ -7,14 +7,15 @@ manager: carmonm
 ms.date: 03/07/2018
 ms.topic: conceptual
 ms.devlang: python
-ms.openlocfilehash: 9638aa4602f96e2da0155a7b3840e5be4857eb98
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.custom: seo-python-october2019
+ms.openlocfilehash: ca69b72789f28445c4654e635e641e2954890a38
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285509"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172366"
 ---
-# <a name="operation-config"></a>作業組態 
+# <a name="parameters-for-operation-configuration"></a>作業設定參數
 
 作業的方法有可在 `kwargs` 中提供的額外參數。 這稱為 operation_config。
 
@@ -30,4 +31,4 @@ ms.locfileid: "68285509"
 |  Proxy  |`dict` |Proxy 伺服器設定。|
 |  use_env_proxies |`bool` |是否從本機環境變數中讀取 Proxy 設定。|
 |  重試  |`int` | 嘗試重試的次數。|
-|  enable_http_logger | `bool`| 啟用偵錯模式中的的 HTTP 記錄 (預設為 False)。|
+|  enable_http_logger | `bool`| 啟用偵錯模式中的 HTTP 記錄 (預設為 False)。|
