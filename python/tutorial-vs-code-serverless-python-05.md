@@ -9,22 +9,24 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 231aefd696b3f4c91e5da8156dc339f4b355c1c7
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 9acf6e4c0ecc5357580957e2ea9295cd89f441f0
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172183"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278577"
 ---
 # <a name="tutorial-deploy-azure-functions-in-python"></a>教學課程：在 Python 中部署 Azure Functions
 
 [上一個步驟：在本機進行偵錯](tutorial-vs-code-serverless-python-04.md)
 
-在這些步驟中，您會使用函式擴充功能，在 Azure 中建立函式應用程式，以及其他必要的 Azure 資源。 函式應用程式可讓您將多個函式群組為邏輯單位，以方便您管理、部署和共用資源。 對於資料和[主控方案](/azure/azure-functions/functions-scale#hosting-plan-support)，它也需要 Azure 儲存體帳戶。 所有這些資源都組織在單一資源群組內。
+在此步驟中，您會使用 Azure Functions 擴充功能在 Azure 中建立函式應用程式，以及其他必要的 Azure 資源。 函式應用程式可讓您將多個函式群組為邏輯單位，以方便您管理、部署和共用資源。
+
+函式應用程式需要資料和[主控方案](/azure/azure-functions/functions-scale#hosting-plan-support)的 Azure 儲存體帳戶。 所有這些資源都組織在單一資源群組內。
 
 1. 在 [Azure：  函式] 總管中，選取 [部署至函式應用程式]  命令，或開啟 [命令選擇區] (**F1**)，然後選取 [Azure Functions：  部署至函式應用程式] 命令。 函式應用程式再次為 Python 專案在 Azure 執行的所在。
 
-    ![[部署至函式應用程式] 命令](media/tutorial-vs-code-serverless-python/deploy-command.png)
+    ![將 Python 函式部署至 Azure 函式應用程式](media/tutorial-vs-code-serverless-python/deploy-a-python-fuction-to-azure-function-app.png)
 
 1. 出現提示時，請選取 [在 Azure 中建立新的函式應用程式]  ，並提供在整個 Azure 中唯一的名稱 (通常會使用您的個人或公司名稱，以及其他唯一識別碼；您可以使用字母、數字和連字號)。 如果您先前已建立函式應用程式，則其名稱會出現在此選項清單中。
 
@@ -36,11 +38,11 @@ ms.locfileid: "72172183"
 
     [Azure：  函式] 總管也會顯示進度：
 
-    ![Azure 中的部署進度列指示器：函式總管](media/tutorial-vs-code-serverless-python/deploy-progress.png)
+    ![Azure 中的部署進度列指示器：函式總管](media/tutorial-vs-code-serverless-python/deployment-progress-indicator-in-azure-function-explorer.png)
 
 1. 一旦部署完成，Azure Functions 擴充功能便會顯示一則訊息，其中包含三個額外動作的按鈕：
 
-    ![指出部署成功並包含其他動作的訊息](media/tutorial-vs-code-serverless-python/deployment-popup.png)
+    ![指出部署成功並包含其他動作的訊息](media/tutorial-vs-code-serverless-python/azure-functions-deployment-success-with-additional-actions.png)
 
     對於 [串流記錄]  和 [上傳設定]  ，請參閱下一節。 對於 [檢視輸出]  ，請參閱隨後的步驟 5。
 

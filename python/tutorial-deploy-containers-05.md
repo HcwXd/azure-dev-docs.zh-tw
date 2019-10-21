@@ -9,14 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 351d7853eb3ebbf5a62e7798eb0696657b0ca216
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 0a3e04759573769d1ed00e59a294caddfc4ef0cc
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172465"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278710"
 ---
 # <a name="tutorial-clean-up-azure-resources"></a>教學課程：清除 Azure 資源
+
+[上一個步驟：串流記錄](tutorial-deploy-containers-04.md)
+
+本文說明如何移除您使用 Visual Studio Code 將應用程式部署至 Azure App Service 時所建立的 Azure 資源。
 
 您在本教學課程中建立的各種 Azure 資源都會產生持續費用。 若要清除它們，最好方法為造訪 [Azure 入口網站](https://portal.azure.com)、從左側瀏覽窗格選取 [資源群組]  、選取您已在本教學課程過程中建立的資源群組，然後使用 [刪除資源群組]  命令。
 
@@ -28,14 +32,14 @@ ms.locfileid: "72172465"
 
 另外還有其他適用於 VS Code 的 Azure 擴充功能，您可能會覺得有用。 只需在 [擴充功能] 總管中搜尋 "Azure"：
 
-![適用於 VS Code 的 Azure 擴充功能](media/deploy-containers/azure-extensions.png)
+![適用於 VS Code 的 Azure 擴充功能](media/deploy-containers/azure-extensions-for-visual-studio-code.png)
 
 一些熱門的擴充功能如下：
 
 - [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 - [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Azure CLI 工具](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
-- [Azure Resource Manager (ARM) 工具](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+- [Azure Resource Manager](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) \(英文\)
 
 > [!div class="nextstepaction"]
 > [我已完成](https://docs.microsoft.com/python/azure/?view=azure-python)

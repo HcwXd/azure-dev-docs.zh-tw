@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: b284dd6b5a5d1a09f1be48fb2ab7e6a8f95a4708
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 96e3a653567d146e1ce10fe0ae7950d35b9ed9e3
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172362"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72279071"
 ---
 # <a name="tutorial-prepare-your-app-for-deployment-to-azure-app-service"></a>教學課程：準備應用程式以便部署至 Azure App Service
 
 [上一個步驟：必要條件](tutorial-deploy-app-service-on-linux-01.md)
+
+在本文中，您會準備一個應用程式以部署至本教學課程的 Azure App Service。 您可以使用現有的應用程式，或是建立或下載應用程式。
 
 如果您已有想要使用的應用程式，請確定您有描述相依性的 *requirements.txt* 檔案，包括 Flask 或 Django 之類的架構。
 

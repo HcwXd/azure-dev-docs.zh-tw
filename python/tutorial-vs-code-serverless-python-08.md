@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: aac220a57c83b274c46886f4548e41b41ec8327e
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 8c3110b14d70c787f81a18aa5d0b5bb3bde41ec1
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172425"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278429"
 ---
 # <a name="tutorial-clean-up-azure-resources-for-azure-functions"></a>教學課程：清除適用於 Azure Functions 的 Azure 資源
 
 [上一個步驟：新增儲存體繫結](tutorial-vs-code-serverless-python-07.md)
 
-您所建立的函式應用程式包含可能產生最低費用的資源 (請參閱[函式定價](https://azure.microsoft.com/pricing/details/functions/))。 若要清除資源，請以滑鼠右鍵按一下 [Azure：  函式] 總管中的函式應用程式，然後選取 [刪除函式應用程式]  。
+本文說明如何移除在本教學課程中建立的 Azure 資源。 您使用 Visual Studio Code 建立的 Azure 函式應用程式包含可能產生最低費用的資源。
+
+若要清除資源，請以滑鼠右鍵按一下 [Azure：  函式] 總管中的函式應用程式，然後選取 [刪除函式應用程式]  。 如需詳細資訊，請參閱 [Functions 定價](https://azure.microsoft.com/pricing/details/functions/)。
 
 您也可以造訪 [Azure 入口網站](https://portal.azure.com)、從左側瀏覽窗格選取 [資源群組]  、選取您已在本教學課程過程中建立的資源群組，然後使用 [刪除資源群組]  命令。
 
@@ -36,7 +38,7 @@ ms.locfileid: "72172425"
 
 另外還有其他適用於 Visual Studio Code 的 Azure 擴充功能，您可能會覺得有用。 只需在 [擴充功能] 總管中搜尋 "Azure"：
 
-![適用於 Visual Studio Code 的 Azure 擴充功能](media/tutorial-vs-code-serverless-python/azure-extensions.png)
+![適用於 Visual Studio Code 的 Azure 擴充功能](media/tutorial-vs-code-serverless-python/azure-extensions-for-visual-studio-code.png)
 
 一些熱門的擴充功能如下：
 

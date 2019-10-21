@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 07f806dc58eb5aede65f0dca67e1bc59ce495a25
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: f247ff7730a9f1bca8cc7ed6255ed52966d94d6d
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172426"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278507"
 ---
 # <a name="tutorial-add-a-second-python-function-to-azure-functions"></a>教學課程：將第二個 Python 函式新增至 Azure Functions
 
 [上一個步驟：部署 Azure](tutorial-vs-code-serverless-python-05.md)
 
-在您的第一個部署之後，您可以對程式碼進行變更，例如新增額外的函式，然後重新部署至相同的函式應用程式。
+完成第一個部署之後，您可以對程式碼進行變更 (例如新增其他 Python 函式)，然後重新部署至相同的 Azure Functions 應用程式。
 
 1. 在 [Azure：  函式] 總管中，選取 [建立函式]  命令，或從 [命令選擇區] 使用 [Azure Functions：  建立函式]。 為函式指定下列詳細資料：
 

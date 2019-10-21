@@ -9,22 +9,24 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 8a2a719ee578553bb2033469e64c2df34351e36e
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 947a474f9bd6efa7fdb3c0a371f140623252aa25
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172514"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72279058"
 ---
 # <a name="tutorial-create-the-app-service-from-visual-studio-code"></a>教學課程：從 Visual Studio Code 建立 App Service
 
-[上一個步驟：準備您的應用程式](tutorial-deploy-app-service-on-linux-01.md)
+[上一個步驟：準備您的應用程式](tutorial-deploy-app-service-on-linux-02.md)
 
-在本步驟中，您會建立 Azure App Service 的執行個體，您的應用程式將部署至其中。 您會在部署程式碼之前執行此步驟，以便如有需要可在下一個步驟中設定自訂啟動檔案。
+在此步驟中，請建立您要在其中部署應用程式的 Azure App Service 執行個體。
+
+您會在部署程式碼之前執行此步驟，以便如有需要可在下一個步驟中設定自訂啟動檔案。
 
 1. 在 [Azure：  App Service] 總管中，選取 **+** 命令來建立新的 App Service，或開啟 [命令選擇區] (**F1**)， 然後選取 [Azure App Service：  建立新的 Web 應用程式]。 (在 App Service 術語中，「Web 應用程式」是 Web 應用程式碼的**主機**，而不是應用程式碼本身。)
 
-    ![App Service 總管中的 [建立新的 App Service] 按鈕](media/deploy-azure/app-service-create-new.png)
+    ![App Service 總管中的 [建立新的 App Service]](media/deploy-azure/create-new-app-service-in-app-service-explorer.png)
 
 1. 在隨後的提示中：
 
@@ -33,15 +35,15 @@ ms.locfileid: "72172514"
 
 1. 當出現訊息指出已建立新的 App Service 時，請選取 [檢視輸出]  以切換至 VS Code 中的 [輸出]  視窗。 輸出會顯示已建立的 Azure 資源群組名稱和 App Service 方案名稱，以及 App Service 的 URL。
 
-    ![在建立 App Service 之後出現的訊息](media/deploy-azure/app-service-created.png)
+    ![App Service 的 URL、資源群組和 App Service 方案](media/deploy-azure/url-for-your-new-app-service-and-resource-group-and-plan.png)
 
 1. 若要確認 App Service 是否正常運作，請在 [Azure：  App Service] 總管中展開您的訂用帳戶、以滑鼠右鍵按一下適當的 App Service 名稱，然後選取 [瀏覽網站]  ：
 
-    ![在 App Service 總管中的 App Service 上瀏覽網站命令](media/deploy-azure/browse-website-command.png)
+    ![在 App Service 總管中的 App Service 上瀏覽網站命令](media/deploy-azure/select-command-to-browse-website-in-app-service.png)
 
 1. 因為您尚未將自己的程式碼部署至 App Service (您會在下一個步驟中執行此部署)，所以只會顯示預設應用程式：
 
-    ![Linux 上 App Service 上的預設 Python 應用程式](media/deploy-azure/default-python-app.png)
+    ![Linux 上 App Service 上的預設 Python 應用程式](media/deploy-azure/default-python-app-on-app-service-on-linux.png)
 
 ## <a name="optional-upload-an-environment-variable-definitions-file"></a>(選用) 上傳環境變數定義檔案
 

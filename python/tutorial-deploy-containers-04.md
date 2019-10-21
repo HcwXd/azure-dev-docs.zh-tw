@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 0f002444d2454b734821e067e65fa513619a68bf
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 12cc4880a7001fc51b0e70f89f177390c5fd0f45
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172217"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278708"
 ---
 # <a name="tutorial-stream-logs-from-azure-app-service-for-a-container"></a>教學課程：從容器的 Azure App Service 串流記錄
 
 [上一個步驟：進行變更並重新部署](tutorial-deploy-containers-03.md)
+
+使用下列程序，將 Azure App Service 中的容器記錄串流至 Visual Studio Code。
 
 從 VS Code 內，您可以檢視 (或「跟蹤」) 來自 Azure App Service 上執行中網站的記錄，這會從 `print` 陳述式將任何輸出擷取至主控台，並將它們路由傳送至 VS Code 的 [輸出]  面板。
 

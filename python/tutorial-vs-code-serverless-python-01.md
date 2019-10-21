@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 792c9962d738a8e70f29d5df78c44b6303a63b77
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 81121490f435c7ff2e2fe8ab397fa18bab7113a3
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172294"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278848"
 ---
 # <a name="tutorial-create-and-deploy-serverless-azure-functions-in-python-with-visual-studio-code"></a>教學課程：使用 Visual Studio Code 在 Python 中建立和部署無伺服器 Azure Functions
 
-在本文中，您會使用 Visual Studio Code 和 Azure Functions 擴充功能，搭配 Python 建立無伺服器 HTTP 端點，並同時將連線 (或「繫結」) 新增至儲存體。 Azure Functions 會在無伺服器環境中執行您的程式碼，而不需要佈建虛擬機器或發佈 Web 應用程式。 適用於 Visual Studio Code 的 Azure Functions 擴充功能可透過自動處理許多設定問題，來大幅簡化使用 Functions 的程序。
+在本文中，您會使用 Visual Studio Code 和 Azure Functions 擴充功能，搭配 Python 建立無伺服器 HTTP 端點，並同時將連線 (或「繫結」) 新增至儲存體。
+
+Azure Functions 會在無伺服器環境中執行您的程式碼，而不需要佈建虛擬機器或發佈 Web 應用程式。 適用於 Visual Studio Code 的 Azure Functions 擴充功能可透過自動處理許多設定問題，來大幅簡化使用 Functions 的程序。
 
 如果您在本教學課程中的任何步驟遇到問題，我們很樂意聆聽細節。 請使用每篇文章結尾處的 **[我遇到問題]** 按鈕來提交意見反應。
 
@@ -56,7 +58,7 @@ ms.locfileid: "72172294"
 
 若要驗證是否已安裝所有的 Azure Functions 工具，請開啟 Visual Studio Code 命令選擇區 (**F1**)、選取 **[終端機：建立新的整合式終端]** 命令，一旦終端機開啟，請執行 `func` 命令：
 
-![檢查 Azure Functions 核心工具必要條件](media/tutorial-vs-code-serverless-python/check-prereqs.png)
+![檢查 Azure Functions 核心工具必要條件](media/tutorial-vs-code-serverless-python/check-azure-functions-tools-prerequisites-in-visual-studio-code.png)
 
 以 Azure Functions 標誌開頭的輸出 (您需要向上捲動輸出) 表示 Azure Functions Core Tools 存在。
 

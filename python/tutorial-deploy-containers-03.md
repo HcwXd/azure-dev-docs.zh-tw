@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 0c57729fd3ab1f671b2533f3e15056aec99cb6c9
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: a8ce5de518ef4eeec2140ec82ef560f3b487783e
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172452"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278692"
 ---
 # <a name="tutorial-redeploy-a-container-to-azure-app-service-after-making-changes"></a>教學課程：在進行變更後將容器重新部署至 Azure App Service
 
 [上一個步驟：將映像部署至 Azure](tutorial-deploy-containers-02.md)
+
+本文說明在 Visual Studio Code 中進行變更後，如何將容器重新部署至 Azure App Service。
 
 因為您會無可避免地對應用程式進行變更，所以最後會重建並重新部署您的容器許多次。 幸運的是，程序很簡單：
 

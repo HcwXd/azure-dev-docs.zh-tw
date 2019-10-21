@@ -8,14 +8,16 @@ ms.date: 06/05/2017
 ms.topic: conceptual
 ms.devlang: python
 ms.custom: seo-python-october2019
-ms.openlocfilehash: a0e979ec58cb659873a1bbe85bda4579363a9777
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 6b131a9a59fdf332abce426b8cbe776341b5b36a
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172345"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72279089"
 ---
 # <a name="install-the-azure-sdk-for-python"></a>安裝適用於 Python 的 Azure SDK
+
+本文將協助您安裝適用於 Python 的 Azure SDK。 您可以使用 pip 來安裝較舊的版本、檢查您的安裝，以及解除安裝適用於 Python 的 Azure SDK。
 
 ## <a name="which-python-and-which-version-to-use"></a>該使用哪個 Python 和哪個版本
 

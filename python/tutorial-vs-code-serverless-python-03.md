@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: c09323e35c20a0b9fb5162c08f7fa223969d83fe
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 4a8ef594b461df406846f16ad71e595b64ffee5e
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172115"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278787"
 ---
 # <a name="tutorial-examine-the-python-code-files-in-visual-studio-code"></a>教學課程：檢查 Visual Studio Code 中的 Python 程式碼檔案
 
 [上一個步驟：建立函式](tutorial-vs-code-serverless-python-02.md)
+
+使用 Visual Studio Code 查看函式資料夾中的 Python 檔案。
 
 在新建立的函式中，子資料夾為三個檔案： *\_\_init\_\_.py* 包含函式的程式碼、*function.json* 說明 Azure Functions 的函式，以及 *sample.dat* 是範例資料檔。 您可以刪除 *sample.dat* (如果想要的話)，因為它的存在只為了顯示，您可以將其他檔案新增至子資料夾。
 

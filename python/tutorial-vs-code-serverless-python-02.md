@@ -9,20 +9,22 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 691e64ae9b407ba4277ddde2a62a583623e53484
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: b87ca4bdefafbfa3e23c9538d6c77357dc9ba99b
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172476"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278759"
 ---
 # <a name="tutorial-create-a-python-function-for-azure-functions"></a>教學課程：建立適用於 Azure Functions 的 Python 函式
 
 [上一個步驟：必要條件](tutorial-vs-code-serverless-python-01.md)
 
-1. Azure Functions 的程式碼是在 Functions _專案_內進行管理，您會先建立此專案，然後再建立程式碼。 在 [Azure：  函式] 總管 (使用左側的 Azure 圖示開啟) 中，選取 [新增專案]  命令圖示，或開啟 [命令選擇區] (F1)，然後選取 [Azure Functions：**建立新專案]** 。
+在本文中，您將使用 Visual Studio Code 建立 Azure Functions 的 Python 函式。 Azure Functions 的程式碼是在 Functions _專案_內進行管理，您會先建立此專案，然後再建立程式碼。
 
-    ![函式總管中的 [建立新專案] 按鈕](media/tutorial-vs-code-serverless-python/project-create-new.png)
+1. 在 [Azure：  函式] 總管 (使用左側的 Azure 圖示開啟) 中，選取 [新增專案]  命令圖示，或開啟 [命令選擇區] (F1)，然後選取 [Azure Functions：**建立新專案]** 。
+
+    ![在 Azure Functions 總管中建立新的專案](media/tutorial-vs-code-serverless-python/create-a-new-project-in-azure-functions-explorer.png)
 
 1. 在隨後的提示中：
 
@@ -37,17 +39,17 @@ ms.locfileid: "72172476"
 
 1. 不久之後，會出現一則訊息，指出已建立新專案。 在 [總管]  中，有針對函式建立的子資料夾，而且 Visual Studio Code 會開啟 *\_\_init\_\_.py* 檔案，其中包含預設函式程式碼：
 
-    [![建立新 Python 函式專案的結果](media/tutorial-vs-code-serverless-python/project-create-results.png)](media/tutorial-vs-code-serverless-python/project-create-results.png)
+    ![在 Azure Functions 中建立新 Python 專案的結果](media/tutorial-vs-code-serverless-python/display-results-of-new-python-project-in-azure-functions.png)
 
     > [!NOTE]
     > 如果 Visual Studio Code 告訴您，在開啟 *\_\_init\_\_.py* 時未選取 Python 解譯器，請開啟 [命令選擇區] (**F1**)、選取 [Python：  選取解譯器] 命令，然後在本機 `.env` 資料夾 (已建立為專案的一部分) 中選取虛擬環境。 此環境必須特別以 Python 3.6 x 為基礎，如前一篇文章的[必要條件](tutorial-vs-code-serverless-python-01.md#prerequisites)中之下所述。
     >
-    > ![選取以專案建立的虛擬環境](media/tutorial-vs-code-serverless-python/select-venv-interpreter.png)
+    > ![選取以 Python 專案建立的虛擬環境](media/tutorial-vs-code-serverless-python/select-virtual-environment-created-with-the-python-project.png)
 
 > [!TIP]
 > 每當您想要在相同的專案中建立另一個函式時，請使用 [Azure：函式]  總管中的 [建立函式]  命令，或開啟 [命令選擇區] (**F1**)，然後選取 [Azure Functions：**建立函式]** 命令。 這兩個命令都會提示您輸入函式名稱 (這是端點的名稱)，然後使用預設檔案建立子資料夾。
 >
-> ![[Azure：函式] 總管中的 [新增函式] 命令](media/tutorial-vs-code-serverless-python/function-create-new.png)
+> ![在 Azure Functions 總管中使用 [新增函式] 建立函式](media/tutorial-vs-code-serverless-python/create-new-functions-in-azure-functions-explorer.png)
 
 > [!div class="nextstepaction"]
 > [我已建立函式](tutorial-vs-code-serverless-python-03.md)

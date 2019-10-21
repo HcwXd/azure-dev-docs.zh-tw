@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: fdd3248e50020bb90cdde8a3e9c30c2895dccdae
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 7c3c863ed333528c675cda939f52b86f53bc8380
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172197"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278931"
 ---
 # <a name="tutorial-configure-a-custom-startup-file-for-python-apps-on-azure-app-service"></a>教學課程：在 Azure App Service 上設定 Python 應用程式的自訂啟動檔案
 
-[上一個步驟：建立 App Service](tutorial-deploy-app-service-on-linux-02.md)
+[上一個步驟：建立 App Service](tutorial-deploy-app-service-on-linux-03.md)
+
+本文說明如何在 Azure App Service 上設定 Python 應用程式的自訂啟動檔案。
 
 根據您建構應用程式的方式，您可能需要為應用程式建立自訂啟動命令檔，如 Azure 文件中的[設定適用於 Azure App Service 的 Linux Python 應用程式](https://docs.microsoft.com/azure/app-service/containers/how-to-configure-python)所述。
 
@@ -37,11 +39,11 @@ ms.locfileid: "72172197"
 
 1. 在 [Azure：  App Service] 總管中，展開 App Service、以滑鼠右鍵按一下 [應用程式設定]  ，然後選取 [在入口網站中開啟]  ：
 
-    ![在 App Service 總管的入口網站命令中開啟設定](media/deploy-azure/open-settings-in-portal-command.png)
+    ![使用 App Service 總管在入口網站中開啟應用程式設定](media/deploy-azure/open-application-settings-in-portal-for-app-service.png)
 
 1. 在 Azure 入口網站中，視需要登入；然後在 [設定]  頁面上，選取 [一般設定]  、在 [堆疊設定]   > [啟動命令]  下輸入啟動檔案的名稱 (例如 *startup.txt*)，然後選取 [儲存]  。
 
-    ![在 Azure 入口網站中設定啟動檔案名稱](media/deploy-azure/azure-portal-startup-file.png)
+    ![在 Azure 入口網站中設定啟動命令檔案名稱](media/deploy-azure/enter-startup-file-for-app-service-in-the-azure-portal.png)
 
     > [!NOTE]
     > 您也可以將啟動命令直接放在 Azure 入口網站上的 [啟動命令]  欄位中，而不是使用啟動命令檔案。 不過，一般最好使用檔案，因為它會在您的存放庫中保留這一項設定，讓您可以同時在其中稽核變更並重新部署到不同的 App Service 實例。

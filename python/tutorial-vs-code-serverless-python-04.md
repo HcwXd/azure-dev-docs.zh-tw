@@ -9,20 +9,22 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 324a67e5eebfce8fde7a2cf88d40f15864817df5
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: cafa10a4ddc9ccc365f9054d009b58b3c9c615bf
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172443"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278596"
 ---
 # <a name="tutorial-debug-the-azure-functions-python-code-locally"></a>教學課程：在本機上針對 Azure Functions Python 程式碼進行偵錯
 
 [上一個步驟：檢查程式碼檔案](tutorial-vs-code-serverless-python-03.md)
 
+您可以在本機使用 Visual Studio Code 對 Azure Functions Python 程式碼進行偵錯。
+
 1. 當您建立 Functions 專案時，Visual Studio Code 擴充功能也會在 `.vscode/launch.json` 中建立啟動設定，其中包含名為 **Attach to Python Functions** 的單一設定。 此設定表示您可以直接按 F5 或使用偵錯總管來啟動專案：
 
-    ![顯示 Functions 啟動設定的偵錯總管](media/tutorial-vs-code-serverless-python/launch-configuration.png)
+    ![偵錯總管用來啟動 Python 專案的組態](media/tutorial-vs-code-serverless-python/configuration-to-start-a-python-project-for-debugging.png)
 
 1. 當您啟動偵錯工具時，終端機即會開啟，其中顯示來自 Azure Functions 的輸出，包括可用端點的摘要。 如果您已使用 "HttpExample" 以外的名稱，則您的 URL 可能會不同：
 

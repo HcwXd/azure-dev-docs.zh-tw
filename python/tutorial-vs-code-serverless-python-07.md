@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: e9f23e138dc9ddc0022199296320ff5c04e6c3d6
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: f8cfe602676c64f516f0a95ae73801b58f35076c
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172116"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278524"
 ---
 # <a name="tutorial-add-a-storage-binding-for-azure-functions-in-python"></a>教學課程：在 Python 中新增 Azure Functions 的儲存體繫結
 
 [上一個步驟：部署第二個函式](tutorial-vs-code-serverless-python-06.md)
 
-_繫結_可讓您將函式程式碼連接至資源 (例如 Azure 儲存體)，而不需要撰寫任何資料存取程式碼。 繫結定義在函式 *function json* 檔案中，而且可以同時代表輸入和輸出。 一個函式可以使用多個輸入和輸出繫結，但只有一個觸發程序。 若要深入了解，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings)。
+您可以新增 Azure Functions 的儲存體繫結。 _繫結_可讓您將函式程式碼連線至資源 (例如 Azure 儲存體)，而不需要撰寫任何資料存取程式碼。
+
+繫結定義在函式 *function json* 檔案中，而且可以同時代表輸入和輸出。 一個函式可以使用多個輸入和輸出繫結，但只有一個觸發程序。 若要深入了解，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings)。
 
 在本節中，您會將儲存體繫結新增至稍早在本教學課程中建立的 HttpExample 函式。 函式會使用此繫結，在每次要求時將訊息寫入至儲存體。 有問題的儲存體會使用函式應用程式所使用的相同預設儲存體帳戶。 不過，如果打算重度使用儲存體，您會想要考慮建立個別帳戶。
 
@@ -28,7 +30,7 @@ _繫結_可讓您將函式程式碼連接至資源 (例如 Azure 儲存體)，�
 
 1. 在 `HttpExample` 資料夾中，以滑鼠右鍵按一下 *function.json*，然後選取 [新增繫結]  ：
 
-    ![在 Visual Studio Code 總管中新增繫結命令](media/tutorial-vs-code-serverless-python/add-binding-command.png)
+    ![在 Visual Studio Code 總管中新增繫結命令](media/tutorial-vs-code-serverless-python/add-binding-command-to-azure-functions-in-visual-studio-code.png)
 
 1. 在 Visual Studio Code 的後續提示中，選取或提供下列值：
 
