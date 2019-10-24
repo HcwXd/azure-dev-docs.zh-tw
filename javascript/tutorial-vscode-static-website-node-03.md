@@ -8,12 +8,12 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: kraigb
-ms.openlocfilehash: 44e6479379fff3ddf1012cdb61cf73440cad346e
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: ad207007e1c5a781f8cc02a2d20e0a68c77892e7
+ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685973"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587647"
 ---
 # <a name="create-an-azure-storage-account"></a>建立 Azure 儲存體帳戶
 
@@ -21,7 +21,7 @@ ms.locfileid: "71685973"
 
 在此步驟中，您會建立一個 Azure 儲存體帳戶，作為具有內建網頁伺服器的簡單檔案存放區 (或 CDN)。 這個內建伺服器讓 Azure 儲存體成為快速裝載靜態網站的絕佳選擇。
 
-1. 從上一個步驟中建立的 `my-react-app` 資料夾，啟動 Visual Studio Code，讓它自動開啟該資料夾：
+1. 從上一個步驟中建立的 `my-static-app` 資料夾，啟動 Visual Studio Code，讓它自動開啟該資料夾：
 
     ```bash
     code .
