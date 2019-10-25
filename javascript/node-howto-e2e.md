@@ -4,19 +4,19 @@ description: 完整的端對端教學課程說明如何建立 Node.js 應用程�
 services: multiple
 author: karlerickson
 manager: douge
-ms.service: azure-nodejs
+ms.service: app-service
 ms.tgt_pltfrm: na
 ms.devlang: nodejs
 ms.topic: article
 ms.date: 06/25/2017
 ms.author: karler
-ms.custom: seo-javascript-september2019
-ms.openlocfilehash: 51ed46032d0cff0f2e35c0a69e9b339158bad867
-ms.sourcegitcommit: 86aec15e2d25b5b706092feb4271fb958c29d5fa
+ms.custom: seo-javascript-september2019, seo-javascript-october2019
+ms.openlocfilehash: bc8e3a79e3d32cc3d16f496b169f4229d20a6163
+ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71710261"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587503"
 ---
 # <a name="develop-and-deploy-a-containerized-nodejs-app-with-visual-studio-code-and-azure"></a>利用 Visual Studio Code 和 Azure 開發及部署容器化 Node.js 應用程式
 
@@ -35,7 +35,7 @@ ms.locfileid: "71710261"
 - [Azure 帳戶](https://azure.microsoft.com/free/)
 - [Yarn](https://yarnpkg.com/en/docs/install)
 - [Chrome](https://www.google.com/chrome/browser/desktop/) - 用於對示範應用程式的前端進行偵錯。
-- MongoDB - 由於示範應用程式會使用 MongoDB，所以您必須有在本機執行並接聽標準 `27017` 連接埠的 MongoDB 執行個體。 安裝 Docker 之後，執行下列兩個命令是達成此目的最簡單的方式：依序執行 `docker pull mongo` 和 `docker run -it -p 27017:27017 mongo`。
+- MongoDB - 由於示範應用程式會使用 MongoDB，所以您必須有在本機執行並接聽標準 `27017` 連接埠的 MongoDB 執行個體。 安裝 Docker 之後，執行下列兩個命令是達成此目的的最簡單方式：依序執行 `docker pull mongo` 和 `docker run -it -p 27017:27017 mongo`。
 
 ## <a name="project-setup"></a>專案設定
 
@@ -47,13 +47,13 @@ ms.locfileid: "71710261"
 
 1. 在命令選擇區提示字元，輸入 `gitcl`，選取 **Git:Clone** 命令，然後按 **&lt;Enter>** 。
 
-    ![Visual Studio Code 命令選擇區提示字元中的 gitcl 命令](./media/node-howto-e2e/git-clone.png)
+    ![Visual Studio Code 命令選擇區提示字元中的 gitcl 命令](./media/node-howto-e2e/visual-studio-code-git-clone.png)
 
 1. 當系統提示您輸入 [存放庫 URL]  時，輸入 `https://github.com/scotch-io/node-todo`，然後按 **&lt;Enter>** 。
 
 1. 選取 (或建立) 要將專案複製到其中的本機目錄。
 
-    ![Visual Studio Code 總管](./media/node-howto-e2e/explorer.png)
+    ![Visual Studio Code 總管](./media/node-howto-e2e/visual-studio-code-explorer.png)
 
 ## <a name="integrated-terminal"></a>整合式終端機
 
@@ -63,7 +63,7 @@ ms.locfileid: "71710261"
 
 1. 輸入 `yarn`，然後按 **&lt;Enter>** 。  
 
-    ![在 Visual Studio Code 中執行 yarn 命令](./media/node-howto-e2e/terminal.png)
+    ![在 Visual Studio Code 中執行 yarn 命令](./media/node-howto-e2e/visual-studio-code-install-yarn.png)
 
 ## <a name="integrated-git-version-control"></a>整合式 Git 版本控制
 
@@ -75,7 +75,7 @@ ms.locfileid: "71710261"
 
 1. 在 [訊息]  方塊中，輸入認可訊息，並且按 **&lt;Ctrl>&lt;Enter>** 。 
 
-    ![將 yarn.lock 檔案新增至 Git](./media/node-howto-e2e/git.png)
+    ![將 yarn.lock 檔案新增至 Git](./media/node-howto-e2e/visual-studio-code-add-yarn-lock.png)
 
 ## <a name="project-and-code-navigation"></a>專案和程式碼瀏覽
 
@@ -85,21 +85,21 @@ ms.locfileid: "71710261"
 
 1. 輸入 `.js`，以顯示專案中的所有 JavaScript/JSON 檔案，以及每個檔案的上層目錄 
 
-    ![顯示所有 .js* 檔案](./media/node-howto-e2e/git-output.png)
+    ![在 Visual Studio Code 中顯示所有 .js* 檔案](./media/node-howto-e2e/visual-studio-code-javascript-json-file-list.png)
 
 1. 選取 `server.js`，這是應用程式的啟動指令碼。 
 
 1. 將滑鼠停留在 **database** 變數上 (已匯入於第 6 行)，以查看其類型。 在您專案的開發期間，快速檢查檔案中變數/模組/類型的這項功能非常有用。 
 
-    ![探索類型](./media/node-howto-e2e/hover-help.png)
+    ![使用暫留說明探索 Visual Studio Code 中的類型](./media/node-howto-e2e/visual-studio-code-hover-help.png)
 
 1. 在變數 (例如 **database**) 的範圍內按一下滑鼠，可讓您查看相同檔案中該變數的所有參考。 若要檢視專案內變數的所有參考，以滑鼠右鍵按一下變數，並從操作功能表中選取 [尋找所有參考]  。
 
-    ![尋找變數的參考](./media/node-howto-e2e/word-hilight.png)
+    ![使用 Visual Studio Code 尋找所有參考](./media/node-howto-e2e/visual-studio-code-find-all-references.png)
 
 1. 除了將滑鼠停留在變數來探索其類型，您也可以檢查定義的變數 (即使它在另一個檔案中)。 若要查看實際作業情形，以滑鼠右鍵按一下 **database.localUrl** (第 12 行)，然後從操作功能表中選取 [預覽定義]  。 
 
-    ![預覽變數的定義](./media/node-howto-e2e/code-peek.png)
+    ![預覽 Visual Studio Code 中變數的定義](./media/node-howto-e2e/visual-studio-code-peek-definition.png)
 
 ## <a name="modifying-the-code-and-using-autocompletion"></a>修改程式碼並使用自動完成功能
 
@@ -121,7 +121,7 @@ MongoDB 連接字串已硬式編碼在 **database.localUrl** 的宣告中。 在
 
 請注意，如果您以手動方式輸入程式碼 (而不是複製並貼上)，則當您在 `process` 之後輸入句點後，Visual Studio Code 會顯示 Node.js **process** 全域 API 的可用成員。
 
-![自動完成功能會自動顯示 API 的成員](./media/node-howto-e2e/process-env.png)
+![自動完成功能會自動顯示 API 的成員](./media/node-howto-e2e/visual-studio-code-process-env.png)
 
 自動完成功能有作用，因為 Visual Studio Code 在幕後使用 TypeScript (即使針對 JavaScript) 來提供類型資訊，而該資訊可接著在您輸入資料時用於告知完成清單。 Visual Studio Code 能夠偵測這是 Node.js 專案，因此會從 [NPM](https://www.npmjs.com/package/@types/node) 自動下載 Node.js 的 TypeScript typings 檔案。 typings 檔案可讓您取得其他 Node.js globals (例如 **Buffer** 和 **setTimeout**) 的自動完成功能，以及所有內建的模組 (例如 **fs** 和 **http**)。
 
@@ -133,7 +133,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 如同先前的程式碼，您會發現您不需執行任何動作，即可取得自動完成功能。
 
-![自動完成功能會自動顯示 API 的成員](./media/node-howto-e2e/mongoose.png)
+![自動完成功能會自動顯示 API 的成員](./media/node-howto-e2e/visual-studio-code-autocomplete-mongoose.png)
 
 您可瀏覽 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) 專案 (這是所有 TypeScript 類型定義的社群導向來源)，以查看哪些模組支援此自動完成功能。
 
@@ -141,19 +141,19 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 一旦瀏覽過程式碼，您就可以執行應用程式。 若要從 Visual Studio Code 執行應用程式，請按 **&lt;F5>** 。 透過  **&lt;F5>** 執行程式碼 (偵錯模式) 時，Visual Studio Code 會啟動應用程式並顯示 [偵錯主控台]  視窗，進而顯示應用程式的 stdout。
 
-![透過偵錯主控台監視應用程式的 stdout](./media/node-howto-e2e/console.png)
+![透過偵錯主控台監視應用程式的 stdout](./media/node-howto-e2e/visual-studio-code-debug-console.png)
 
 此外，[偵錯主控台]  會附加至新執行的應用程式，以便您輸入 JavaScript 運算式 (將在應用程式中評估)，而且還包含自動完成功能。 若要查看實際作業情形，請在主控台中輸入 `process.env`：
 
-![在偵錯主控台中輸入程式碼](./media/node-howto-e2e/console-code.png)
+![在偵錯主控台中輸入程式碼](./media/node-howto-e2e/visual-studio-code-debug-console-autocomplete.png)
 
 因為目前開啟的檔案是 JavaScript 檔案 (`server.js`)，所以您可按 **&lt;F5>** 來執行應用程式。 因此，Visual Studio Code 假設此專案是 Node.js 應用程式。 如果您關閉 Visual Studio Code 中所有的 JavaScript 檔案，然後按 **&lt;F5>** ，Visual Studio Code 會查詢您的環境：
 
-![指定執行階段環境](./media/node-howto-e2e/select-env.png)
+![指定執行階段環境](./media/node-howto-e2e/visual-studio-code-select-environment.png)
 
 開啟瀏覽器並瀏覽至 `http://localhost:8080`，以查看執行中的應用程式。 在文字方塊中輸入訊息並新增/移除一些待辦事項，感受一下應用程式的運作方式。
 
-![執行中的待辦事項應用程式](./media/node-howto-e2e/todo.png)
+![透過應用程式新增或移除待辦事項](./media/node-howto-e2e/add-remove-todos-app.png)
 
 ## <a name="debugging"></a>Debugging
 
@@ -161,7 +161,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 在第 28 行上設定中斷點，其代表應用程式嘗試新增待辦項目時呼叫的 Express 路由。 若要設定中斷點，只要在編輯器中按一下行號左邊的區域，如下圖所示。
 
-![在 Visual Studio Code 中設定中斷點](./media/node-howto-e2e/breakpoint.png)
+![在 Visual Studio Code 中設定中斷點](./media/node-howto-e2e/visual-studio-code-set-breakpoint.png)
 
 > [!NOTE]
 > 除了標準中斷點以外，Visual Studio Code 還支援條件式中斷點，這可讓您自訂應用程式何時應該暫停執行。 若要設定條件式中斷點，請以滑鼠右鍵按一下要暫停執的行左邊的區域，選取 [新增條件式中斷點...]  ，並指定 JavaScript 運算式 (例如 `foo = "bar"`) 或執行計數，以定義您要暫停執行的條件。
@@ -170,7 +170,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 一旦設定中斷點，請回到執行中的應用程式並新增待辦項目。 立即新增待辦項目會導致應用程式在您設定中斷點的第 28 行暫停執行：
 
-![Visual Studio Code 在中斷點暫停執行](./media/node-howto-e2e/debugger.png)
+![Visual Studio Code 在中斷點暫停執行](./media/node-howto-e2e/visual-studio-code-pause-breakpoint-execution.png)
 
 應用程式一旦暫停，您即可將滑鼠停留在程式碼的運算式上，以檢視其目前的值、檢查區域變數/監看式並呼叫堆疊，以及使用偵錯工具列來逐步執行程式碼。 按 **&lt;F5>** 以繼續執行應用程式。
 
@@ -180,17 +180,17 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 切換至 [擴充功能]  索引標籤，然後在搜尋方塊中輸入 `chrome`：
 
-![Visual Studio Code 的 Chrome 偵錯擴充功能](./media/node-howto-e2e/chrome.png)
+![Visual Studio Code 的 Chrome 偵錯擴充功能](./media/node-howto-e2e/visual-studio-code-chrome-extension.png)
 
 選取名為 [Chrome 偵錯工具]  的擴充功能，然後選取 [安裝]  。 安裝 Chrome 偵錯擴充功能之後，請選取 [重新載入]  以關閉並重新開啟 Visual Studio Code，進而啟用擴充功能。 
 
-![在安裝 Chrome 偵錯擴充功能之後重新載入 Visual Studio Code](./media/node-howto-e2e/chrome-extension-reload-vscode.png)
+![在安裝 Chrome 偵錯擴充功能之後重新載入 Visual Studio Code](./media/node-howto-e2e/visual-studio-code-reload-extension.png)
 
 隨然您可以在任何 Visual Studio Code 專屬組態的情況下，執行 Node.js 程式碼並進行偵錯，但為了進行前端 Web 應用程式的偵錯，您必須產生 `launch.json` 檔案，以指示 Visual Studio Code 如何執行應用程式。 
 
 若要產生 `launch.json` 檔案，請切換至 [偵錯]  索引標籤，按一下齒輪圖示 (其頂端應該會有小紅點)，然後選取 **node.js** 環境。
 
-![用來設定 launch.json 檔案的 Visual Studio Code 選項](./media/node-howto-e2e/debug-gear.png)
+![用來設定 launch.json 檔案的 Visual Studio Code 選項](./media/node-howto-e2e/visual-studio-code-debug-gear.png)
 
 所建立的 `launch.json` 檔案會如下所示，並且告知 Visual Studio Code 如何啟動及/或附加至應用程式，才能進行偵錯。 
 
@@ -219,7 +219,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 開啟 `launch.json` 檔案後，選取 [新增組態]  \(右下方)，然後選取 [Chrome:  使用 userDataDir 啟動]。
 
-![將 Chrome 組態新增至 Visual Studio Code](./media/node-howto-e2e/add-chrome-config.png)
+![將 Chrome 組態新增至 Visual Studio Code](./media/node-howto-e2e/visual-studio-code-add-chrome-config.png)
 
 為 Chrome 新增的執行組態可讓您進行前端 JavaScript 程式碼的偵錯。 
 
@@ -251,7 +251,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 在 **compounds.configurations** 陣列中指定的字串值是指 **configurations** 清單中個別項目的 **name**。 如果您已修改這些名稱，您必須在陣列中進行適當的變更。 若要查看實際作業情形，切換至 [偵錯] 索引標籤，將所選取的組態變更為 [完整堆疊]  \(複合組態的名稱)，然後按 **&lt;F5>** 加以執行。
 
-![在 Visual Studio Code 中執行組態](./media/node-howto-e2e/full-stack-profile.png)
+![在 Visual Studio Code 中執行組態](./media/node-howto-e2e/visual-studio-code-full-stack-configuration.png)
 
 執行組態可啟動 Node.js 應用程式 (如偵錯主控台輸出所示) 和 Chrome (已設定為瀏覽至位於 `http://localhost:8080` 的 Node.js 應用程式)。
 
@@ -261,7 +261,7 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 返回執行中的應用程式、新增待辦項目，並請注意 Visual Studio Code 現在已在 Angular 程式碼內暫停執行。
 
-![在 Visual Studio Code 中進行前端程式碼的偵測](./media/node-howto-e2e/chrome-pause.png)
+![在 Visual Studio Code 中進行前端程式碼偵錯](./media/node-howto-e2e/visual-studio-code-chrome-pause.png)
 
 如同 Node.js 偵錯，您可以將滑鼠停留在運算式上、檢視區域變數/監看式、在主控台中評估運算式等等。 
 
@@ -283,19 +283,19 @@ mongoose.connection.on("error", () => { console.log("DB connection error"); });
 
 安裝 Docker 擴充功能，然後重新載入 Visual Studio Code。
 
-![安裝適用於 Visual Studio Code 的 Docker 擴充功能](./media/node-howto-e2e/docker-search.png)
+![安裝適用於 Visual Studio Code 的 Docker 擴充功能](./media/node-howto-e2e/visual-studio-code-docker-extension.png)
 
 適用於 Visual Studio Code 的 Docker 擴充功能包含針對現有專案產生 *Dockerfile* 和 `docker-compose.yml` 檔案的命令。 
 
 若要查看可用的 Docker 命令，請顯示命令選擇區 (透過 **&lt;F1>** ) 並輸入 `docker`。
 
-![適用於 Visual studio 的 Docker 擴充功能所支援的命令 ](./media/node-howto-e2e/docker-commands.png)
+![適用於 Visual Studio Code 的 Docker 擴充功能所支援的命令 ](./media/node-howto-e2e/visual-studio-code-available-docker-codes.png)
 
 選取 [Docker:  將 Docker 檔案新增到工作區]，選取 **Node.js** 作為應用程式平台，並指定應用程式公開連接埠 `8080`。 
 
 Docker 命令會產生您可立即開始使用的完整 `Dockerfile` 和 Docker-compose 檔案。
 
-![所產生的 Dockerfile](./media/node-howto-e2e/docker-file.png)
+![在 Visual Studio Code 中產生的 Dockerfile](./media/node-howto-e2e/visual-studio-code-complete-dockerfile.png)
 
 Docker 擴充功能也會為 `Dockerfiles` 和 `docker-compose.yml` 檔案提供自動完成功能。 
 
@@ -313,7 +313,7 @@ FROM mhart
 
 將游標放在 `mhart` 中的 `t` 之後，按 **&lt;Ctrl>&lt;Space>** 以檢視 `mhart` 在 DockerHub 上發佈的所有映像存放庫。
 
-![Docker 擴充功能自動完成](./media/node-howto-e2e/docker-completion.png)
+![在 DockerHub 中檢視映像存放庫](./media/node-howto-e2e/visual-studio-code-dockerhub-image-repositories.png)
 
 選取 `mhart/alpine-node`，這會提供此應用程式需要的所有項目。 
 
@@ -321,7 +321,7 @@ FROM mhart
 
 此時，您已產生 `Dockerfile`，您必須建立實際的 Docker 映像。 同樣地，您可以使用 Docker 擴充功能安裝在 Visual Studio Code 中的命令。 按 **&lt;F1>** ，在命令選擇區輸入 `dockerb`，然後選取 [Docker:  建置映像] 命令。 選擇您剛產生及修改的 `/Dockerfile`。 指定包含您的 DockerHub 使用者名稱的標籤 (例如 `lostintangent/node`)。 按 **&lt;ENTER>** 以啟動整合式終端機視窗，以顯示正在建立的 Docker 映像輸出。
 
-![Docker 映像組建狀態](./media/node-howto-e2e/docker-build.png)
+![Docker 映像組建輸出](./media/node-howto-e2e/docker-build-image-output.png)
 
 請注意，此命令會為您自動執行 `docker build`，這是您可以選擇使用的另一個生產力加強程式範例，或者您可以直接使用 Docker CLI。 
 
@@ -381,7 +381,7 @@ FROM mhart
     az webapp browse
     ```
 
-    ![在瀏覽器中執行的待辦事項應用程式](./media/node-howto-e2e/browse-app.png)
+    ![在瀏覽器中執行的待辦事項應用程式](./media/node-howto-e2e/deployed-container-app.png)
 
     > [!NOTE]
     > 第一次可能需要幾分鐘才能載入應用程式，因為 App Service 必須從 DockerHub 提取 Docker 映像，然後加以啟動。
@@ -414,7 +414,7 @@ FROM mhart
 
 4. 返回您的瀏覽器並予以重新整理。 嘗試新增和移除待辦項目，證明應用程式現在運作正常，而不需要變更任何項目！ 將環境變數設定為已建立的 Cosmos DB 執行個體，這完全模擬 MongoDB 資料庫。
 
-    ![連線到資料庫之後的示範應用程式](./media/node-howto-e2e/finished-demo.png)
+    ![連線到資料庫之後的示範應用程式](./media/node-howto-e2e/finish-demo-walkthrough.png)
 
 如有需要，您可以切換回 Cosmos DB 執行個體並相應增加 (或減少) MongoDB 執行個體所需的保留輸送量，並受惠於新增的流量，而不需要手動管理任何基礎結構。
 

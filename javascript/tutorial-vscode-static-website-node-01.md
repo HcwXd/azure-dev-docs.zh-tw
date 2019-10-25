@@ -8,16 +8,16 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: kraigb
-ms.openlocfilehash: 45dfb1f32d98385b2cb944340b4601de804e133f
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 0e5a7e12d234b56899e3c814cb577002125ea052
+ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685904"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587135"
 ---
 # <a name="deploy-a-static-website-to-azure-from-visual-studio-code"></a>從 Visual Studio Code 將靜態網站部署至 Azure
 
-在本教學課程中，您會使用 [Azure 儲存體](https://docs.microsoft.com/azure/storage)來建立靜態網站並將其部署至 Azure。 靜態網站是由 HTML、CSS、JavaScript 和其他靜態檔案 (例如影像或字型) 所組成。 靜態網站通常是以 Angular 或 React 撰寫的單頁應用程式 (或 [SPA](https://en.wikipedia.org/wiki/Single-page_application))。 不過，您可以設計應用程式，直接從「儲存體」  (而非使用網頁伺服器) 來裝載和提供這些檔案。 比起維護網頁伺服器，在儲存體中裝載更為簡單、成本更低。
+在本教學課程中，您會使用 [Azure 儲存體](https://docs.microsoft.com/azure/storage)來建立靜態網站並將其部署至 Azure。 靜態網站是由 HTML、CSS、JavaScript 和其他靜態檔案 (例如影像或字型) 所組成。 靜態網站通常是以 Angular、React 或 Vue 撰寫的單頁應用程式 (或 [SPA](https://en.wikipedia.org/wiki/Single-page_application))。 不過，您可以設計應用程式，直接從「儲存體」  (而非使用網頁伺服器) 來裝載和提供這些檔案。 比起維護網頁伺服器，在儲存體中裝載更為簡單、成本更低。
 
 > [!NOTE]
 > 如果您有自己的伺服器程式碼，例如 Node.js/Express 應用程式，請改為遵循 [App Service 教學課程](tutorial-vscode-azure-app-service-node-01.md)。

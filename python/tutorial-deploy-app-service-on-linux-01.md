@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 24f615f5f456276b1ed78fc431e3cdd929e2d1cd
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 389b1ef07bd997ea6cd7d3d46fcaeffb36f6eaae
+ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172517"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587120"
 ---
 # <a name="tutorial-deploy-python-apps-to-azure-app-service-on-linux-from-visual-studio-code"></a>教學課程：從 Visual Studio Code 將 Python 應用程式部署至 Linux 上的 Azure App Service
 
@@ -23,7 +23,7 @@ ms.locfileid: "72172517"
 如果您在本教學課程中的任何步驟遇到問題，我們很樂意聆聽細節。 請使用每篇文章結尾處的 **[我遇到問題]** 連結來提交意見反應。
 
 > [!TIP]
-> [Linux 上的 Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro) (目前在 Python 的預覽中) 會在預先定義的 Docker 容器中執行您的原始程式碼。 該容器會使用 [Gunicorn](https://gunicorn.org) Web 伺服器，搭配 Python 3.7 執行應用程式。 [設定適用於 Azure App Service 的 Linux Python 應用程式](https://docs.microsoft.com/azure/app-service/containers/how-to-configure-python)會描述此容器的特性。 容器定義本身位於 [github.com/Azure-App-Service/python](https://github.com/Azure-App-Service/python/tree/master/3.7)。
+> [Linux 上的 Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro) 會在預先定義的 Docker 容器中執行您的原始程式碼。 該容器會使用 [Gunicorn](https://gunicorn.org) Web 伺服器，搭配 Python 3.7 執行應用程式。 [設定適用於 Azure App Service 的 Linux Python 應用程式](https://docs.microsoft.com/azure/app-service/containers/how-to-configure-python)會描述此容器的特性。 容器定義本身位於 [github.com/Azure-App-Service/python](https://github.com/Azure-App-Service/python/tree/master/3.7)。
 
 ## <a name="prerequisites"></a>必要條件
 
