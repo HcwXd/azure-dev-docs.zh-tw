@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 4a8ef594b461df406846f16ad71e595b64ffee5e
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: f31cbb3c1ad66a97ab4bb87cdcc58c9bd815c72e
+ms.sourcegitcommit: 38fc0daead4f6ef0cf16d9f4762ad24f4dc4c3e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72278787"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980945"
 ---
 # <a name="tutorial-examine-the-python-code-files-in-visual-studio-code"></a>教學課程：檢查 Visual Studio Code 中的 Python 程式碼檔案
 
@@ -57,7 +57,7 @@ function.json 檔案會提供 Azure Functions 端點的必要設定資訊：
 
 `bindings` 元素包含兩個物件，一個用來描述傳入要求，另一個則用來描述 HTTP 回應。 針對傳入要求 (`"direction": "in"`)，函式會回應 HTTP GET 或 POST 要求，而且不需要驗證。 回應 (`"direction": "out"`) 是 HTTP 回應，其會傳回從 `main` Python 函式傳回的任何值。
 
-## <a name="__initpy__"></a>\_\_init.py\_\_
+## <a name="__init__py"></a>\_\_init\_\_.py
 
 當您建立新函式時，Azure Functions 會在 *\_\_init\_\_.py* 中提供預設 Python 程式碼：
 
