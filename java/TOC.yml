@@ -141,6 +141,8 @@
           href: spring-framework/deploy-containerized-spring-boot-java-app-with-maven-plugin.md?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: 從 Azure Container Registry 部署到 App Service
           href: spring-framework/deploy-spring-boot-java-app-from-container-registry-using-maven-plugin.md?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
+        - name: 使用事件中樞和 Cosmos DB 的 Java 函式
+          href: /azure/azure-functions/functions-event-hub-cosmos-db?toc=/azure/java/toc.json&bc=/azure/java/breadcrumb/toc.json
         - name: 在 Azure 上搭配使用 Logz.io 與 Java
           href: java-get-started-with-logzio.md
     - name: 操作說明文章

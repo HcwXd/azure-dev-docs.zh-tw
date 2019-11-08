@@ -3,18 +3,18 @@ title: Azure SDK for JavaScript 文件
 summary: >
   了解適用於 JavaScript 和 Node.js 的 Azure SDK、如何開始使用以及其為開發人員提供的功能。 開始使用實用的 Azure 功能，例如應用程式裝載、DevOps 工作、持續性儲存體和資料庫，以及使用物聯網裝置。
 metadata:
-  title: 適用於 JavaScript 和 Node.js 開發人員的 Azure - 教學課程、工具與 SDK 參考
-  description: 在瀏覽器或 Node.js 中使用 Azure SDK for JavaScript 開始開發應用程式。
+  title: 適用於 JavaScript 和 Node.js 開發人員的 Azure
+  description: 透過教學課程、工具和 SDK 參考，在瀏覽器或 Node.js 中使用 Azure SDK for JavaScript 開始開發應用程式。
   author: sptramer
   ms.author: sttramer
   ms.date: 09/15/2019
   ms.topic: landing-page
-  ms.openlocfilehash: 8c3399baa263f6ec393d88c2b4698e39e76b976e
-  ms.sourcegitcommit: 47afd94820bad5214e60b42575e2a2d91a07ff65
+  ms.openlocfilehash: a24d3f9451d39b5d143060e12b92a9d703bdf49f
+  ms.sourcegitcommit: 380300c283f3df8a87c7c02635eae3596732fb72
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/15/2019
-  ms.locfileid: "72348026"
+  ms.lasthandoff: 11/06/2019
+  ms.locfileid: "73661271"
 landingContent:
 - title: 開始使用 Azure SDK for JavaScript
   linkLists:
