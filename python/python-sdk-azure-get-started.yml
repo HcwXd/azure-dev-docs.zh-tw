@@ -3,49 +3,42 @@ title: 開始使用適用於 Python 的 Azure 程式庫進行雲端開發
 metadata:
   title: 開始使用適用於 Python 的 Azure 程式庫
   description: 了解如何建立 Azure 雲端資源，並在您的 Python 應用程式中連線及使用。
-  author: sptramer
-  ms.author: sttramer
-  manager: carmonm
+  author: kraigb
+  ms.author: kraigb
+  manager: barbkess
   audience: Developer
   level: Beginner
   nextTutorialHref: /python/api/overview/azure/?view=azure-python
   nextTutorialTitle: Python SDK 參考
   displayType: two-column
   interactive: azurecli
-  ms.date: 11/30/2017
-  ms.openlocfilehash: 39dc282c9d0a2cebb0f540a446767e3a60fc1428
-  ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
+  ms.date: 10/18/2019
+  ms.openlocfilehash: 32cfda14e307d0293c9ffec8b24685375cc929d0
+  ms.sourcegitcommit: 7e5392a0af419c650225cfaa10215d1e0e56ce71
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/20/2019
-  ms.locfileid: "69635090"
+  ms.lasthandoff: 11/04/2019
+  ms.locfileid: "73568202"
 items:
 - durationInMinutes: 1
-  content: "本指南會示範適用於 Python 的幾個 Azure 程式庫使用方式。  \n"
+  content: "本指南會示範如何在適用於 Python 的 Azure SDK 中使用數個程式庫。  \n"
 - title: 必要條件
   durationInMinutes: 5
   content: >
     - 一個 Azure 帳戶。 如果您沒有帳戶，請[取得免費試用帳戶](https://azure.microsoft.com/free/)。
 
-    - [Python](https://www.python.org/downloads/)
+    - [最新的 Python 3.x 解譯器](https://www.python.org/downloads/)
 
-    - [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) 或 [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2)。
+    - 在本機上運作的 [Azure CLI 2.0](/azure/install-az-cli2)，或僅在雲端上運作的 [Azure Cloud Shell](/azure/cloud-shell/quickstart)。
 - title: 設定驗證
   durationInMinutes: 5
   content: >
-    > [!IMPORTANT]
-
-    > 這應該用來作為快速入門開發人員的體驗。 若要用於生產環境，請使用 [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) 或您自己的認證系統。
-
-    > 對 CLI 設定的任何變更都會影響 SDK 執行。
+    SDK 能夠使用 CLI 使用中訂用帳戶來建立用戶端。 不過，若要用於生產環境，請使用 [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) 或您自己的認證系統。
 
 
-    SDK 能夠使用 CLI 使用中訂用帳戶來建立用戶端。
+    若要定義使用中的認證，請使用 [az 登入](/azure/authenticate-azure-cli)。
 
-
-    若要定義使用中的認證，請使用 [az 登入](https://docs.microsoft.com/cli/azure/authenticate-azure-cli)。
-
-    預設訂用帳戶識別碼是您所擁有的唯一一個，或是可以使用 [az 帳戶](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli)加以定義。
+    預設訂用帳戶識別碼是您所擁有的唯一一個，或是可以使用 [az 帳戶](/azure/manage-azure-subscriptions-azure-cli)加以定義。
 
 
     ```python
@@ -61,9 +54,7 @@ items:
 - title: 建立虛擬環境
   durationInMinutes: 5
   content: >
-    > [!IMPORTANT]
-
-    > 建立虛擬環境是選擇性的，但強烈建議您這麼做。
+    虛擬環境會將 SDK 程式庫保留在專案的獨立位置中，讓您可以在有需要時，藉由刪除環境資料夾來輕鬆地將 SDK 解除安裝。
 
 
     在 Bash 中建立虛擬環境 (Linux 或[適用於 Windows 的 Bash](https://msdn.microsoft.com/commandline/wsl/about))：
