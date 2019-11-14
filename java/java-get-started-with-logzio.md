@@ -1,6 +1,6 @@
 ---
-title: 開始對 Azure 上執行的 JAVA 專案使用 Logz.io
-description: 本教學課程將示範如何為 Azure 上執行的 JAVA 專案整合及設定 Logz.io。
+title: 開始對 Azure 上執行的 Java 應用程式使用 Logz.io
+description: 本教學課程將示範如何為 Azure 上執行的 Java 應用程式整合及設定 Logz.io。
 author: jdubois
 manager: bborges
 ms.devlang: java
@@ -8,16 +8,16 @@ ms.topic: tutorial
 ms.service: azure
 ms.date: 11/05/2019
 ms.author: judubois
-ms.openlocfilehash: 49fd2ada98bcfdb02db3f4b79afb2f80f2d700f2
-ms.sourcegitcommit: 380300c283f3df8a87c7c02635eae3596732fb72
+ms.openlocfilehash: 263a328866d36fd60e2ab7cc9fbe8fa8af45b9d4
+ms.sourcegitcommit: 794f7f72947034944dc4a5d19baa57d905a16ab0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661281"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73957201"
 ---
-# <a name="tutorial-getting-started-with-logzio-for-java-projects-running-on-azure"></a>教學課程：開始對 Azure 上執行的 JAVA 專案使用 Logz.io
+# <a name="tutorial-getting-started-with-monitoring-and-logging-using-logzio-for-java-apps-running-on-azure"></a>教學課程：針對在 Azure 上執行的 Java 應用程式，使用 Logz.io 開始進行監視和記錄
 
-本教學課程將說明如何設定傳統 JAVA 應用程式，以將記錄傳送至 [Logz.io](https://logz.io/) 服務進行擷取和分析。 Logz.io 提供以 Elasticsearch、Logstash、Kibana 和 Grafana 為基礎的完整監視解決方案。
+本教學課程將說明如何設定傳統 JAVA 應用程式，以將記錄傳送至 [Logz.io](https://logz.io/) 服務進行擷取和分析。 Logz.io 提供以 Elasticsearch/Logstash/Kibana (ELK) 和 Grafana 為基礎的完整監視解決方案。
 
 本教學課程假設您使用 Log4J 或 Logback。 這兩個是以 JAVA 進行記錄時最常使用的程式庫，因此本教學課程應適用於 Azure 上執行的大部分應用程式。 如果您已經使用彈性堆疊來監視您的 JAVA 應用程式，本教學課程會示範如何重新設定為以 Logz.io 端點為目標。
 
@@ -30,7 +30,7 @@ ms.locfileid: "73661281"
 ## <a name="prerequisites"></a>必要條件
 
 * [Java Developer Kit](https://aka.ms/azure-jdks) 第 8 版或更高版本
-* [Logz.io](https://logz.io/) 帳戶。 或者，您可以從 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/logz.logzio-elk-as-a-service-pro) 購買 Logz.io。
+* 來自 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/logz.logzio-elk-as-a-service-pro) 的 Logz.io 帳戶
 * 使用 Log4J 或 Logback 的現有 JAVA 應用程式
 
 ## <a name="send-java-application-logs-to-logzio"></a>將 JAVA 應用程式記錄傳送至 Logz.io
@@ -43,7 +43,7 @@ ms.locfileid: "73661281"
 
 ### <a name="install-and-configure-the-logzio-library-for-log4j-or-logback"></a>安裝和設定適用於 Log4J 或 Logback 的 Logz.io 程式庫
 
-Logz.io JAVA 程式庫可在 Maven Central 取得，因此您可以將其新增為專案設定的相依性。 檢查 Maven Central 的版本號碼，並在下列組態設定中使用最新版本。
+Logz.io Java 程式庫可在 Maven Central 取得，因此您可以將其新增為應用程式設定的相依性。 檢查 Maven Central 的版本號碼，並在下列組態設定中使用最新版本。
 
 如果您使用 Maven，請將下列相依性新增至您的 `pom.xml` 檔案：
 
@@ -88,9 +88,9 @@ implementation 'io.logz.logback:logzio-logback-appender:1.0.22'
 ```xml
 <Appenders>
     <LogzioAppender name="Logzio">
-        <logzioToken>{{your-logz-io-token}}</logzioToken>
+        <logzioToken><your-logz-io-token></logzioToken>
         <logzioType>java-application</logzioType>
-        <logzioUrl>https://listener-wa.logz.io:8071</logzioUrl>
+        <logzioUrl>https://<your-logz-io-listener-host>:8071</logzioUrl>
     </LogzioAppender>
 </Appenders>
 
@@ -108,8 +108,8 @@ implementation 'io.logz.logback:logzio-logback-appender:1.0.22'
     <!-- Use shutdownHook so that we can close gracefully and finish the log drain -->
     <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook"/>
     <appender name="LogzioLogbackAppender" class="io.logz.logback.LogzioLogbackAppender">
-        <token>{{your-logz-io-token}}</token>
-        <logzioUrl>https://listener-wa.logz.io:8071</logzioUrl>
+        <token><your-logz-io-token></token>
+        <logzioUrl>https://<your-logz-io-listener-host>:8071</logzioUrl>
         <logzioType>java-application</logzioType>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
@@ -121,6 +121,8 @@ implementation 'io.logz.logback:logzio-logback-appender:1.0.22'
     </root>
 </configuration>
 ```
+
+將 `<your-logz-io-token>` 的預留位置以您的存取權杖取代，並以您的區域接聽程式主機 (例如 listener.logz.io) 取代 `<your-logz-io-listener-host>` 預留位置。 如需尋找帳戶區域的詳細資訊，請參閱[帳戶區域](https://docs.logz.io/user-guide/accounts/account-region.html)。
 
 `logzioType` 元素會參考 Elasticsearch 中的邏輯欄位，以分隔不同的文件。 請務必適當地設定此參數，如此才能充分利用 Logz.io。
 
