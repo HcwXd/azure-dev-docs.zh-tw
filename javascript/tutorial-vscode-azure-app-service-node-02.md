@@ -8,12 +8,12 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
 ms.author: kraigb
-ms.openlocfilehash: 769ca61ef7716eaa08d45e109a9bf50e5801721c
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 0ee7b185532b3febe8aab720e40ff10cf4b079b7
+ms.sourcegitcommit: ad1b12d9ebb6113991ce48255f5b491364490079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686186"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73842210"
 ---
 # <a name="create-your-nodejs-application"></a>建立您的 Node.js 應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "71686186"
 1. 在終端或命令提示字元中，使用下列命令來執行 Express 產生器，並 Scaffold 名為 "myExpressApp" 的新 Express 應用程式。 (`--view pug --git` 參數會指示產生器使用 [pug](https://pugjs.org/api/getting-started.html) 範本引擎 (先前稱為 Jade)，並建立 *.gitignore* 檔案。)
 
     ```bash
-    npx express-generator myExpressApp --view pug –git
+    npx express-generator myExpressApp --view pug -–git
     ```
 
 1. 在 app 資料夾中執行 `npm install`，以安裝應用程式的相依性：

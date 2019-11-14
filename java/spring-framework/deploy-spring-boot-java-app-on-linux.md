@@ -8,19 +8,19 @@ manager: douge
 editor: ''
 ms.assetid: ''
 ms.author: brendm
-ms.date: 12/19/2018
+ms.date: 11/12/2019
 ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: 93c67221748f354f2bf772a5f67903512a241063
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 0d41f71ede412a34b39fb2cd74db3ce7a2190dee
+ms.sourcegitcommit: 25cef39b178a175822bf29f28fb2658bb8df8c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691174"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74040472"
 ---
 # <a name="deploy-a-spring-boot-application-on-azure-app-service-for-container"></a>在適用於容器的 Azure App Service 上部署 Spring Boot 應用程式
 
@@ -75,7 +75,7 @@ ms.locfileid: "68691174"
 1. 建立 Web 應用程式之後，將目錄變更為 JAR 檔案所在的 `target` 目錄，並啟動 Web 應用程式；例如：
    ```
    cd target
-   java -jar gs-spring-boot-docker-0.1.0.jar
+   java -jar gs-spring-boot-docker-0.1.0.jar --server.port=80
    ```
 
 1. 測試 Web 應用程式，方法是使用網頁瀏覽器在本機瀏覽它。 例如，如果您有 curl 可用，並將 Tomcat 伺服器設定為在連接埠 80 上執行：
@@ -83,7 +83,7 @@ ms.locfileid: "68691174"
    curl http://localhost
    ```
 
-1. 您應該會看到下列訊息：**Hello Docker World!**
+1. 您應該會看到下列訊息：**Hello Docker World**
 
    ![在本機瀏覽範例應用程式][SB01]
 
@@ -124,7 +124,7 @@ ms.locfileid: "68691174"
 
    ```xml
    <properties>
-      <jib-maven-plugin.version>1.2.0</jib-maven-plugin.version>
+      <jib-maven-plugin.version>1.7.0</jib-maven-plugin.version>
       <docker.image.prefix>wingtiptoysregistry.azurecr.io</docker.image.prefix>
       <java.version>1.8</java.version>
       <username>wingtiptoysregistry</username>
