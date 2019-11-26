@@ -4,26 +4,21 @@ description: 了解如何使用 Azure Key Vault Starter 來設定 Spring Boot In
 services: key-vault
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
-ms.date: 12/19/2018
+ms.date: 10/29/2019
 ms.devlang: java
 ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 1c04bab67c7fc6a409893416d27de7ed18018cd9
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 7841386ba89f2f14e4ef6e5c279d62293940f4af
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68283219"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118033"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>如何對 Azure Key Vault 使用 Spring Boot Starter
-
-## <a name="overview"></a>概觀
 
 本文示範如何使用 **[Spring Initializr]** 建立應用程式，Spring Initializr 會使用適用於 Azure Key Vault 的 Spring Boot Starter，來擷取在金鑰保存庫中儲存作為祕密的連接字串。
 
@@ -37,23 +32,25 @@ ms.locfileid: "68283219"
 
 ## <a name="create-an-app-using-spring-initializr"></a>使用 Spring Initialzr 建立應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+下列程序會使用 Spring Initializr 來建立應用程式。
 
-1. 指定您想要使用 [Java]  產生 [Maven 專案]  、輸入應用程式的 [群組]  和 [成品]  名稱，然後按一下 Spring Initializr 的 [切換至完整版本]  連結。
+1. 瀏覽至 <https://start.spring.io/>。
 
-   ![指定群組和成品名稱][secrets-01]
+1. 指定您要使用 **Java** 產生 **Maven** 專案。  
 
-1. 向下捲動至 [Azure]  區段，然後核取 [Azure Key Vault]  的方塊。
+1. 輸入應用程式的**群組**和**成品**名稱。
 
-   ![選取 Azure Key Vault Starter][secrets-02]
+1. 在 [相依性]  區段中，輸入 **Azure Key Vault**。
 
-1. 捲動到頁面底部，然後按一下按鈕以**產生專案**。
+1. 捲動到頁面底部，然後按一下 [產生]  。
 
-   ![產生 Spring Boot 專案][secrets-03]
+   ![產生 Spring Boot 專案][secrets-01]
 
 1. 出現提示時，將專案下載至本機電腦上的路徑。
 
 ## <a name="sign-into-azure"></a>登入 Azure
+
+下列程序會在 Azure CLI 中驗證使用者。
 
 1. 開啟命令提示字元。
 
@@ -62,13 +59,15 @@ ms.locfileid: "68283219"
    ```azurecli
    az login
    ```
-   依照指示完成登入程序。
+
+依照指示完成登入程序。
 
 1. 列出您的訂用帳戶：
 
    ```azurecli
    az account list
    ```
+
    Azure 會傳回訂用帳戶清單，而且您必須複製所要使用之訂用帳戶的 GUID；例如：
 
    ```json
@@ -96,10 +95,14 @@ ms.locfileid: "68283219"
 
 ## <a name="create-a-new-azure-key-vault"></a>建立新的 Azure Key Vault
 
+下列程序會建立並初始化金鑰保存庫。
+
 1. 為將要用於金鑰保存庫的 Azure 資源建立資源群組；例如：
+
    ```azurecli
-   az group create --name wingtiptoysresources --location westus
+   az group create --name vged-rg2 --location westus
    ```
+
    其中：
 
    | 參數 | 說明 |
@@ -111,10 +114,10 @@ ms.locfileid: "68283219"
 
    ```json
    {
-     "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/wingtiptoysresources",
+     "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/vged-rg2",
      "location": "westus",
      "managedBy": null,
-     "name": "wingtiptoysresources",
+     "name": "vged-rg2",
      "properties": {
        "provisioningState": "Succeeded"
      },
@@ -124,7 +127,7 @@ ms.locfileid: "68283219"
 
 2. 從應用程式註冊建立 Azure 服務主體；例如：
    ```shell
-   az ad sp create-for-rbac --name "wingtiptoysuser"
+   az ad sp create-for-rbac --name "vgeduser"
    ```
    其中：
 
@@ -132,22 +135,24 @@ ms.locfileid: "68283219"
    |---|---|
    | `name` | 指定 Azure 服務主體的名稱。 |
 
-   Azure CLI 會傳回 JSON 狀態訊息，其中包含 appId  和 password  ，可供您稍候用來作為用戶端識別碼和用戶端密碼；例如：
+   Azure CLI 會傳回 JSON 狀態訊息，其中包含 appId  和 password  ，可供您稍後作為用戶端識別碼和用戶端密碼；例如：
 
    ```json
    {
      "appId": "iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii",
-     "displayName": "wingtiptoysuser",
-     "name": "http://wingtiptoysuser",
+     "displayName": "vgeduser",
+     "name": "http://vgeduser",
      "password": "pppppppp-pppp-pppp-pppp-pppppppppppp",
      "tenant": "tttttttt-tttt-tttt-tttt-tttttttttttt"
    }
    ```
 
 3. 在資源群組中建立新的金鑰保存庫；例如：
+
    ```azurecli
-   az keyvault create --name wingtiptoyskeyvault --resource-group wingtiptoysresources --location westus --enabled-for-deployment true --enabled-for-disk-encryption true --enabled-for-template-deployment true --sku standard --query properties.vaultUri
+   az keyvault create --name vgedkeyvault --resource-group vged-rg2 --location westus --enabled-for-deployment true --enabled-for-disk-encryption true --enabled-for-template-deployment true --sku standard --query properties.vaultUri
    ```
+
    其中：
 
    | 參數 | 說明 |
@@ -162,14 +167,17 @@ ms.locfileid: "68283219"
 
    Azure CLI 會顯示您稍候會用到的金鑰保存庫 URI；例如：  
 
-   ```
-   "https://wingtiptoyskeyvault.vault.azure.net"
+   ```azurecli
+   "https://vgedkeyvault.vault.azure.net"
+
    ```
 
 4. 設定您稍早建立之 Azure 服務主體的存取原則；例如：
+
    ```azurecli
-   az keyvault set-policy --name wingtiptoyskeyvault --secret-permission set get list delete --spn "iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii"
+   az keyvault set-policy --name vgedkeyvault --secret-permission set get list delete --spn "iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii"
    ```
+
    其中：
 
    | 參數 | 說明 |
@@ -184,22 +192,24 @@ ms.locfileid: "68283219"
    {
      "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/...",
      "location": "westus",
-     "name": "wingtiptoyskeyvault",
+     "name": "vgedkeyvault",
      "properties": {
        ...
        ... (A long list of values will be displayed here.)
        ...
      },
-     "resourceGroup": "wingtiptoysresources",
+     "resourceGroup": "vged-rg2",
      "tags": {},
      "type": "Microsoft.KeyVault/vaults"
    }
    ```
 
 5. 將祕密儲存在您的新金鑰保存庫中；例如：
+
    ```azurecli
-   az keyvault secret set --vault-name "wingtiptoyskeyvault" --name "connectionString" --value "jdbc:sqlserver://SERVER.database.windows.net:1433;database=DATABASE;"
+   az keyvault secret set --vault-name "vgedkeyvault" --name "connectionString" --value "jdbc:sqlserver://SERVER.database.windows.net:1433;database=DATABASE;"
    ```
+
    其中：
 
    | 參數 | 說明 |
@@ -221,28 +231,32 @@ ms.locfileid: "68283219"
        "updated": "2017-12-01T09:00:16+00:00"
      },
      "contentType": null,
-     "id": "https://wingtiptoyskeyvault.vault.azure.net/secrets/connectionString/123456789abcdef123456789abcdef",
+     "id": "https://vgedkeyvault.vault.azure.net/secrets/connectionString/123456789abcdef123456789abcdef",
      "kid": null,
      "managed": null,
      "tags": {
        "file-encoding": "utf-8"
      },
-     "value": "jdbc:sqlserver://wingtiptoys.database.windows.net:1433;database=DATABASE;"
+     "value": "jdbc:sqlserver://.database.windows.net:1433;database=DATABASE;"
    }
    ```
 
 ## <a name="configure-and-compile-your-app"></a>設定及編譯您的應用程式
+
+使用下列程序設定及編譯您的應用程式。
 
 1. 從您稍早下載至目錄的 Spring Boot 專案封存檔解壓縮檔案。
 
 2. 瀏覽至專案中的 src/main/resources  資料夾，然後在文字編輯器中開啟 application.properties  檔案。
 
 3. 使用您稍早在本教學課程中完成步驟所得到的值，為金鑰保存庫新增值；例如：
+
    ```yaml
-   azure.keyvault.uri=https://wingtiptoyskeyvault.vault.azure.net/
+   azure.keyvault.uri=https://vgedkeyvault.vault.azure.net/
    azure.keyvault.client-id=iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii
    azure.keyvault.client-key=pppppppp-pppp-pppp-pppp-pppppppppppp
    ```
+
    其中：
 
    |          參數          |                                 說明                                 |
@@ -252,12 +266,12 @@ ms.locfileid: "68283219"
    | `azure.keyvault.client-key` | 指定您在建立服務主體時所得到的 password  GUID。 |
 
 
-4. 瀏覽至專案的主要原始程式碼檔案；例如：/src/main/java/com/wingtiptoys/secrets  。
+4. 瀏覽至專案的主要原始程式碼檔案；例如：/src/main/java/com/vged/secrets  。
 
 5. 在文字編輯器中開啟應用程式的主要 Java 檔案；例如：*SecretsApplication.java*，並將下列幾行新增至檔案：
 
    ```java
-   package com.wingtiptoys.secrets;
+   package com.vged.secrets;
 
    import org.springframework.boot.SpringApplication;
    import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -284,6 +298,8 @@ ms.locfileid: "68283219"
 6. 儲存並關閉 Java 檔案。
 
 ## <a name="build-and-test-your-app"></a>建置及測試您的應用程式
+
+使用下列程序測試您的應用程式。
 
 1. 瀏覽至 Spring Boot 應用程式的 pom.xml  檔案所在的目錄：
 
@@ -322,7 +338,7 @@ ms.locfileid: "68283219"
 
 * [Key Vault 文件]。
 
-* [開始使用 Azure Key Vault]
+* [開始使用 Azure 金鑰保存庫]
 
 如需在 Azure 上使用 Spring Boot 應用程式的詳細資訊，請參閱下列文章：
 
@@ -335,7 +351,7 @@ ms.locfileid: "68283219"
 <!-- URL List -->
 
 [Key Vault 文件]: /azure/key-vault/
-[開始使用 Azure Key Vault]: /azure/key-vault/key-vault-get-started
+[開始使用 Azure 金鑰保存庫]: /azure/key-vault/key-vault-get-started
 [適用於 Java 開發人員的 Azure]: /azure/java/
 [免費的 Azure 帳戶]: https://azure.microsoft.com/pricing/free-trial/
 [使用 Azure DevOps 和 Java]: /azure/devops/

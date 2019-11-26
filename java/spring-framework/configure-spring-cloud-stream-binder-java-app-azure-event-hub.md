@@ -4,9 +4,6 @@ description: 了解如何對使用 Spring Boot Initializr 建立的 Java 架構 
 services: event-hubs
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
 ms.date: 12/19/2018
 ms.devlang: java
@@ -14,16 +11,14 @@ ms.service: event-hubs
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 48dfa19177c52da4f296b3e19ae26e91b1d44c33
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 56ac71007af04d3294da811a879ebcf37f54ae73
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282699"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118113"
 ---
 # <a name="how-to-create-a-spring-cloud-stream-binder-application-with-azure-event-hubs"></a>如何使用 Azure 事件中樞建立 Spring Cloud Stream Binder 應用程式
-
-## <a name="overview"></a>概觀
 
 本文會示範如何對使用 Spring Boot Initializer 建立的 Java 架構 Spring Cloud Stream Binder 應用程式設定 Azure 事件中樞。
 
@@ -42,69 +37,71 @@ ms.locfileid: "68282699"
 
 ## <a name="create-an-azure-event-hub-using-the-azure-portal"></a>使用 Azure 入口網站建立 Azure 事件中樞
 
+下列程序會建立 Azure 事件中樞。
+
 ### <a name="create-an-azure-event-hub-namespace"></a>建立 Azure 事件中樞命名空間
 
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
-1. 依序按一下 [+ 建立資源]  、[物聯網]  和 [事件中樞]  。
+1. 按一下 [+ 建立資源]  ，然後搜尋「事件中樞*」。
+
+1. 按一下頁面底部的 [新增]  。
 
    ![建立 Azure 事件中樞命名空間][IMG01]
 
 1. 在 [建立命名空間]  頁面上，輸入下列資訊：
 
    * 輸入唯一**名稱**，這將成為事件中樞命名空間 URI 的一部分。 例如：如果您輸入 **wingtiptoys** 作為**名稱**，則 URI 會是 wingtiptoys.servicebus.windows.net  。
-   * 為事件中樞命名空間選擇 [定價層]  。
+   * 定價層。
    * 選取您想要用於命名空間的**訂用帳戶**。
    * 指定是否要為命名空間建立新的**資源群組**，或選擇現有的資源群組。
    * 指定事件中樞命名空間的**位置**。
+   * 您也可以為命名空間指定**輸送量單位**。
 
    ![指定 Azure 事件中樞命名空間選項][IMG02]
 
 1. 指定上面列出的選項之後，按一下 [建立]  以建立您的命名空間。
 
-### <a name="create-an-azure-event-hub-in-your-namespace"></a>在命名空間中建立 Azure 事件中樞
+## <a name="create-an-azure-event-hub-in-your-namespace"></a>在命名空間中建立 Azure 事件中樞
 
-1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站。
+部署命名空間之後，您可以在命名空間中建立事件中樞。
 
-1. 按一下 [所有資源]  ，然後按一下您建立的命名空間。
+1. 瀏覽至在先前的步驟中建立的命名空間。
 
-   ![選取 Azure 事件中樞命名空間][IMG03]
+1. 按一下頂端功能表列中的 [+ 事件中樞]  。
 
-1. 按一下 [事件中樞]  ，然後按一下 [+ 事件中樞]  。
+1. 為事件中樞命名。
 
-   ![新增 Azure 事件中樞][IMG04]
+1. 按一下頁面底部的 [新增]  。
 
-1. 在 [建立事件中樞]  頁面上，為您的事件中樞輸入唯一**名稱**，然後按一下 [建立]  。
-
-   ![建立 Azure 事件中樞][IMG05]
-
-1. 事件中樞建好之後，即會列在 [事件中樞]  頁面上。
-
-   ![建立 Azure 事件中樞][IMG06]
+   ![建立事件中樞][IMG05]
 
 ### <a name="create-an-azure-storage-account-for-your-event-hub-checkpoints"></a>為事件中樞檢查點建立 Azure 儲存體帳戶
 
+下列程序會建立事件中樞檢查點的儲存體帳戶。
+
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站。
 
-1. 依序按一下 [+ 建立資源]  、[儲存體]  和 [儲存體帳戶]  。
+1. 依序按一下 [+建立]  、[儲存體]  和 [儲存體帳戶]  。
 
-   ![建立 Azure 儲存體帳戶][IMG07]
+1. 在 [建立儲存體帳戶]  頁面上，輸入下列資訊：
 
-1. 在 [建立命名空間]  頁面上，輸入下列資訊：
-
-   * 輸入唯一**名稱**，這將成為儲存體帳戶 URI 的一部分。 例如：如果您輸入 **wingtiptoys** 作為**名稱**，則 URI 會是 wingtiptoys.core.windows.net  。
-   * 選擇 [Blob 儲存體]  作為 [帳戶種類]  。
-   * 指定儲存體帳戶的**位置**。
    * 選取您想要用於儲存體帳戶的**訂用帳戶**。
    * 指定是否要為儲存體帳戶建立新的**資源群組**，或選擇現有的資源群組。
+   * 為儲存體帳戶輸入唯一的**名稱**。
+   * 指定儲存體帳戶的**位置**。
 
    ![指定 Azure 儲存體帳戶選項][IMG08]
 
-1. 當您指定上面列出的選項之後，按一下 [建立]  以建立您的儲存體帳戶。
+1. 在指定上面列出的選項後，按一下 [檢閱 + 建立]  以建立您的儲存體帳戶。
+
+1. 檢閱規格，然後按一下 [建立]  。  完成部署需要幾分鐘的時間。
 
 ## <a name="create-a-simple-spring-boot-application-with-the-spring-initializr"></a>使用 Spring Initializr 建立簡單的 Spring Boot 應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+下列程序會建立 Spring Boot 應用程式。
+
+1. 瀏覽至 <https://start.spring.io/>。
 
 1. 指定下列選項：
 
@@ -123,8 +120,6 @@ ms.locfileid: "68282699"
 1. 當您指定上面列出的選項之後，按一下 [產生專案]  。
 
 1. 出現提示時，將專案下載至本機電腦上的路徑。
-
-   ![下載 Spring 專案][SI02]
 
 1. 當您在本機系統上擷取檔案之後，就可以開始編輯簡單的 Spring Boot 應用程式。
 
@@ -245,7 +240,6 @@ ms.locfileid: "68282699"
    spring.cloud.azure.eventhub.checkpoint-storage-account=wingtiptoysstorage
    spring.cloud.stream.bindings.input.destination=wingtiptoyshub
    spring.cloud.stream.bindings.input.group=$Default
-   spring.cloud.stream.bindings.output.destination=wingtiptoyshub
    spring.cloud.stream.eventhub.bindings.input.consumer.checkpoint-mode=MANUAL
    ```
    其中：
@@ -365,6 +359,8 @@ ms.locfileid: "68282699"
 
 ## <a name="build-and-test-your-application"></a>建置與測試您的應用程式
 
+使用下列程序建置並測試您的應用程式。
+
 1. 開啟命令提示字元，並將目錄切換到 *pom.xml* 檔案所在的資料夾；例如：
 
    `cd C:\SpringBoot\eventhub`
@@ -411,7 +407,7 @@ ms.locfileid: "68282699"
 
 如需如何搭配使用 Azure 和 Java 的詳細資訊，請參閱[適用於 Java 開發人員的 Azure] 和[使用 Azure DevOps 和 Java]。
 
-**[Spring Framework]** 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 [Spring Boot] 是建立在該平台基礎上更為熱門的專案之一，其中會提供用來建立獨立 Java 應用程式的簡化方法。 為了協助開發人員開始使用 Spring Boot， <https://github.com/spring-guides/> 上提供了數個範例 Spring Boot 套件。 除了從基本的 Spring Boot 專案清單中進行選擇， **[Spring Initializr]** 還能協助開發人員開始建立自訂的 Spring Boot 應用程式。
+**[Spring Framework]** 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 [Spring Boot] 是建立在該平台基礎上更為熱門的專案之一，其中會提供用來建立獨立 Java 應用程式的簡化方法。 為了協助開發人員開始使用 Spring Boot，<https://github.com/spring-guides/> 上提供了數個範例 Spring Boot 套件。 除了從基本的 Spring Boot 專案清單中進行選擇， **[Spring Initializr]** 還能協助開發人員開始建立自訂的 Spring Boot 應用程式。
 
 <!-- URL List -->
 

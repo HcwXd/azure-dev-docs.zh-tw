@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 81121490f435c7ff2e2fe8ab397fa18bab7113a3
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: 0aa353d741906c887723a012bb6d4abfc719a049
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72278848"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118213"
 ---
 # <a name="tutorial-create-and-deploy-serverless-azure-functions-in-python-with-visual-studio-code"></a>教學課程：使用 Visual Studio Code 在 Python 中建立和部署無伺服器 Azure Functions
 
@@ -38,7 +38,7 @@ Azure Functions 會在無伺服器環境中執行您的程式碼，而不需要�
 
 請安裝下列軟體：
 
-- Azure Functions 所需的 Python 3.6. x。 [Python 3.6.8](https://www.python.org/downloads/release/python-368/) 是最新的 3.6. x 版本。
+- Azure Functions 所需的 Python 3.7 或 Python 3.6。 [Python 3.7.5](https://www.python.org/downloads/release/python-375/) 和 [Python 3.6.8](https://www.python.org/downloads/release/python-368/) 是最新的相容版本。
 - [Visual Studio Code](https://code.visualstudio.com/)。
 - [Python 擴充功能](https://marketplace.visualstudio.com/items?itemName=ms-python.python)，如 [Visual Studio Code Python 教學課程 - 必要條件](https://code.visualstudio.com/docs/python/python-tutorial)所述。
 - [Azure Functions 擴充功能](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)。 如需一般資訊，請造訪 [vscode-azurefunctions GitHub 存放庫](https://github.com/Microsoft/vscode-azurefunctions)。

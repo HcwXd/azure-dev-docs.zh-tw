@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: b87ca4bdefafbfa3e23c9538d6c77357dc9ba99b
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: 4c4fab3227194884e1b9a77439efbe87099a6812
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72278759"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118096"
 ---
 # <a name="tutorial-create-a-python-function-for-azure-functions"></a>教學課程：建立適用於 Azure Functions 的 Python 函式
 
@@ -36,6 +36,9 @@ ms.locfileid: "72278759"
     | 提供函式名稱 | HttpExample | 此名稱用於子資料夾，其中包含函式程式碼以及設定資料，而且也會定義 HTTP 端點的名稱。 使用 "HttpExample"，而不是接受預設 "HTTPTrigger"，以區別函式本身與觸發程序。 |
     | 授權層級 | **匿名** | 匿名授權可讓任何人都能公開存取函式。 |
     | 選取您要如何開啟專案 | **在目前視窗中開啟** | 在目前 Visual Studio Code 視窗中開啟專案。 |
+
+    > [!NOTE]
+    > 如果您已安裝 Python 3.6 和 3.7，Visual Studio Code 依預設會對 Azure Functions 專案使用 Python 3.6。 若要使用目前的 Python 3.7，請先建立並啟用 Python 3.7 環境，然後從終端機使用 `func init` 命令。 接著，使用 `code .` 命令，從該資料夾重新啟動 Visual Studio Code。
 
 1. 不久之後，會出現一則訊息，指出已建立新專案。 在 [總管]  中，有針對函式建立的子資料夾，而且 Visual Studio Code 會開啟 *\_\_init\_\_.py* 檔案，其中包含預設函式程式碼：
 

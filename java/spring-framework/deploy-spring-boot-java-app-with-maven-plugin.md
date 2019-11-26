@@ -12,18 +12,18 @@ ms.devlang: java
 ms.service: app-service
 ms.topic: article
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019
-ms.openlocfilehash: f093e7f23a15420a60b6725e0f13d8457478ab5c
-ms.sourcegitcommit: ad1b12d9ebb6113991ce48255f5b491364490079
+ms.openlocfilehash: 274287a6e29bd75721758805d508ebebfcc7586a
+ms.sourcegitcommit: 8be617e100ae3d3e90d56c672b1c7c110b7a588f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73842226"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160736"
 ---
 # <a name="deploy-a-spring-boot-jar-file-app-to-azure-app-service-with-maven-and-azure-on-linux"></a>透過 Linux 上的 Maven 和 Azure 將 Spring Boot JAR 檔案應用程式部署至 Azure App Service
 
 在本快速入門中，您會使用使用[適用於 App Service Web Apps 的 Maven 外掛程式](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme)，將 Spring Boot 應用程式封裝成 Java SE JAR，並部署至 [Linux 上的 Azure App Service](/azure/app-service/containers/)。 若要將應用程式相依性、執行階段及組態合併至單一可部署成品，您可從 [Tomcat 與 WAR 檔案](/azure/app-service/containers/quickstart-java)中選擇 Java SE 部署。
 
-如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) 。
+如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -108,45 +108,45 @@ ms.locfileid: "73842226"
     * **OS**：Linux  
     * **javaVersion**：Java 8    
     
-```cmd
-mvn azure-webapp:config
-```
+   ```cmd
+   mvn azure-webapp:config
+   ```
 
-看到 **Confirm (Y/N)** 提示時，按下 **'y'** 完成設定。
+   看到 **Confirm (Y/N)** 提示時，按下 **'y'** 完成設定。
 
-```cmd
-~@Azure:~/gs-spring-boot/complete$ mvn azure-webapp:config
-[INFO] Scanning for projects...
-[INFO]
-[INFO] -----------------< org.springframework:gs-spring-boot >-----------------
-[INFO] Building gs-spring-boot 0.1.0
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO]
-[INFO] --- azure-webapp-maven-plugin:1.8.0:config (default-cli) @ gs-spring-boot ---
-[WARNING] The plugin may not work if you change the os of an existing webapp.
-Define value for OS(Default: Linux):
-1. linux [*]
-2. windows
-3. docker
-Enter index to use:
-Define value for javaVersion(Default: Java 8):
-1. Java 11
-2. Java 8 [*]
-Enter index to use:
-Please confirm webapp properties
-AppName : gs-spring-boot-1559091271202
-ResourceGroup : gs-spring-boot-1559091271202-rg
-Region : westeurope
-PricingTier : Premium_P1V2
-OS : Linux
-RuntimeStack : JAVA 8-jre8
-Deploy to slot : false
-Confirm (Y/N)? : Y
-```
+   ```cmd
+   ~@Azure:~/gs-spring-boot/complete$ mvn azure-webapp:config
+   [INFO] Scanning for projects...
+   [INFO]
+   [INFO] -----------------< org.springframework:gs-spring-boot >-----------------
+   [INFO] Building gs-spring-boot 0.1.0
+   [INFO] --------------------------------[ jar ]---------------------------------
+   [INFO]
+   [INFO] --- azure-webapp-maven-plugin:1.6.0:config (default-cli) @ gs-spring-boot ---
+   [WARNING] The plugin may not work if you change the os of an existing webapp.
+   Define value for OS(Default: Linux):
+   1. linux [*]
+   2. windows
+   3. docker
+   Enter index to use:
+   Define value for javaVersion(Default: Java 8):
+   1. Java 11
+   2. Java 8 [*]
+   Enter index to use:
+   Please confirm webapp properties
+   AppName : gs-spring-boot-1559091271202
+   ResourceGroup : gs-spring-boot-1559091271202-rg
+   Region : westeurope
+   PricingTier : Premium_P1V2
+   OS : Linux
+   RuntimeStack : JAVA 8-jre8
+   Deploy to slot : false
+   Confirm (Y/N)? : Y
+   ```
 
 4. 將 `<appSettings>` 區段新增到 `<azure-webapp-maven-plugin>` 的 `<configuration>` 區段，以接聽連接埠 *80*。
 
-    ```xml
+   ```xml
    <plugin>
        <groupId>com.microsoft.azure</groupId>
        <artifactId>azure-webapp-maven-plugin</artifactId>
@@ -166,7 +166,7 @@ Confirm (Y/N)? : Y
           <appSettings>
              <property>
                    <name>JAVA_OPTS</name>
-                   <value>-Dserver.port=80</value>
+                   <value>-D server.port=80</value>
              </property>
           </appSettings>
           <!-- End of App Settings  -->
@@ -198,7 +198,7 @@ Confirm (Y/N)? : Y
    mvn azure-webapp:deploy
    ```
 
-Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 Web 應用程式方案不存在，系統會為您建立。
+Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 Web 應用程式方案不存在，系統會為您建立。 可能需要幾分鐘的時間，Web 應用程式才會顯示在輸出中的 URL 上。 請在網頁瀏覽器中瀏覽至 URL。  您應該會看到顯示下列內容的訊息：Greetings from Spring Boot!
 
 網站部署完成時，您就可以使用 [Azure 入口網站]來管理。
 
@@ -227,7 +227,7 @@ Maven 會將您的 Web 應用程式部署至 Azure；如果 Web 應用程式或 
 > [!div class="nextstepaction"]
 > [Azure 上的 Spring](/azure/java/spring-framework)
 
-### <a name="additional-resources"></a>其他資源
+### <a name="additional-esources"></a>其他資源
 
 如需本文所討論之各種技術的詳細資訊，請參閱下列文章：
 

@@ -7,18 +7,16 @@ ms.author: brendm
 ms.reviewer: joshuapa
 ms.date: 4/24/2019
 ms.devlang: java
-ms.service: app-service, cosmos-db
+ms.service: cosmos-db
 ms.topic: article
-ms.openlocfilehash: e7360067deaa9d038440978892f093dfb28db499
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 7fcd23ad45a591614516fec97e312c71773ce657
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691153"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118045"
 ---
 # <a name="how-to-use-spring-and-cosmos-db-with-app-service-on-linux"></a>如何在 Linux 上的 App Service 中使用 Spring 和 Cosmos DB
-
-## <a name="overview"></a>概觀
 
 本文將引導您完成在 Linux 上的 Azure App Service 中建置、設定、部署、疑難排解及調整 Java Web 應用程式的程序。
 
@@ -38,6 +36,7 @@ ms.locfileid: "68691153"
 - [Maven 3](http://maven.apache.org/)
 
 ## <a name="clone-the-sample-java-web-app-repository"></a>複製範例 Java Web 應用程式存放庫
+
 在此練習中，您將使用 Spring Todo 應用程式，這是使用 [Spring Boot](https://spring.io/projects/spring-boot)、[適用於 Cosmos DB 的 Spring 資料](https://docs.microsoft.com/azure/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db)和 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) 建置的 Java 應用程式。
 1. 複製 Spring Todo 應用程式，並複製 **.prep** 資料夾的內容以初始化專案：
 
@@ -58,8 +57,11 @@ ms.locfileid: "68691153"
 
    ```bash
    cd initial\spring-todo-app
-   ``` 
+   ```
+
 ## <a name="create-an-azure-cosmos-db-from-azure-cli"></a>從 Azure CLI 建立 Azure Cosmos DB
+
+下列程序會使用 CLI 建立 Azure Cosmos 資料庫。
 
 1. 登入 Azure CLI，並設定您的訂用帳戶識別碼。
 
@@ -68,6 +70,7 @@ ms.locfileid: "68691153"
     ```
 
 2. 視需要設定訂用帳戶識別碼。
+
     ```bash
     az account set -s <your-subscription-id>
     ```
@@ -88,13 +91,15 @@ Cosmos DB 的名稱只能使用小寫字母。 請務必記下回應中的 `docu
         -n <your-azure-COSMOS-DB-name-in-lower-case-letters>
      ```
 
-4. 取得您的 Azure Cosmos DB 金鑰，並記錄 `primaryMasterKey` 值供後續使用。
+5. 取得您的 Azure Cosmos DB 金鑰，並記錄 `primaryMasterKey` 值供後續使用。
 
     ```bash
-    az cosmosdb list-keys -g <your-azure-group-name> -n <your-azure-COSMOSDB-name>
+    az cosmosdb keys list -g <your-azure-group-name> -n <your-azure-COSMOSDB-name>
     ```
 
 ## <a name="build-and-run-the-app-locally"></a>於本機建置並執行應用程式
+
+下列程序會在開發電腦上執行應用程式。
 
 1. 在您選擇的主控台內，使用您先前在本文中收集的 Azure 與 Cosmos DB 連線資訊，設定下列程式碼區段中顯示的環境變數。 您必須為 **WEBAPP_NAME** 提供唯一的名稱，並提供 **REGION** 變數的值。
 
@@ -139,6 +144,8 @@ set REGION=<put-your-REGION-here>
  ![在本機執行的 Spring 應用程式][SCDB01]
 
 ## <a name="deploy-to-app-service-linux"></a>部署到 App Service Linux
+
+下列程序會將應用程式部署至 Azure 上的 Linux。
 
 1. 開啟您先前複製到存放庫的 **initial/spring-todo-app** 目錄的 pom.xml 檔案。 請確定其中包含[適用於 Azure App Service 的 Maven 外掛程式](https://github.com/Microsoft/azure-maven-plugins/blob/develop/azure-webapp-maven-plugin/README.md)，如下列 pom.xml 檔案中所示。 如果版本未設為 **1.6.0**，請更新其值。
 
@@ -231,6 +238,8 @@ bash-3.2$ mvn azure-webapp:deploy
 
 ## <a name="troubleshoot-spring-todo-app-on-azure-by-viewing-logs"></a>藉由檢視記錄對 Azure 上的 Spring Todo 應用程式進行疑難排解
 
+下列程序會開啟 Azure 上的記錄檔。
+
 1. 針對 Linux 中的 Azure App Service 已部署的 Java Web 應用程式設定記錄：
 
     ```bash
@@ -283,6 +292,8 @@ bash-3.2$ az webapp log tail --name ${WEBAPP_NAME}  --resource-group ${RESOURCEG
 
 ## <a name="scale-out-the-spring-todo-app"></a>相應放大 Spring Todo 應用程式
 
+使用下列程序調整應用程式。
+
 1. 使用 Azure CLI 相應放大 Java Web 應用程式：
 
     ```bash
@@ -309,7 +320,7 @@ bash-3.2$ az webapp log tail --name ${WEBAPP_NAME}  --resource-group ${RESOURCEG
 
 如需如何搭配使用 Azure 和 Java 的詳細資訊，請參閱[適用於 Java 開發人員的 Azure] 和[使用 Azure DevOps 和 Java]。
 
-**[Spring Framework]** 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 [Spring Boot] 是建立在該平台基礎上更為熱門的專案之一，其中會提供用來建立獨立 Java 應用程式的簡化方法。 為了協助開發人員開始使用 Spring Boot， <https://github.com/spring-guides/> 上提供了數個範例 Spring Boot 套件。 除了從基本的 Spring Boot 專案清單中進行選擇， **[Spring Initializr]** 還能協助開發人員開始建立自訂的 Spring Boot 應用程式。
+**[Spring Framework]** 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 [Spring Boot] 是建立在該平台基礎上更為熱門的專案之一，其中會提供用來建立獨立 Java 應用程式的簡化方法。 為了協助開發人員開始使用 Spring Boot，<https://github.com/spring-guides/> 上提供了數個範例 Spring Boot 套件。 除了從基本的 Spring Boot 專案清單中進行選擇， **[Spring Initializr]** 還能協助開發人員開始建立自訂的 Spring Boot 應用程式。
 
 <!-- URL List -->
 

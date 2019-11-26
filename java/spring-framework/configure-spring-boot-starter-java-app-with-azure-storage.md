@@ -4,26 +4,20 @@ description: 了解如何使用 Azure 儲存體 Starter 來設定 Spring Boot In
 services: storage
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
 ms.date: 12/19/2018
 ms.devlang: java
 ms.service: storage
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: c4cc70cb97ec5e2199b41d768dbfd6313b19edcb
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: fe6f2869d775961cf69e7f109fe788d3dfad8b28
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282969"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118079"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>如何對 Azure 儲存體使用 Spring Boot Starter
-
-## <a name="overview"></a>概觀
 
 本文將逐步引導您使用 **Spring Initializr** 建立自訂應用程式，並將 Azure 儲存體 Starter 新增至您的應用程式，然後使用您的應用程式將 Blob 上傳至 Azure 儲存體帳戶。
 
@@ -32,7 +26,7 @@ ms.locfileid: "68282969"
 若要遵循本文中的步驟，需要具備下列必要條件：
 
 * Azure 訂用帳戶；如果您還沒有 Azure 訂用帳戶，則可以啟用 [MSDN 訂戶權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)或註冊[免費的 Azure 帳戶](https://azure.microsoft.com/pricing/free-trial/)。
-* [Azure 命令列介面 (CLI)](http://docs.microsoft.com/cli/azure/overview)。
+* [Azure 命令列介面 (CLI)](https://docs.microsoft.com/cli/azure/index)。
 * 受支援的 Java 開發套件 (JDK)。 如需在 Azure 上進行開發時可使用的 JDK 相關資訊，請參閱 <https://aka.ms/azure-jdks>。
 * Apache 的 [Maven](http://maven.apache.org/) 3.0 版或更新版本。
 
@@ -43,43 +37,42 @@ ms.locfileid: "68282969"
 
 ## <a name="create-an-azure-storage-account-and-blob-container-for-your-application"></a>為您的應用程式建立 Azure 儲存體帳戶和 Blob 容器
 
+下列程序會建立 Azure 儲存體帳戶和容器。
+
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
 1. 依序按一下 [+ 建立資源]  、[儲存體]  和 [儲存體帳戶]  。
 
    ![建立 Azure 儲存體帳戶][IMG01]
 
-1. 在 [建立命名空間]  頁面上，輸入下列資訊：
+1. 在 [建立儲存體帳戶]  頁面上，輸入下列資訊：
 
-   * 輸入唯一**名稱**，這將成為儲存體帳戶 URI 的一部分。 例如：如果您輸入 **wingtiptoysstorage** 作為**名稱**，則 URI 會是 wingtiptoysstorage.core.windows.net  。
-   * 選擇 [Blob 儲存體]  作為 [帳戶種類]  。
+   * 選取 [訂用帳戶]  。
+   * 選取 [資源群組]  ，或建立新的資源群組。
+   * 輸入唯一的**儲存體帳戶名稱**，這將成為儲存體帳戶 URI 的一部分。 例如：如果您輸入 **wingtiptoysstorage** 作為**名稱**，則 URI 會是 wingtiptoysstorage.core.windows.net  。
    * 指定儲存體帳戶的**位置**。
-   * 選取您想要用於儲存體帳戶的**訂用帳戶**。
-   * 指定是否要為儲存體帳戶建立新的**資源群組**，或選擇現有的資源群組。
+1. 在指定上面列出的選項後，按一下 [檢閱 + 建立]  。 
+1. 檢閱規格，然後按一下 [建立]  以建立您的儲存體帳戶。
+1. 部署完成後，請按一下 [移至資源]  。
+1. 按一下 [容器]  。
+1. 按一下 [+容器]  。
+   * 為容器命名。
+   * 從下拉式清單中選取 [Blob]  。
 
-   ![指定 Azure 儲存體帳戶選項][IMG02]
-
-1. 當您指定上面列出的選項之後，按一下 [建立]  以建立您的儲存體帳戶。
-
-1. 在 Azure 入口網站建立儲存體帳戶之後，按一下 [Blob]  ，然後按一下 [+ 容器]  。
-
-   ![建立 Blob 容器][IMG03]
-
-1. 請輸入 Blob 容器的**名稱**，然後按一下 [確定]  。
-
-   ![指定 Blob 容器選項][IMG04]
+   ![建立 Blob 容器][IMG02]
 
 1. Blob 容器會在建好後出現在 Azure 入口網站中。
 
-   ![檢視 Blob 容器的清單][IMG05]
-
 ## <a name="create-a-simple-spring-boot-application-with-the-spring-initializr"></a>使用 Spring Initializr 建立簡單的 Spring Boot 應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+下列程序會建立 Spring Boot 應用程式。
+
+1. 瀏覽至 <https://start.spring.io/>。
 
 1. 指定下列選項：
 
-   * 使用 **Java** 產生 **Maven** 專案。
+   * 產生 **Maven** 專案。
+   * 指定 **Java**。
    * 指定 **Spring Boot** 版本，應等於或大於 2.0。
    * 指定應用程式的**群組**和**成品**名稱。
    * 新增 **Web** 相依性。
@@ -91,15 +84,15 @@ ms.locfileid: "68282969"
    > Spring Initializr 會使用**群組**和**成品**名稱來建立套件名稱；例如：com.wingtiptoys.storage  。
    >
 
-1. 當您指定上面列出的選項之後，按一下 [產生專案]  。
+1. 在指定上面列出的選項後，按一下 [產生]  。
 
 1. 出現提示時，將專案下載至本機電腦上的路徑。
 
-   ![下載 Spring 專案][SI02]
-
-1. 當您在本機系統上擷取檔案之後，就可以開始編輯簡單的 Spring Boot 應用程式。
+1. 在本機系統上擷取檔案後，就可以開始編輯簡單的 Spring Boot 應用程式。
 
 ## <a name="configure-your-spring-boot-app-to-use-the-azure-storage-starter"></a>設定 Spring Boot 應用程式以使用 Azure Storage Starter
+
+下列程序會將 Spring Boot 應用程式設定為使用 Azure 儲存體。
 
 1. 在應用程式的根目錄中尋找 pom.xml  檔案；例如：
 
@@ -124,6 +117,8 @@ ms.locfileid: "68282969"
 1. 儲存並關閉 *pom.xml* 檔案。
 
 ## <a name="create-an-azure-credential-file"></a>建立 Azure 認證檔案
+
+下列程序會建立 Azure 認證檔案。
 
 1. 開啟命令提示字元。
 
@@ -200,6 +195,8 @@ ms.locfileid: "68282969"
 
 ## <a name="configure-your-spring-boot-app-to-use-your-azure-storage-account"></a>設定 Spring Boot 應用程式以使用您的 Azure 儲存體帳戶
 
+下列程序會將 Spring Boot 應用程式設定為使用您的 Azure 儲存體帳戶。
+
 1. 在應用程式的 resources  目錄中尋找 *application.properties*；例如：
 
    `C:\SpringBoot\storage\src\main\resources\application.properties`
@@ -242,7 +239,7 @@ ms.locfileid: "68282969"
 
    `/users/example/home/storage/src/main/java/com/wingtiptoys/storage/StorageApplication.java`
 
-1. 在文字編輯器中開啟主要應用程式 Java 檔案，並將下列數行新增至檔案中：
+1. 在文字編輯器中開啟主要應用程式 Java 檔案，並將以下幾行新增至檔案中。 請將 wingtiptoys 取代為您的值：
 
    ```java
    package com.wingtiptoys.storage;
@@ -270,7 +267,7 @@ ms.locfileid: "68282969"
 
    `/users/example/home/storage/src/main/java/com/wingtiptoys/storage/WebController.java`
 
-1. 在文字編輯器中開啟Web 控制器 Java 檔案，並將下列數行新增至檔案中：
+1. 在文字編輯器中開啟Web 控制器 Java 檔案，並將以下幾行新增至檔案中。  請將 wingtiptoys  變更為您的資源群組，並將 storage  變更為您的成品名稱。
 
    ```java
    package com.wingtiptoys.storage;
@@ -357,7 +354,7 @@ ms.locfileid: "68282969"
 若要深入了解 Spring 和 Azure，請繼續閱讀「Azure 上的 Spring」文件中心中的資訊。
 
 > [!div class="nextstepaction"]
-> [Azure 上的 Spring](/azure/java/spring-framework)
+> [Azure 上的 Spring](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault?view=azure-java-stable)
 
 ### <a name="additional-resources"></a>其他資源
 
