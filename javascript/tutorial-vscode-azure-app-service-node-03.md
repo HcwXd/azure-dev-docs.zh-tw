@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 將 Node.js 應用程式部署至 Azure App Service
 description: 教學課程第 3 部分：部署網站
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 5891c5a9dafe87987f725b38147957fb6a961ca5
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 937eb54e9885e3b5b9fa7be54f551945a54572cd
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686259"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467198"
 ---
 # <a name="deploy-the-website"></a>部署網站
 

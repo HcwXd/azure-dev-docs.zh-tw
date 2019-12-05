@@ -1,20 +1,15 @@
 ---
 title: 教學課程：準備應用程式從 Visual Studio Code 將其部署至 Linux 上的 Azure App Service
 description: 教學課程步驟 2：設定您的應用程式
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
-ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 96e3a653567d146e1ce10fe0ae7950d35b9ed9e3
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: e504e78ae660719c60827db46d4801f5f5c4b3ce
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72279071"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466216"
 ---
 # <a name="tutorial-prepare-your-app-for-deployment-to-azure-app-service"></a>教學課程：準備應用程式以便部署至 Azure App Service
 

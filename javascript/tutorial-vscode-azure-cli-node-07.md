@@ -1,19 +1,14 @@
 ---
 title: 使用 Azure CLI 將 Node.js 應用程式部署至 Azure 後清除資源
 description: 教學課程第 7 部分：清除資源
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
-ms.author: kraigb
-ms.openlocfilehash: 6d0b9c671c4ffd0fb5d521e6247e9964d6d93980
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 7998eb641090b252455613a46ae41e45e5cd1c1d
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686108"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466755"
 ---
 # <a name="clean-up-resources"></a>清除資源
 

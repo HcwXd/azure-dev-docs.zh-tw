@@ -1,24 +1,18 @@
 ---
 title: 將適用於 Azure 的根憑證新增至 Java CA 存放區
 description: 了解如何將憑證授權單位 (CA) 根憑證新增至 Java CA 憑證 (cacerts) 存放區，以供 Microsoft Azure 使用。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
 ms.assetid: d3699b0a-835c-43fb-844d-9c25344e5cda
 ms.service: multiple
-ms.workload: na
 ms.tgt_pltfrm: na
-ms.devlang: Java
 ms.topic: article
 ms.date: 11/13/2018
-ms.author: brendm
-ms.openlocfilehash: 519f75b637e957a7207a25359457252097efafbb
-ms.sourcegitcommit: 4cc7f5e1e4601065bfcb4c2eeb7d47ad0bec61f8
+ms.openlocfilehash: 849e4cb65311078fa694151fa8295e6c31d52eb5
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68431040"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812443"
 ---
 # <a name="adding-a-root-certificate-to-the-java-ca-certificates-store"></a>新增根憑證至 Java CA 憑證存放區
 

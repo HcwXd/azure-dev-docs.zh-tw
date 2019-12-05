@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 建立 Azure Functions 應用程式
 description: 教學課程第 2 部分：建立 Azure Functions 應用程式
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
-ms.author: kraigb
-ms.openlocfilehash: 190e574e9614eb11d913c8b26904f7b80dab35fc
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 5b2e46cde8740020cc2ad7a1b50ac9b4687d17d3
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686000"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467122"
 ---
 # <a name="create-the-local-functions-app"></a>建立本機 Functions 應用程式
 

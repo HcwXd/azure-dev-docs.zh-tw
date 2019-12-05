@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 將 Node.js 靜態網站部署至 Azure
 description: 教學課程第 1 部分：簡介和必要條件。
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
-ms.author: kraigb
-ms.openlocfilehash: 0e5a7e12d234b56899e3c814cb577002125ea052
-ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
+ms.openlocfilehash: 8b19b32933c2405082e2d1e2aa46c7a06af1f9d1
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587135"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467097"
 ---
 # <a name="deploy-a-static-website-to-azure-from-visual-studio-code"></a>從 Visual Studio Code 將靜態網站部署至 Azure
 
@@ -33,7 +28,7 @@ ms.locfileid: "72587135"
 
 ### <a name="azure-subscription"></a>Azure 訂用帳戶
 
-如果您沒有 Azure 訂用帳戶，請[立即註冊](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-static-website&mktingSource=vscode-tutorial-static-website)免費帳戶，即可獲得價值 200 美元的 Azure 點數，讓您可以試用各種服務組合。
+如果您沒有 Azure 訂用帳戶，請[立即註冊](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-static-website&mktingSource=vscode-tutorial-static-website)免費帳戶，即可獲得價值 200 美元的 Azure 點數，讓您可以試用各種服務組合。
 
 ## <a name="sign-in-to-azure"></a>登入 Azure
 

@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 串流來自容器化 Node.js 應用程式的記錄
 description: 教學課程步驟 5：將記錄串流至 Visual Studio Code
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 9df23cb6aac013006cf0f21871f16eededdcb816
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 2ac930996bd910014565c4e329bec93015bd2a3a
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685991"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466524"
 ---
 # <a name="stream-logs-into-visual-studio-code"></a>將記錄串流至 Visual Studio Code
 

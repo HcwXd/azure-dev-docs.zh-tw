@@ -1,25 +1,18 @@
 ---
-title: 使用適用於 Eclipse 的 Azure 工具組，將 Spring Boot 應用程式發佈為 Docker 容器
+title: 將 Spring Boot 應用程式發佈為 Docker 容器
+titleSuffix: Azure Toolkit for Eclipse
 description: 了解如何使用適用於 Eclipse 的 Azure 工具組，將 Web 應用程式發佈至 Microsoft Azure 作為 Docker 容器。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 02/01/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 7c8e03989efae94a74bd00976793b692b801f126
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: ece88bc262cf6b7c626cd50364c1133b098bb0f7
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68430773"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811833"
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>使用適用於 Eclipse 的 Azure 工具組，將 Spring Boot 應用程式發佈為 Docker 容器
 
@@ -161,7 +154,7 @@ Spring Boot Docker 存放庫包含將用於此教學課程的已完成 Maven 專
 
    a. 輸入自訂 Docker 映像名稱。
    
-   b. 在 [Artifact to deploy] (要部署的成品)  中，指定您剛剛建置之 **gs-spring-boot-docker-0.1.0.jar** 檔案的路徑。
+   b. 在 [Artifact to deploy] (要部署的構件)  中，指定您剛剛建置之 **gs-spring-boot-docker-0.1.0.jar** 檔案的路徑。
 
    ![Specify Docker options (指定 Docker 選項)][PU02]
 
@@ -209,7 +202,7 @@ Spring Boot Docker 存放庫包含將用於此教學課程的已完成 Maven 專
 
 <!-- URL List -->
 
-[Azure Management Portal]: http://go.microsoft.com/fwlink/?LinkID=512959
+[Azure Management Portal]: https://go.microsoft.com/fwlink/?LinkID=512959
 [Deploy Spring Boot on Linux in AKS]: /azure/container-service/kubernetes/container-service-deploy-spring-boot-app-on-linux
 [Docker]: https://www.docker.com/
 [Publish Container with Azure Toolkit]: azure-toolkit-for-eclipse-publish-as-docker-container.md

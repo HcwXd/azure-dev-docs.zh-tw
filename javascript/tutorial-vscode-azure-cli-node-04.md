@@ -1,19 +1,14 @@
 ---
 title: 使用 Azure CLI 將應用程式碼部署至 Azure App Service
 description: 教學課程第 4 部分：部署網站
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
-ms.author: kraigb
-ms.openlocfilehash: fbf8c9d77876e5617aee5ed5b27257a4aaca2f41
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 4911ccdf4003b44359d40c58d1b924e6bf88c829
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686159"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467170"
 ---
 # <a name="deploy-the-app-to-app-service"></a>將應用程式部署至 App Service
 

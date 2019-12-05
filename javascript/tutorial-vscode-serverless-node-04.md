@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 部署 Azure Functions 應用程式
 description: 教學課程第 4 部分：將 Functions 應用程式部署至雲端。
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
-ms.author: kraigb
-ms.openlocfilehash: 53d0dd11567084d42de71a0f737cf8b9f5fc5249
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 690477392fffda4cd94d7271b061c195ccceb42b
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685928"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467106"
 ---
 # <a name="deploy-the-functions-app"></a>部署 Functions 應用程式
 
@@ -29,7 +24,7 @@ ms.locfileid: "71685928"
 
 1. 出現下一個提示時，為您的函式應用程式輸入全域唯一名稱，然後按 **Enter**。 函式應用程式名稱的有效字元為 'a-z'、'0-9' 和 '-'。
 
-1. 出現下一個提示時，選取接近您的 Azure [區域](https://azure.microsoft.com/en-us/regions/)。
+1. 出現下一個提示時，選取接近您的 Azure [區域](https://azure.microsoft.com/regions/)。
 
 1. **Azure Functions** 的 VS Code [輸出]  面板會顯示進度：
 

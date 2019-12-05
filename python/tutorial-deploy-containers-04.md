@@ -1,20 +1,15 @@
 ---
 title: 教學課程：將 Azure App Service 中的容器記錄串流至 Visual Studio Code
 description: 教學課程第 4 部分：檢視 Azure App Service 中的記錄來監視其行為。
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
-ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 12cc4880a7001fc51b0e70f89f177390c5fd0f45
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: e9b54e53763b729f5042cfb0d8df438650fd362f
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72278708"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466988"
 ---
 # <a name="tutorial-stream-logs-from-azure-app-service-for-a-container"></a>教學課程：從容器的 Azure App Service 串流記錄
 

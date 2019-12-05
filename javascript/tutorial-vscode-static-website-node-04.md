@@ -1,19 +1,15 @@
 ---
 title: 從 Visual Studio Code 將靜態 Node.js 應用程式檔案部署至 Azure 儲存體
 description: 教學課程第 4 部分：將檔案部署至 Azure 儲存體
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: buhollan
-ms.openlocfilehash: 671e600471402dbd6ca71d385a238caeee889497
-ms.sourcegitcommit: 66cc8d1839dbd7cc01b33030f188e15bf5f24dae
+ms.openlocfilehash: 2683de33fd8ddc7148991d85e3d67f1eb93a5f44
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72916674"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466655"
 ---
 # <a name="deploy-the-website-to-azure-storage"></a>將網站部署至 Azure 儲存體
 

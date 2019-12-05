@@ -1,19 +1,14 @@
 ---
 title: 使用 Azure 資料庫搭配 Node.js 應用程式
 description: Azure 提供數個不同的資料庫，可與 Web 和其他 Node.js 應用程式搭配使用。
-author: kraigb
-manager: barbkess
-ms.devlang: nodejs
 ms.topic: article
-ms.service: azure-nodejs
 ms.date: 08/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 1861b5df8cc9a54379762fac001c5cecc2f89b1f
-ms.sourcegitcommit: 60c41faa59dbb59406eb7c1715f5708b5ed892c2
+ms.openlocfilehash: 6eb7dcb97d78504c49f2ea39f5d39750dfec7215
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036077"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467287"
 ---
 # <a name="how-to-integrate-azure-databases-in-nodejs-apps"></a>如何在 Node.js 應用程式中整合 Azure 資料庫
 

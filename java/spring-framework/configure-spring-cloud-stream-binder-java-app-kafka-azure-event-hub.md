@@ -3,19 +3,15 @@ title: 如何搭配 Azure 事件中樞使用適用於 Apache Kafka 的 Spring Bo
 description: 了解如何將使用 Spring Boot Initializer 所建立的應用程式設定為搭配使用 Apache Kafka 與 Azure 事件中樞。
 services: event-hubs
 documentationcenter: java
-author: bmitchell287
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: event-hubs
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 5d1f1d40eba0f4b4a6aa2718f09124b765a06a82
-ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
+ms.openlocfilehash: 6e6bee70c07538d06859254543886685308a0302
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74118310"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812065"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-apache-kafka-with-azure-event-hubs"></a>如何搭配 Azure 事件中樞使用適用於 Apache Kafka 的 Spring Boot Starter
 
@@ -431,7 +427,7 @@ ms.locfileid: "74118310"
 
 如需如何搭配使用 Azure 和 Java 的詳細資訊，請參閱 [適用於 Java 開發人員的 Azure] 和[使用 Azure DevOps 和 Java]。
 
-**[Spring Framework]** 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 [Spring Boot] 是建立在該平台基礎上更為熱門的專案之一，其中會提供用來建立獨立 Java 應用程式的簡化方法。 為了協助開發人員開始使用 Spring Boot，<https://github.com/spring-guides/> 上提供了數個範例 Spring Boot 套件。 除了從基本的 Spring Boot 專案清單中進行選擇， **[Spring Initializr]** 還能協助開發人員開始建立自訂的 Spring Boot 應用程式。
+**[Spring Framework]** 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 [Spring Boot] 是建立在該平台基礎上更為熱門的專案之一，其中會提供用來建立獨立 Java 應用程式的簡化方法。 為了協助開發人員開始使用 Spring Boot， <https://github.com/spring-guides/> 上提供了數個範例 Spring Boot 套件。 除了從基本的 Spring Boot 專案清單中進行選擇， **[Spring Initializr]** 還能協助開發人員開始建立自訂的 Spring Boot 應用程式。
 
 <!-- URL List -->
 

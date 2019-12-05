@@ -3,20 +3,17 @@ title: 開始使用 Azure SDK for Java
 description: 了解如何建立 Azure 雲端資源，並在您的 Java 應用程式中連線及使用。
 keywords: Azure, Java, SDK, API, 驗證, 開始使用
 author: rloutlaw
-ms.author: brendm
-manager: douge
 ms.date: 04/16/2017
 ms.topic: article
-ms.devlang: java
 ms.service: multiple
 ms.assetid: b1e10b79-f75e-4605-aecd-eed64873e2d3
 ms.custom: seo-java-august2019
-ms.openlocfilehash: 36693307d140c3cde4e28c5583bebea20ee3dc79
-ms.sourcegitcommit: 2147617c746bc9be7b6ee66e0250bd16cf9febab
+ms.openlocfilehash: b0fcdae9e54ac990b94b605cf4ba4c76707258bd
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68829652"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812392"
 ---
 # <a name="get-started-with-cloud-development-using-java-on-azure"></a>開始使用 Azure 上的 Java 進行雲端開發
 

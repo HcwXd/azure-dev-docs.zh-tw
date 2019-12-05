@@ -3,20 +3,17 @@ title: 如何對 Azure Key Vault 使用 Spring Boot Starter
 description: 了解如何使用 Azure Key Vault Starter 來設定 Spring Boot Initializer 應用程式。
 services: key-vault
 documentationcenter: java
-author: bmitchell287
-ms.author: brendm
 ms.date: 10/29/2019
-ms.devlang: java
 ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 7841386ba89f2f14e4ef6e5c279d62293940f4af
-ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
+ms.openlocfilehash: 13ca873a838d3097484343a28d1f12300550ded8
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74118033"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812135"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>如何對 Azure Key Vault 使用 Spring Boot Starter
 

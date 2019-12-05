@@ -3,23 +3,17 @@ title: 如何對 Azure Active Directory 使用 Spring Boot Starter
 description: 了解如何使用 Azure Active Directory Starter 來設定 Spring Boot Initializer 應用程式。
 services: active-directory
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: active-directory
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 72916633d4b0df05957b2289ad31559a0c9319bc
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 3a1c174662d172b38e9d2c88043be24f18332356
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68283359"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812145"
 ---
 # <a name="tutorial-secure-a-java-web-app-using-the-spring-boot-starter-for-azure-active-directory"></a>教學課程：使用適用於 Azure Active Directory 的 Spring Boot Starter 保護 Java Web 應用程式
 
@@ -27,7 +21,7 @@ ms.locfileid: "68283359"
 
 本文示範如何使用 **[Spring Initializr]** (適用於 Azure Active Directory (Azure AD) 的 Spring Boot Starter) 建立 Java 應用程式。
 
-在本教學課程中，您了解如何：
+在本教學課程中，您會了解如何：
 
 > [!div class="checklist"]
 > * 使用 Spring Initializr 建立 Java 應用程式
@@ -35,7 +29,7 @@ ms.locfileid: "68283359"
 > * 使用 Spring Boot 類別和註解保護應用程式
 > * 建置與測試您的 Java 應用程式
 
-如果您沒有 Azure 訂用帳戶，請在開始前建立 [免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) 。
+如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -46,7 +40,7 @@ ms.locfileid: "68283359"
 
 ## <a name="create-an-app-using-spring-initializr"></a>使用 Spring Initialzr 建立應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+1. 瀏覽至 <https://start.spring.io/>。
 
 1. 指定您想要使用 **JAVA** 產生 **Maven** 專案、輸入應用程式的**群組**和**成品**名稱，然後按一下 Spring Initializr 的 [切換至完整版本]  連結。
 

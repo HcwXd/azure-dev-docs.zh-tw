@@ -1,25 +1,17 @@
 ---
 title: 適用於 Azure 的 Spring Boot Starter
 description: 本文說明適用於 Azure 的各種 Spring Boot Starter。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 2e9d2ecd22d6f276629cb8b0e519959837346693
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 624aaff3022bd40068ce0e0032ab676bd85b200b
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285309"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811840"
 ---
 # <a name="spring-boot-starters-for-azure"></a>適用於 Azure 的 Spring Boot Starter
 
@@ -136,7 +128,7 @@ ms.locfileid: "68285309"
    ```
 
 <a name="azure-key-vault"></a>
-## <a name="azure-key-vault"></a>Azure Key Vault
+## <a name="azure-key-vault"></a>Azure 金鑰保存庫
 
 此 Spring Boot Starter 提供 Spring 值註釋支援以便與 Azure Key Vault 祕密整合。
 

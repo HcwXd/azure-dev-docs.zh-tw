@@ -3,23 +3,17 @@ title: 使用 IntelliJ 的舊版工具組建立 Azure 的 Hello World Web 應用
 description: 本教學課程示範如何使用適用於 IntelliJ 的 3.0.6 版 (或舊版) Azure 工具組來建立 Azure 的 Hello World Web 應用程式。
 services: app-service
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 11/13/2018
-ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 3be6f9ffe08229343a948b4ddef0040b1e99dfca
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 423379239c823bdeba9947719a43d9f446bbd2f3
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68281029"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811180"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a>使用 IntelliJ 的舊版工具組建立 Azure 的 Hello World Web 應用程式
 
@@ -65,7 +59,7 @@ ms.locfileid: "68281029"
    
    ![開啟索引頁面][05c]
 
-6. 當 index.jsp 檔案在 IntelliJ 中開啟時，加入文字以動態顯示 **Hello World!** (在現有的 `<body>` 元素內加入)。 您已更新的 `<body>` 內容看起來應該與下列範例類似：
+6. 當 index.jsp 檔案在 IntelliJ 中開啟時，加入文字以動態顯示 **Hello World!** (在現有 `<body>` 元素內)。 您已更新的 `<body>` 內容看起來應該與下列範例類似：
    
    ```java
    <body><b><% out.println("Hello World!"); %></b></body>
@@ -85,9 +79,9 @@ ms.locfileid: "68281029"
 
 2. 當 [專案結構] 對話方塊出現時：
 
-   a. 按一下 [專案設定]  清單中的 [成品]  。
+   a. 按一下 [專案設定]  清單中的 [構件]  。
 
-   b. 變更 [名稱]  方塊中的成品名稱，使其不包含空格或特殊字元；這是必要動作，因為此名稱將用於統一資源識別項 (URI) 中。
+   b. 變更 [名稱]  方塊中的構件名稱，使其不包含空格或特殊字元；這是必要動作，因為此名稱將用於統一資源識別項 (URI) 中。
 
    c. 將 [類型]  變更為 [Web 應用程式:**封存]** 。
 

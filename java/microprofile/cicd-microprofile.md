@@ -5,21 +5,17 @@ services: devops
 documentationcenter: MicroProfile
 author: ruyakubu
 manager: brunoborges
-editor: ruyakubu
-ms.assetid: ''
 ms.author: ruyakubu
 ms.date: 07/31/2019
-ms.devlang: Java
-ms.service: Azure DevOps
 ms.tgt_pltfrm: multiple
 ms.topic: tutorial
 ms.workload: web
-ms.openlocfilehash: f75a4f32c56b949f7ea4f5e87863a83cbdf4b5d8
-ms.sourcegitcommit: bf64ca31b2d4aea3f5c9b36d7c5ed7bde266584a
+ms.openlocfilehash: cdd704626b51105f93c19378511f4a267cb56649
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68755908"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812236"
 ---
 # <a name="cicd-for-microprofile-apps-using-azure-pipelines"></a>使用 Azure Pipelines 為 MicroProfile 應用程式設定 CI/CD
 
@@ -173,7 +169,7 @@ Azure Pipelines 持續發行管線會在組建成功時，自動觸發部署至�
 
 1. 選取 [變數]  索引標籤，然後選取 [新增]  ，為您的容器登錄 URL、使用者名稱和密碼新增下列變數。 
    
-   |Name|值|
+   |名稱|值|
    |---|---|
    |*registry.url*|輸入容器登錄 URL。 例如：*https:\//mymicroprofileregistry.azure.io*|
    |*registry.username*|輸入登錄的使用者名稱。|
@@ -187,7 +183,7 @@ Azure Pipelines 持續發行管線會在組建成功時，自動觸發部署至�
    
 1. 在 [應用程式設定]  快顯視窗中，選取 [新增]  以定義並指派應用程式設定變數：
    
-   |Name|值|
+   |名稱|值|
    |---|---|
    |*DOCKER_REGISTRY_SERVER_URL*|*$(registry.url)*|
    |*DOCKER_REGISTRY_SERVER_USERNAME*|*$(registry.username)*|

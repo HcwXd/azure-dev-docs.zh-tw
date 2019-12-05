@@ -2,24 +2,18 @@
 title: 如何搭配使用 Spring Data JPA 與適用於 MySQL 的 Azure 資料庫
 description: 了解如何使用適用於 MySQL 的 Azure 資料庫來設定和使用 Spring Data JPA。
 documentationcenter: java
-author: bmitchell287
-manager: douge
-ms.author: brendm
-ms.date: 12/19/2018
-ms.devlang: java
+ms.date: 11/27/2019
 ms.service: mysql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: 842dc7785f8c7c84d6e9ba464c96d65db75dc9fd
-ms.sourcegitcommit: 2610f3992cb6d21a3657032074acb981d130fdad
+ms.openlocfilehash: 83883ffd06353854a3c69c9abdc946a035dda6b1
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71960775"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811968"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-database-for-mysql"></a>如何搭配使用 Spring Data JPA 與適用於 MySQL 的 Azure 資料庫
-
-## <a name="overview"></a>概觀
 
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在[適用於 MySQL 的 Azure 資料庫](/azure/mysql/)中使用 [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm) 儲存和擷取資訊。
 
@@ -50,27 +44,24 @@ ms.locfileid: "71960775"
 
 1. 輸入以下資訊：
 
-   - **伺服器名稱**：為適用於 MySQL 的 Azure 資料庫伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoysmysql.mysql.database.azure.com  。
    - 訂用帳戶  ：指定您要使用的 Azure 訂用帳戶。
    - **資源群組**：指定是要建立新的資源群組，還是選擇現有的資源群組。
+   - **伺服器名稱**：為 MySQL 伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoysmysql.mysql.database.azure.com  。
    - **選取來源**：在此教學課程中，選取 `Blank` 以建立新的資料庫。
    - **伺服器管理員登入**：指定資料庫管理員的名稱。
    - **密碼**和**確認密碼**：指定資料庫管理員的密碼。
    - **位置**：指定與資料庫最為接近的地理區域。
    - **版本**：指定最新的資料庫版本。
-   - **定價層**：在此教學課程中，指定價格最實惠的定價層。
 
    ![建立 MySQL 資料庫屬性][MYSQL02]
 
-1. 上述所有資訊皆輸入完成時，按一下 [建立]  。
+1. 上述所有資訊皆輸入完成時，按一下 [檢閱 + 建立]  。
 
 ### <a name="configure-a-firewall-rule-for-your-server-using-the-azure-portal"></a>使用 Azure 入口網站設定伺服器的防火牆規則
 
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 MySQL 資料庫。
-
-   ![選取 MySQL 資料庫][MYSQL03]
 
 1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
 
@@ -81,8 +72,6 @@ ms.locfileid: "71960775"
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
 1. 按一下 [所有資源]  ，然後按一下您剛才所建立的「適用於 MySQL 的 Azure 資料庫」資源。
-
-   ![選取 MySQL 資料庫][MYSQL03]
 
 1. 按一下 [連接字串]  ，然後複製 [JDBC]  文字欄位中的值。
 
@@ -257,6 +246,5 @@ ms.locfileid: "71960775"
 
 [MYSQL01]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-01.png
 [MYSQL02]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-02.png
-[MYSQL03]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-03.png
 [MYSQL04]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-04.png
 [MYSQL05]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-05.png

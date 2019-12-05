@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 使用容器登錄
 description: 教學課程第 2 部分：使用容器登錄
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 790267333cadc1208b6a750e487f0e459e87185d
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 7d51e8011824ec19e9530f9bc94bcb2ce07f2851
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686246"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466637"
 ---
 # <a name="use-a-container-registry"></a>使用容器登錄
 
@@ -21,7 +16,7 @@ ms.locfileid: "71686246"
 
 在此步驟中，您會為您的應用程式映像設定合適的容器登錄。 具有容器功能的裝載服務 (例如 Azure App Service) 會從登錄中提取映像。
 
-本教學課程會使用 [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/) (ACR)，這是您的映像適用的私人、安全、裝載的登錄。 不過，這裡所示的工具和程序也適用於其他登錄，像是 [Docker Hub](https://hub.docker.com/)。
+本教學課程會使用 [Azure Container Registry](https://azure.microsoft.com/services/container-registry/) (ACR)，這是您的映像適用的私人、安全、裝載的登錄。 不過，這裡所示的工具和程序也適用於其他登錄，像是 [Docker Hub](https://hub.docker.com/)。
 
 ## <a name="create-an-azure-container-registry"></a>建立 Azure Container Registry
 

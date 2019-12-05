@@ -3,17 +3,15 @@ title: 如何使用適用於 Azure 服務匯流排的 Spring Cloud Azure Stream 
 description: 本文示範如何使用 Spring Cloud Stream Binder，將訊息傳送至 Azure 服務匯流排及從中接收訊息。
 author: seanli1988
 manager: kyliel
-ms.author: Sean.Li
+ms.author: seal
 ms.date: 08/21/2019
-ms.devlang: java
-ms.service: azure-java
 ms.topic: article
-ms.openlocfilehash: 48bb5ee53c88910528ad2ed7f06c626e0a431275
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: 2d888d225a8bcf5c957da11e18ea86d09ec8e897
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892382"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812044"
 ---
 # <a name="how-to-use-spring-cloud-azure-stream-binder-for-azure-service-bus"></a>如何使用適用於 Azure 服務匯流排的 Spring Cloud Azure Stream Binder
 
@@ -268,7 +266,7 @@ Azure 提供名為 [Azure 服務匯流排](https://docs.microsoft.com/azure/serv
 
 ## <a name="clean-up-resources"></a>清除資源
 
-當不再需要時，請使用 [Azure 入口網站](http://ms.portal.azure.com/)來刪除在本文中建立的資源，以避免產生非預期的費用。
+當不再需要時，請使用 [Azure 入口網站](https://portal.azure.com/)來刪除在本文中建立的資源，以避免產生非預期的費用。
 
 ## <a name="next-steps"></a>後續步驟
 

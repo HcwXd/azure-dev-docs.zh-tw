@@ -3,23 +3,17 @@ title: 如何搭配 Azure 儲存體 API 使用 Spring Boot Starter
 description: 了解如何使用 Azure 儲存體 API 來設定 Spring Boot Initializer 應用程式。
 services: storage
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: 5524b131d1019128ef9deb8a2ebf8f68f7e7b629
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 5f61f3eb721c475b0941b2215a0a180ef00ea3d3
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68283079"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812106"
 ---
 # <a name="how-to-use-the-spring-boot-starter-with-the-azure-storage-api"></a>如何搭配 Azure 儲存體 API 使用 Spring Boot Starter
 
@@ -32,13 +26,13 @@ ms.locfileid: "68283079"
 若要遵循本文中的步驟，需要具備下列必要條件：
 
 * Azure 訂用帳戶；如果您還沒有 Azure 訂用帳戶，則可以啟用 [MSDN 訂戶權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)或註冊[免費的 Azure 帳戶](https://azure.microsoft.com/pricing/free-trial/)。
-* [Azure 命令列介面 (CLI)](http://docs.microsoft.com/cli/azure/overview)。
+* [Azure 命令列介面 (CLI)](/cli/azure/overview)。
 * 受支援的 Java 開發套件 (JDK)。 如需在 Azure 上進行開發時可使用的 JDK 相關資訊，請參閱 <https://aka.ms/azure-jdks>。
 * Apache 的 [Maven](http://maven.apache.org/) 3.0 版或更新版本。
 
 ## <a name="create-a-custom-application-using-the-spring-initializr"></a>使用 Spring Initializr 建立自訂應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+1. 瀏覽至 <https://start.spring.io/>。
 
 1. 指定您想要使用 **JAVA** 產生 **Maven** 專案、輸入應用程式的**群組**和**成品**名稱，然後按一下 Spring Initializr 的 [切換至完整版本]  連結。
 

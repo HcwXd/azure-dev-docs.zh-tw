@@ -1,21 +1,16 @@
 ---
 title: 使用適用於 Node.js 的 Azure 管理模組進行驗證
 description: 使用用來進入適用於 Node.js 之 Azure 管理模組的服務主體進行驗證
-author: kraigb
-manager: barbkess
-ms.author: kraigb
-ms.date: 06/17/2017
 ms.topic: article
-ms.prod: azure
-ms.devlang: nodejs
-ms.openlocfilehash: 87a30973c8a295540924e41aee9c8e0af455b41f
-ms.sourcegitcommit: 380300c283f3df8a87c7c02635eae3596732fb72
+ms.date: 06/17/2017
+ms.openlocfilehash: bf368183b63dbe42dd02d8236cf7e7b73cbc1845
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661235"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467268"
 ---
-# <a name="authenticate-with-the-azure-modules-for-nodejs"></a>使用適用於 Node.js 的 Azure 模組進行驗證 
+# <a name="authenticate-with-the-azure-modules-for-nodejs"></a>使用適用於 Node.js 的 Azure 模組進行驗證
 
 所有服務 API 在具現化時都需要透過 `credentials` 物件驗證。 透過 Azure SDK for Node.js 驗證並建立所需認證的方法有三種： 
 

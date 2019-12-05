@@ -5,23 +5,19 @@ services: app-service
 keywords: java, IntelliJ, web 應用程式, azure app service, hello world, 快速入門
 documentationcenter: java
 author: selvasingh
-manager: douge
-editor: ''
 ms.assetid: 75ce7b36-e3ae-491d-8305-4b42ce37db4e
-ms.author: brendm
 ms.reviewer: asirveda
 ms.date: 02/01/2018
-ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 695622ee4de0f0e9b99255ac814bb3b5403957b8
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 21c680281de231cff7c3f2f2044c63383c5a0e4c
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691597"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811151"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-app-service-using-intellij"></a>使用 IntelliJ 建立 Azure App Service 的 Hello World Web 應用程式
 

@@ -3,17 +3,15 @@ title: 如何對 Azure 服務匯流排 JMS 使用 Spring Boot Starter
 description: 本文示範如何使用 Spring JMS Starter，將訊息傳送至 Azure 服務匯流排及從中接收訊息。
 author: seanli1988
 manager: kyliel
-ms.author: Sean.Li
+ms.author: seal
 ms.date: 08/21/2019
-ms.devlang: java
-ms.service: azure-java
 ms.topic: article
-ms.openlocfilehash: 58d8dd00deeb90b1a1b8935bcbbab471255328d4
-ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
+ms.openlocfilehash: b64095bc2971bf9d9a7308bebdb91617538796c4
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70181983"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812119"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-service-bus-jms"></a>如何對 Azure 服務匯流排 JMS 使用 Spring Boot Starter
 
@@ -348,7 +346,7 @@ Azure 提供名為 [Azure 服務匯流排](https://docs.microsoft.com/azure/serv
 
 ## <a name="clean-up-resources"></a>清除資源
 
-當不再需要時，請使用 [Azure 入口網站](http://ms.portal.azure.com/)來刪除在本文中建立的資源，以避免產生非預期的費用。
+當不再需要時，請使用 [Azure 入口網站](https://portal.azure.com/)來刪除在本文中建立的資源，以避免產生非預期的費用。
 
 ## <a name="next-steps"></a>後續步驟
 

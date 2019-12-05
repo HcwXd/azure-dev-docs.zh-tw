@@ -3,20 +3,17 @@ title: 如何搭配 Azure Cosmos DB SQL API 使用 Spring Data Gremlin Starter
 description: 了解如何設定搭配 Azure Cosmos DB SQL API 使用 Spring Boot Initializer 建立的應用程式。
 services: cosmos-db
 documentationcenter: java
-author: bmitchell287
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: add8fed3dd9a0add38363742f3142eb1d7d11470
-ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
+ms.openlocfilehash: b5e6b3866b9b1e6a326547c053c628a282d9aaf3
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70182019"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812105"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>如何搭配 Azure Cosmos DB SQL API 使用 Spring Data Gremlin Starter
 
@@ -94,7 +91,7 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 
 ## <a name="create-a-simple-spring-boot-application-with-the-spring-initializr"></a>使用 Spring Initializr 建立簡單的 Spring Boot 應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+1. 瀏覽至 <https://start.spring.io/>。
 
 1. 指定您想要使用 **Java** 產生 **Maven** 專案、輸入應用程式的**群組**和**成品**名稱、指定您的 **Spring Boot** 版本 (等於或大於 2.0)，然後按一下 [產生專案]  。
 

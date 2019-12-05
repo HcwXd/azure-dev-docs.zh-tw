@@ -1,19 +1,15 @@
 ---
 title: 從 Visual Studio Code 將變更部署至靜態 Node.js 網站
 description: 教學課程第 5 部分：進行變更並重新部署
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: buhollan
-ms.openlocfilehash: 73d27549e5ff1acb294f8e65fa610d0b46f56914
-ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
+ms.openlocfilehash: 0db773cdea2e288dc461479c3753b94c9a286e82
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587294"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466638"
 ---
 # <a name="make-changes-and-redeploy"></a>進行變更並重新部署
 

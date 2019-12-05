@@ -1,19 +1,14 @@
 ---
 title: 使用 Azure CLI 將 Node.js 應用程式部署至 Azure App Service
 description: 教學課程第 1 部分：簡介和必要條件。
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
-ms.author: kraigb
-ms.openlocfilehash: 2c566e43bce15672d4ae73310f96c91f4a6f137a
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: b249084e6c22491bd05dbb3df2544f8570dadad0
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686181"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466788"
 ---
 # <a name="deploy-to-azure-app-service-using-the-azure-cli"></a>使用 Azure CLI 部署至 Azure App Service
 
@@ -32,7 +27,7 @@ ms.locfileid: "71686181"
 
 ### <a name="azure-subscription"></a>Azure 訂用帳戶
 
-如果您沒有 Azure 訂用帳戶，請[立即註冊](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-node-git&mktingSource=vscode-tutorial-node-git)免費帳戶，即可獲得價值 200 美元的 Azure 點數，讓您可以試用各種服務組合。
+如果您沒有 Azure 訂用帳戶，請[立即註冊](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-node-git&mktingSource=vscode-tutorial-node-git)免費帳戶，即可獲得價值 200 美元的 Azure 點數，讓您可以試用各種服務組合。
 
 ### <a name="sign-in-to-the-azure-cli"></a>登入 Azure CLI
 
