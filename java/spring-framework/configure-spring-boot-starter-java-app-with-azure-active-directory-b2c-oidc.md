@@ -5,21 +5,18 @@ services: active-directory-b2c
 documentationcenter: java
 author: panli
 manager: kevinzha
-editor: panli
-ms.assetid: ''
 ms.author: panli
 ms.date: 02/28/2019
-ms.devlang: java
 ms.service: active-directory-b2c
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: c0c7ec20c4e4a9472b8653fd3940740238a7420c
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 7996e4f2947e08fc7a802a741b958988e58829e8
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68283469"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812159"
 ---
 # <a name="tutorial-secure-a-java-web-app-using-the-spring-boot-starter-for-azure-active-directory-b2c"></a>教學課程：使用適用於 Azure Active Directory B2C 的 Spring Boot Starter 保護 Java Web 應用程式。
 
@@ -27,7 +24,7 @@ ms.locfileid: "68283469"
 
 本文示範如何透過 [Spring Initializr](https://start.spring.io/) (使用適用於 Azure Active Directory (Azure AD) 的 Spring Boot Starter) 建立 Java 應用程式。
 
-在本教學課程中，您了解如何：
+在本教學課程中，您會了解如何：
 
 > [!div class="checklist"]
 > * 使用 Spring Initializr 建立 Java 應用程式
@@ -35,7 +32,7 @@ ms.locfileid: "68283469"
 > * 使用 Spring Boot 類別和註解保護應用程式
 > * 建置與測試您的 Java 應用程式
 
-如果您沒有 Azure 訂用帳戶，請在開始前建立 [免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) 。
+如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -46,7 +43,7 @@ ms.locfileid: "68283469"
 
 ## <a name="create-an-app-using-spring-initializr"></a>使用 Spring Initialzr 建立應用程式
 
-1. 瀏覽至 <https://start.spring.io/> 。
+1. 瀏覽至 <https://start.spring.io/>。
 
 2. 指定您想要使用 **Java** 產生 **Maven** 專案、為您的應用程式輸入**群組**和**成品**名稱，然後選取 Spring Initializr 的 **Web** 和**安全性**模組。
 
