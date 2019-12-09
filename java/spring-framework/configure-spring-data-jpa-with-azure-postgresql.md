@@ -2,23 +2,18 @@
 title: 如何搭配使用 Spring Data JPA 和 Azure PostgreSQL
 description: 了解如何使用適用於 PostgreSQL 的 Azure 資料庫來設定和使用 Spring Data JPA。
 documentationcenter: java
-author: bmitchell287
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: da8feb20e4163d9280256b51f64d3148b077f7ce
-ms.sourcegitcommit: 2610f3992cb6d21a3657032074acb981d130fdad
+ms.openlocfilehash: d2134ae08bdad69af1e347476e96833d375ee966
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71960764"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811957"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-postgresql"></a>如何搭配使用 Spring Data JPA 和 Azure PostgreSQL
-
-## <a name="overview"></a>概觀
 
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在[適用於 PostgreSQL 的 Azure 資料庫](/azure/postgresql/)中使用 [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm) 儲存和擷取資訊。
 
@@ -47,41 +42,40 @@ ms.locfileid: "71960764"
 
    ![建立 PostgreSQL 資料庫][POSTGRESQL01]
 
+1. 選取 [單一伺服器]  或 [超大規模伺服器群組]  。
+
+1. 按一下頁面底部的 [新增]  。
+
 1. 輸入以下資訊：
 
-   - **伺服器名稱**：為 PostgreSQL 伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoyspostgresql.postgres.database.azure.com  。
    - 訂用帳戶  ：指定您要使用的 Azure 訂用帳戶。
    - **資源群組**：指定是要建立新的資源群組，還是選擇現有的資源群組。
-   - **選取來源**：在此教學課程中，選取 `Blank` 以建立新的資料庫。
-   - **伺服器管理員登入**：指定資料庫管理員的名稱。
+   - **伺服器名稱**：為 PostgreSQL 伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoyspostgresql.postgres.database.azure.com  。
+   - **資料來源**：在此教學課程中，選取 `Blank` 以建立新的資料庫。
+   - **系統管理員使用者名稱**：指定資料庫管理員的名稱。
    - **密碼**和**確認密碼**：指定資料庫管理員的密碼。
    - **位置**：指定與資料庫最為接近的地理區域。
    - **版本**：指定最新的資料庫版本。
-   - **定價層**：在此教學課程中，指定價格最實惠的定價層。
 
    ![建立 PostgreSQL 資料庫屬性][POSTGRESQL02]
 
-1. 上述所有資訊皆輸入完成時，按一下 [建立]  。
+1. 上述所有資訊皆輸入完成時，按一下 [檢閱並建立]  。
+
+1. 檢查並確認選取項目，然後按一下 [建立]  。
 
 ### <a name="configure-a-firewall-rule-for-your-postgresql-database-server-using-the-azure-portal"></a>使用 Azure 入口網站設定 PostgreSQL 資料庫伺服器的防火牆規則
 
-1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
+1. 部署完成後，請按一下 [移至資源]  。
 
-1. 按一下 [所有資源]  ，然後按一下您剛才建立的 PostgreSQL 資料庫。
+1. 按一下 [連線安全性]  。
+
+1. 藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
 
    ![選取 PostgreSQL 資料庫][POSTGRESQL03]
-
-1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
-
-   ![設定連線安全性][POSTGRESQL04]
 
 ### <a name="retrieve-the-connection-string-for-your-postgresql-server-using-the-azure-portal"></a>使用 Azure 入口網站擷取 PostgreSQL 伺服器的連接字串
 
-1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
-
-1. 按一下 [所有資源]  ，然後按一下您剛才建立的 PostgreSQL 資料庫。
-
-   ![選取 PostgreSQL 資料庫][POSTGRESQL03]
+1. 在 [所有資源]  頁面上，按一下您剛才建立的 PostgreSQL 資料庫。
 
 1. 按一下 [連接字串]  ，然後複製 [JDBC]  文字欄位中的值。
 
