@@ -1,25 +1,17 @@
 ---
 title: 使用適用於 IntelliJ 的 Azure Explorer 來管理虛擬機器
 description: 了解如何使用適用於 IntelliJ 的 Azure 工具組來管理 Azure 虛擬機器。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 11/13/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 30241c97a1d05fb163e68ca47d48f6ac3fe6a7cf
-ms.sourcegitcommit: 3d42245ecbfaeda31abba5f3f813b28f715ffd7c
+ms.openlocfilehash: 621683630769667591d6194d9dba4824de8a4fcb
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68279179"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811054"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>使用適用於 IntelliJ 的 Azure Explorer 來管理虛擬機器
 

@@ -1,24 +1,20 @@
 ---
 title: 受控磁碟
 description: 建立、調整大小並更新受控磁碟。
-author: sptramer
-manager: carmonm
-ms.devlang: python
 ms.topic: conceptual
 ms.date: 6/15/2017
-ms.author: sttramer
-ms.openlocfilehash: ab80a4aebd5f43d10f0cb6d939afbdf7ea9fb1b5
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: c65e07dc4a56ef0376785df4f55d3a9fc9f129ac
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285719"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467018"
 ---
 # <a name="managed-disks"></a>受控磁碟
 
 Azure 受控磁碟提供簡化的磁碟管理、增強的延展性、更佳的安全性和調整。 它不會採用磁碟的儲存體帳戶概念，讓使用者能夠進行調整，而無需擔心與儲存體帳戶相關聯的限制。 這篇文章會提供關於使用來自 Python 之服務的快速簡介和參考。
 
-從開發人員的觀點而言，Azure CLI 中的受控磁碟體驗是其他跨平台工具的 CLI 體驗之慣用語。 您可以使用 [Azure Python](https://azure.microsoft.com/develop/python/) SDK 和 [azure-mgmt-compute 套件 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) 來管理受控磁碟。 您可以使用此[教學課程](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python)來建立計算用戶端。
+從開發人員的觀點而言，Azure CLI 中的受控磁碟體驗是其他跨平台工具中 CLI 體驗的慣用方式。 您可以使用 [Azure Python](https://azure.microsoft.com/develop/python/) SDK 和 [azure-mgmt-compute 套件 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) 來管理受控磁碟。 您可以使用此[教學課程](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python)來建立計算用戶端。
 
 ## <a name="standalone-managed-disks"></a>獨立的受控磁碟
 
@@ -166,7 +162,7 @@ async_update.wait()
 
 在受控磁碟之前，您必須針對擴展集內需要的所有 VM，以手動方式建立儲存體帳戶，然後使用 list 參數 ``vhd_containers`` 向擴展集 RestAPI 提供所有儲存體帳戶名稱。 可在 `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>` 文章中取得官方轉換指南。
 
-現在透過受控磁碟，您就完全不需要管理任何儲存體帳戶。 如果您習慣使用 VMSS Python SDK，``storage_profile`` 現在可以與建立 VM 時所用的完全相同：
+現在透過受控磁碟，您就完全不需要管理任何儲存體帳戶。 如果您習慣使用虛擬機器擴展集 Python SDK，``storage_profile`` 現在可以與建立 VM 時所用的完全相同：
 
 ```python
 'storage_profile': {

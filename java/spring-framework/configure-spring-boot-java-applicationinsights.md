@@ -56,7 +56,7 @@ ms.locfileid: "74812154"
 
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure，然後按一下 [+ 建立新的資源]  。
 
-1. 按一下 [IT 與管理工具]  ，然後按一下 [Application Insights]  。
+1. 按一下 [IT 與管理工具]  ，然後按一下 **Application Insights**。
 
 1. 在 [新的 Application Insights 資源]  頁面上，輸入下列資訊：
 

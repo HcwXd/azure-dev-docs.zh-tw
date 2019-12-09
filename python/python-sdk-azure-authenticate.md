@@ -1,19 +1,15 @@
 ---
 title: 使用適用於 Python 的 Azure 管理程式庫來進行驗證
 description: 使用用來進入適用於 Python 之 Azure 管理程式庫的服務主體來進行驗證
-author: sptramer
-ms.author: sttramer
-manager: carmonm
 ms.date: 04/11/2019
 ms.topic: conceptual
-ms.devlang: python
 ms.custom: seo-python-october2019
-ms.openlocfilehash: afeaafb4289544b92324154d5c45d3410cbb3b02
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: 93d41e76bc8fb58d70a3590e2ea3658014a8673a
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72279108"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466446"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>使用適用於 Python 的 Azure 管理程式庫來進行驗證
 
@@ -215,9 +211,9 @@ client = get_client_from_cli_profile(ComputeManagementClient)
 
 ## <a name="mgmt-auth-legacy"></a>使用權杖認證進行驗證 (舊版)
 
-在舊版的 SDK 中，ADAL 尚無法提供使用，因此我們提供了 `UserPassCredentials` 類別。 這會視為已被取代，不應該再使用。
+在舊版的 SDK 中，ADAL 尚無法提供使用，因此我們提供了 `UserPassCredentials` 類別。 此類別已被視為淘汰的用法，不應該再使用。
 
-這個範例示範使用者/密碼情節。 不支援 2FA。
+此範例會說明不支援 2FA 的使用者/密碼案例。
 
 ```python
 from azure.common.credentials import UserPassCredentials

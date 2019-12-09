@@ -1,28 +1,23 @@
 ---
-title: 使用 Azure Toolkit for Eclipse，在雲端中部署 Linux 容器中執行的 Hello World Web 應用程式
+title: 在 Linux 雲端容器中部署 Hello World 應用程式
+titleSuffix: Azure Toolkit for Eclipse
 description: 使用 Azure Toolkit for Eclipse，在 Linux 容器中執行基本的 Hello World Web 應用程式並部署到雲端。
 services: app-service\web
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/20/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 471deaa03b282bb3a901e52592988d9d72712b86
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 5ad0949fb415b5bf04e47b8cf6605fe77dbcb0e7
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68429679"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811870"
 ---
 # <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-eclipse"></a>使用 Azure Toolkit for Eclipse 將 Hello World Web 應用程式部署到雲端的 Linux 容器
 
-[Docker] 容器是部署 Web 應用程式的常用方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 Azure Toolkit for Eclipse 在部署容器至 Microsoft Azure 方面新增了功能，藉此為 Java 開發人員簡化部署程序。
+[Docker] 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 Azure Toolkit for Eclipse 在部署容器至 Microsoft Azure 方面新增了功能，藉此為 Java 開發人員簡化部署程序。
 
 本文示範建立基本的 Hello World Web 應用程式，並使用 Azure Toolkit for Eclipse 在 Linux 容器中發佈該 Web 應用程式所需的步驟。
 

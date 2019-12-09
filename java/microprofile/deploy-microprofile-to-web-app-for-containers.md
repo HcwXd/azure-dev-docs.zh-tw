@@ -1,25 +1,22 @@
 ---
-title: 將 Java 型 MicroProfile 服務部署至用於容器的 Azure Web App
+title: 部署 Java MicroProfile 服務
+titleSuffix: Azure Web App for Containers
 description: 了解如何使用 Docker 和用於容器的 Azure Web App 來部署 MicroProfile 服務
 services: container-registry;app-service
 documentationcenter: java
 author: jonathangiles
-manager: douge
-editor: jonathangiles
-ms.assetid: ''
 ms.author: jogiles
 ms.date: 09/07/2018
-ms.devlang: java
-ms.service: container-registry;app-service
+ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 4ef47693094489baae85bc7622289d9943acb62b
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 6deaced31e9cbe6ebd1ef1eb20bd0414ab5df471
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284019"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812195"
 ---
 # <a name="deploy-a-java-based-microprofile-service-to-azure-web-app-for-containers"></a>將 Java 型 MicroProfile 服務部署至用於容器的 Azure Web App
 
@@ -37,9 +34,9 @@ MicroProfile 非常適合用來建置極小的 Java 應用程式，以便您快�
 
 ## <a name="creating-an-azure-container-registry"></a>建立 Azure Container Registry
 
-我們將使用 [Azure 入口網站](http://portal.azure.com)來建立 Azure Container Registry，但是請注意，您也可以選擇使用 Azure CLI。 請遵循下列步驟來建立新的 Azure Container Registry：
+我們將使用 [Azure 入口網站](https://portal.azure.com)來建立 Azure Container Registry，但是請注意，您也可以選擇使用 Azure CLI。 請遵循下列步驟來建立新的 Azure Container Registry：
 
-1. 登入 [Azure 入口網站](http://portal.azure.com)並建立新的 Azure Container Registry 資源。 提供登錄名稱 (請注意，此名稱會設定為 `pom.xml` 中的 `docker.registry` 屬性)。 如有需要，請變更預設值，然後按一下 [建立]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)並建立新的 Azure Container Registry 資源。 提供登錄名稱 (請注意，此名稱會設定為 `pom.xml` 中的 `docker.registry` 屬性)。 如有需要，請變更預設值，然後按一下 [建立]。
 
 1. 一旦容器登錄可使用時 (按下 [建立] 後約 30 秒)，按一下容器登錄，然後按一下左側功能表區域中的 [存取金鑰] 連結。 在這裡，您需要啟用 [管理使用者] 設定，以便從我們的機器存取此容器登錄 (用來將 Docker 容器推送過去)，並也讓用於容器的 Azure Web APP 執行個體 (即將設定) 可進行存取。
 
@@ -143,7 +140,7 @@ public class API {
 
 ## <a name="creating-an-azure-web-app-for-containers-instance"></a>建立用於容器的 Azure Web App 執行個體
 
-1. 返回 [Azure 入口網站](http://portal.azure.com)並新建用於容器的 Azure Web App 執行個體 (位於功能表中的 [Web + 行動] 標題下方)。 以下是一些提示：
+1. 返回 [Azure 入口網站](https://portal.azure.com)並新建用於容器的 Azure Web App 執行個體 (位於功能表中的 [Web + 行動] 標題下方)。 以下是一些提示：
 
    1. 在此指定的名稱會是 Web 應用程式的公用 URL (但若有需要，之後可以新增自訂網域)，因此最好挑選好記的名稱。
 

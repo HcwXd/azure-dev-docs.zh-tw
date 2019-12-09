@@ -1,25 +1,17 @@
 ---
 title: 使用適用於 IntelliJ 的 Azure Explorer 來管理儲存體帳戶
 description: 了解如何使用適用於 IntelliJ 的 Azure 工具組來管理 Azure 儲存體帳戶。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 02/01/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 7062a125822425c5c9421edc7987b71f83b48624
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: bd5c6960f9fe5c5c4d3b1e4b639ce68d887917ad
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68278989"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810969"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a>使用適用於 IntelliJ 的 Azure Explorer 來管理儲存體帳戶
 
@@ -119,7 +111,7 @@ Azure Explorer 是適用於 IntelliJ 的 Azure 工具組一部分，可為 Java 
 [關於 Azure 儲存體帳戶]: /azure/storage/storage-create-storage-account
 [Azure 儲存體複寫]: /azure/storage/storage-redundancy
 [Azure 儲存體延展性和效能目標]: /azure/storage/storage-scalability-targets
-[命名和參考容器、Blob 及中繼資料]: http://go.microsoft.com/fwlink/?LinkId=255555
+[命名和參考容器、Blob 及中繼資料]: https://go.microsoft.com/fwlink/?LinkId=255555
 
 [Azure 中的 Windows 儲存體帳戶大小]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Azure 中的 Linux 儲存體帳戶大小]: /azure/virtual-machines/virtual-machines-linux-sizes

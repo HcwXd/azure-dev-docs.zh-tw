@@ -4,17 +4,15 @@ description: 一份摘要層級文件，旨在供決策者權衡從 Java 8 移�
 author: dsgrieve
 manager: maverberg
 tags: java
-ms.service: azure
-ms.devlang: java
 ms.topic: article
 ms.date: 11/19/2019
 ms.author: dagrieve
-ms.openlocfilehash: ed9b4d7e98357486367f7e7eaacac64ff05a0ff8
-ms.sourcegitcommit: 90068e30def5dfcb4289d8530ea5914728182a15
+ms.openlocfilehash: 7daf058c2abebbf2cca85dadc4f9ffe3e8771fa1
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74250745"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812216"
 ---
 # <a name="reasons-to-move-to-java-11"></a>移至 Java 11 的原因
 
@@ -27,9 +25,9 @@ ms.locfileid: "74250745"
 轉換至 Java 11 的作業可透過逐步方式來完成。 程式碼*不*需要使用 Java 模組即可在 Java 11 上執行。 Java 11 可用來執行以 JDK 8 開發和建置的程式碼。
 但這會有一些潛在的問題，主要是關於已被取代的 API、類別載入器和反映。
 
-Microsoft Java 平台部門即將推出從 Java 8 轉換至 Java 11 的完整指南。 同時，還有許多從 Java 8 轉換至 Java 9 的指南，可協助您展開作業。 例如，[Java Platform Standard Edition Oracle JDK 9 移轉指南](https://docs.oracle.com/javase/9/migrate/toc.htm)和[模組系統的狀態：相容性和移轉](http://openjdk.java.net/projects/jigsaw/spec/sotms/#compatibility--migration)。
+Microsoft Java 工程部門即將推出從 Java 8 轉換至 Java 11 的完整指南。 同時，還有許多從 Java 8 轉換至 Java 9 的指南，可協助您展開作業。 例如，[Java Platform Standard Edition Oracle JDK 9 移轉指南](https://docs.oracle.com/javase/9/migrate/toc.htm)和[模組系統的狀態：相容性和移轉](http://openjdk.java.net/projects/jigsaw/spec/sotms/#compatibility--migration)。
 
-## <a name="high-level-changes-between-java-8-and-11"></a>Java 8 與 11 之間的高層級變更
+## <a name="high-level-changes-between-java-8-and-11"></a>Java 8 與 11 之間的變更概述
 
 本節不會列舉 Java 9 \[[1](#ref1)\]、10 \[[2](#ref2)\] 和 11 \[[3](#ref3)\] 版中所做的所有變更。 對效能、診斷和生產力有所影響的變更會摘要列出。
 
@@ -66,7 +64,7 @@ Java 11 具有 JVM 的所有元件通用的記錄系統。
 
 Java 虛擬機器工具介面 (JVMTI) 已加入新的 API，用以取樣 Java 堆積配置。 取樣的額外負荷很低，且可以持續啟用。 雖然可以使用 Java Flight Recorder (JFR) 來監視堆積配置，但是 JFR 中的取樣方法僅適用於配置。 JFR 實作也有可能遺漏配置。 相對地，Java 11 中的堆積取樣可同時提供有效和失效物件的相關資訊。
 
-應用程式效能監控 (APM) 廠商已開始利用這項新功能，而 Java 平台小組正在研究是否可將其與 Azure 效能監控工具搭配使用。
+應用程式效能監控 (APM) 廠商已開始利用這項新功能，而 Java 工程小組正在研究是否可將其與 Azure 效能監控工具搭配使用。
 
 #### <a name="stackwalker-9ref9"></a>StackWalker \[[9](#ref9)\]
 

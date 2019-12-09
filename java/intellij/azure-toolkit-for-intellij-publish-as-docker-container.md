@@ -1,29 +1,22 @@
 ---
-title: 使用適用於 IntelliJ 的 Azure 工具組來發佈 Docker 容器
+title: 將 Web 應用程式發佈為 Docker 容器
+titleSuffix: Azure Toolkit for IntelliJ
 description: 了解如何使用適用於 IntelliJ 的 Azure 工具組，將 Web 應用程式發佈至 Microsoft Azure 作為 Docker 容器。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 02/01/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: a4518994b961294a6a9cf3dffc302da6bd52b441
-ms.sourcegitcommit: 3d42245ecbfaeda31abba5f3f813b28f715ffd7c
+ms.openlocfilehash: 0d57d691853cf16dba21cda9cea670629528c144
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68279209"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812509"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>使用適用於 IntelliJ 的 Azure 工具組，將 Web 應用程式發佈作為 Docker 容器
 
-Docker 容器是常見的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 適用於 IntelliJ 的 Azure 工具組可為 Java 開發人員簡化此部署程序，其憑借的方法是為 Microsoft Azure 的部署新增「發佈作為 Docker 容器」  功能。 本文會引導您完成所需步驟，以便將應用程式發佈至 Azure 來作為 Docker 容器。
+Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 適用於 IntelliJ 的 Azure 工具組可為 Java 開發人員簡化此部署程序，其憑借的方法是為 Microsoft Azure 的部署新增「發佈作為 Docker 容器」  功能。 本文會引導您完成所需步驟，以便將應用程式發佈至 Azure 來作為 Docker 容器。
 
 > [!NOTE]
 >

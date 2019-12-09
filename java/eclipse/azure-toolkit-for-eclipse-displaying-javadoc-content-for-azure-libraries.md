@@ -1,25 +1,19 @@
 ---
-title: 在 Eclipse 中顯示 Azure Libraries for Java 封裝的 Javadoc 內容
+title: 在 Eclipse 中顯示 Javadoc 內容
+titleSuffix: Azure Libraries for Java
 description: 如何在 Eclipse 中顯示 Azure Libraries 的 Javadoc 內容。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
 ms.assetid: 30f8b6a1-1d76-4d1c-861b-1db478c46e6b
-ms.author: brendm
 ms.date: 02/01/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: b25feaeae2a38bbf6cbbbeef94ee40718956b85a
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: ecd491031522fdf2a9e06ff4104f7191f4efc59e
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68429365"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811557"
 ---
 # <a name="displaying-javadoc-content-in-eclipse-for-the-azure-libraries-package-for-java"></a>在 Eclipse 中顯示 Azure Libraries for Java 封裝的 Javadoc 內容
 
@@ -29,7 +23,7 @@ Javadoc 內容與 Azure Libraries for Java 產生關聯時，即可在 Eclipse �
 
 ## <a name="to-display-javadoc-content-in-eclipse-for-the-azure-libraries-for-java"></a>在 Eclipse 中顯示 Azure Libraries for Java 的 Javadoc 內容
 
-1. 於 Eclipse 的 [專案總管] 中，在您專案的 [ **所參考的資料庫** ] 區段中，開啟 Azure library for Java JAR 的內容功能表。 例如， **microsoft-windowsazure-api-0.1.0.jar** (視您所安裝的版本而定，版本號碼可能會有所不同)。
+1. 於 Eclipse 的 [專案總管] 中，在您專案的 [ **所參考的資料庫** ] 區段中，開啟 Azure library for Java JAR 的內容功能表。 例如，**microsoft-windowsazure-api-0.1.0.jar** (視您所安裝的版本而定，版本號碼可能會有所不同)。
 
 1. 按一下 [內容]  。
 
@@ -37,7 +31,7 @@ Javadoc 內容與 Azure Libraries for Java 產生關聯時，即可在 Eclipse �
 
 1. 您可以指定 [Javadoc URL]  或 [封存檔案中的 Javadoc]  。
 
-   * 如果您選擇指定 **Javadoc URL**，請使用類似 **http://dl.windowsazure.com/javadoc** 或 **http://dl.windowsazure.com/storage/javadoc** 的 URL。
+   * 如果您選擇指定 **Javadoc URL**，請使用類似 **https://dl.windowsazure.com/javadoc** 或 **https://dl.windowsazure.com/storage/javadoc** 的 URL。
 
    * 若選擇使用 **封存檔案中的 Javadoc**，可以指定外部檔案或工作區檔案。
 

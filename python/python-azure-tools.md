@@ -1,24 +1,20 @@
 ---
 title: 適用於 Python 開發人員的 Azure 工具 | Microsoft Docs
 description: 供 Python 開發人員在 Azure 上工作的 IDE 整合及命令列介面。
-author: sptramer
-manager: carmonm
-ms.devlang: python
 ms.topic: conceptual
 ms.date: 06/21/2017
-ms.author: sttramer
-ms.openlocfilehash: 19f314347296c2ecaf7e41da2332ff6a018a5a06
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: c1ca9752b63baa783f078d7d26a2576fdee74e6a
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285769"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467077"
 ---
 # <a name="azure-tools-for-python-developers"></a>適用於 Python 開發人員的 Azure 工具
 
 ## <a name="azure-cli-20"></a>Azure CLI 2.0
 
-Azure 2.0 CLI 提供的命令列介面可建立及設定您訂用帳戶中的 Azure 資源。 Azure CLI 2.0 可跨平台，且具有查詢和篩選功能，因此您可以直接將輸出輸送到您最愛的命令列工具。 
+Azure 2.0 CLI 提供的命令列介面可建立及設定您訂用帳戶中的 Azure 資源。 Azure CLI 2.0 可跨平台，且具有查詢和篩選功能，因此您可以直接將輸出輸送到您最愛的命令列工具。
 
 [安裝 Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-azure-cli)
 

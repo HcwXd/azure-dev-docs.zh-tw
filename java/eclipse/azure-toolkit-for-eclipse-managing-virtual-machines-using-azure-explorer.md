@@ -1,25 +1,17 @@
 ---
-title: 使用 Azure Explorer for Eclipse 來管理虛擬機器
+title: 使用適用於 Eclipse 的 Azure Explorer 來管理虛擬機器
 description: 了解如何使用適用於 Eclipse 的 Azure 工具組來管理 Azure 虛擬機器。
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 11/13/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 45e4b1d4066138f2d5b7157d4f8576e82a66eef3
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 2706fd76989450748fae2ad5e01ce81e7c147c4e
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68430480"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811767"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a>使用 Azure Explorer for Eclipse 來管理虛擬機器
 
@@ -33,7 +25,7 @@ Azure Explorer 是 Azure Toolkit for Eclipse 一部分，可為 Java 開發人�
 
 若要使用 Azure Explorer 來建立虛擬機器，請執行下列作業︰
 
-1. 使用 [Azure Toolkit for Eclipse 的登入指示](https://docs.microsoft.com/azure/java/eclipse/azure-toolkit-for-eclipse-sign-in-instructions) 來登入您的 Azure 帳戶。
+1. 使用 [Azure Toolkit for Eclipse 的登入指示](https://docs.microsoft.com/azure/java/eclipse/azure-toolkit-for-eclipse-sign-in-instructions)來登入您的 Azure 帳戶。
 
 2. 在 [Azure Explorer]  檢視中，展開 [Azure]  節點，以滑鼠右鍵按一下 [虛擬機器]  ，然後按一下 [建立 VM]  。
 

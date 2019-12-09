@@ -5,23 +5,19 @@ services: app-service
 keywords: java, eclipse, web 應用程式, azure app service, hello world, 快速入門
 documentationcenter: java
 author: selvasingh
-manager: douge
-editor: ''
 ms.assetid: 20d41e88-9eab-462e-8ee3-89da71e7a33f
-ms.author: brendm
 ms.reviewer: asirveda
 ms.date: 02/01/2018
-ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 3d673abe4f4efd7330307999c7a945cd5cb37179
-ms.sourcegitcommit: 3d42245ecbfaeda31abba5f3f813b28f715ffd7c
+ms.openlocfilehash: ae3d983a0b3e64489fa89d0e6a845310878b204c
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68691757"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811439"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-app-service-using-eclipse"></a>使用 Eclipse 建立 Azure App Service 的 Hello World Web 應用程式
 
@@ -42,7 +38,7 @@ ms.locfileid: "68691757"
 
 1. 將下列按鈕拖曳到您執行中的 Eclipse 工作區，以安裝「適用於 Eclipse 的 Azure 工具組」外掛程式 ([其他安裝選項](azure-toolkit-for-eclipse-installation.md))。
 
-    [![拖曳到您執行中的 Eclipse* 工作區。*需要 Eclipse Marketplace 用戶端](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "拖曳到您執行中的 Eclipse* 工作區。*需要 Eclipse Marketplace 用戶端")
+    [![拖曳至您執行中的 Eclipse * 工作區。*需要 Eclipse Marketplace 用戶端](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "拖曳至您執行中的 Eclipse * 工作區。*需要 Eclipse Marketplace 用戶端")
 
 1. 若要登入您的 Azure 帳戶，請依序按一下 [工具]  、[Azure]  以及 [登入]  。
    ![Azure 登入的 Eclipse 功能表][I01]

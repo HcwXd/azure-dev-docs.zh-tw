@@ -1,20 +1,15 @@
 ---
 title: 使用 Azure Functions 撰寫無伺服器 Node.js 程式碼
 description: 有關如何使用 Azure Functions 來建立和部署無伺服器程式碼的指引。
-author: kraigb
-manager: barbkess
-ms.devlang: nodejs
 ms.topic: article
-ms.service: azure-nodejs
 ms.date: 08/19/2019
-ms.author: kraigb
 ms.custom: seo-javascript-september2019, seo-javascript-october2019
-ms.openlocfilehash: a985578312a2c7cb722307bf8b291eaf02905e2c
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: e8caa6d540d7f3be815b05e627b82745ccf9c14f
+ms.sourcegitcommit: 9d0a6de18d9b5180c1cb485eff8e2774de48d225
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172158"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540493"
 ---
 # <a name="use-azure-functions-to-write-serverless-nodejs-code-on-azure"></a>使用 Azure Functions 在 Azure 上撰寫無伺服器 Node.js 程式碼
 

@@ -1,19 +1,14 @@
 ---
 title: 從 Visual Studio Code 建立 Node.js 應用程式的容器映像
 description: 教學課程第 3 部分：建立 Node.js 應用程式映像
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 1b79f84bd69853578796b4485ca669be98f41006
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: c3662c7d21359008bdc0cc5c3050fb2fdc7d6241
+ms.sourcegitcommit: 9d0a6de18d9b5180c1cb485eff8e2774de48d225
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686100"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540521"
 ---
 # <a name="create-your-nodejs-application-image"></a>建立您的 Node.js 應用程式映像
 

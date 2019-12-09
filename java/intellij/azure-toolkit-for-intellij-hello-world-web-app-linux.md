@@ -1,28 +1,23 @@
 ---
-title: 使用適用於 IntelliJ 的 Azure 工具組，在雲端中部署 Linux 容器中執行的 Hello World Web 應用程式
+title: 在 Linux 容器中部署 Hello World Web 應用程式
+titleSuffix: Azure Toolkit for IntelliJ
 description: 使用適用於 IntelliJ 的 Azure 工具組，在 Linux 容器中執行基本的 Hello World Web 應用程式並部署到雲端。
 services: app-service\web
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/20/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 08e318de1a802d2b1d27db2f3a7bcc37c7ec8535
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 3e36123086486e8f1d98ca135d4360962d0d23a8
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68281019"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810999"
 ---
 # <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a>使用適用於 IntelliJ 的 Azure 工具組，在雲端中將 Hello World Web 應用程式部署到 Linux 容器
 
-[Docker] 容器是部署 Web 應用程式的常用方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 適用於 IntelliJ 的 Azure 工具組在部署容器至 Microsoft Azure 方面新增了功能，藉此為 Java 開發人員簡化部署程序。
+[Docker] 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 適用於 IntelliJ 的 Azure 工具組在部署容器至 Microsoft Azure 方面新增了功能，藉此為 Java 開發人員簡化部署程序。
 
 本文示範建立基本的 Hello World Web 應用程式，並使用適用於 IntelliJ 的 Azure 工具組在 Linux 容器中發佈該 Web 應用程式所需的步驟。
 
@@ -44,7 +39,7 @@ ms.locfileid: "68281019"
    
    ![建立新專案][file-new-project]
 
-1. 在 **新增專案** 對話方塊中，選取 **Maven** ，然後選取 **maven-archetype-webapp** ，再按一下 [下一步]  。
+1. 在 **新增專案** 對話方塊中，選取 **Maven**，然後選取 **maven-archetype-webapp**，再按一下 [下一步]  。
    
    ![選擇 Maven archetype webapp][maven-archetype-webapp]
    
@@ -119,7 +114,7 @@ ms.locfileid: "68281019"
 
    ![瀏覽至您的 Web 應用程式][browsing-to-web-app]
 
-## <a name="optional-modify-your-web-app-publish-settings"></a>選用：修改您的 Web 應用程式發佈設定
+## <a name="optional-modify-your-web-app-publish-settings"></a>選擇性：修改您的 Web 應用程式發佈設定
 
 1. 發佈 Web 應用程式之後，系統會將您的設定儲存為預設值，您可以按一下工具列上的綠色箭號圖示，在 Azure 上執行您的應用程式。 您可以按一下 Web 應用程式的下拉式功能表，然後按一下 [編輯組態]  ，修改這些設定。
 
