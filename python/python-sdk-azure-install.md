@@ -4,12 +4,12 @@ description: 如何使用 PIP 或 GitHub 安裝適用於 Python 的 Azure SDK。
 ms.date: 10/31/2019
 ms.topic: conceptual
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 39de0959f3d73306412c39b32a4e13766d1500e9
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: d3d162bc14f27a9b2bc3fb033dab36dcd1dfeb89
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466407"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992492"
 ---
 # <a name="install-the-azure-sdk-for-python"></a>安裝適用於 Python 的 Azure SDK
 
@@ -19,7 +19,7 @@ CPython 版本 2.7 和 3.5.3+ 及 PyPy 5.4+ 已針對適用於 Python 的 Azure 
 
 ## <a name="install-sdk-libraries-using-pip"></a>使用 PIP 安裝 SDK 程式庫
 
-適用於 Python 的 Azure SDK 是由數個個別的程式庫所組成，每一個都會佈建或使用特定 Azure 服務。 您可以使用 `pip install <library>`，並搭配 [SDK 程式庫清單](https://github.com/Azure/azure-sdk-for-python/blob/master/packages.md)中顯示的名稱來安裝每一個程式庫。 (該清單會提供每個程式庫的實用讀我檔案連結)。
+適用於 Python 的 Azure SDK 是由數個個別的程式庫所組成，每一個都會佈建或使用特定 Azure 服務。 您可以使用 `pip install <library>` 來安裝每個程式庫。 如需每個程式庫的特定指示和文件，請參閱 [SDK 版本頁面](https://azure.github.io/azure-sdk/releases/latest/python.html)。
 
 例如，如果您使用 Azure 儲存體，您可能會安裝 `azure-storage-file`、`azure-storage-blob` 或 `azure-storage-queue` 程式庫。 如果您要使用 Azure Cosmos DB 資料表，請安裝 `azure-cosmosdb-table`。 Azure Functions 是透過 `azure-functions` 程式庫受到支援，依此類推。 以 `azure-mgmt-` 開頭的程式庫會提供用於佈建 Azure 資源的 API 給您。
 

@@ -1,15 +1,15 @@
 ---
-title: 教學課程：使用 Visual Studio Code 在 Python 中建立和部署無伺服器 Azure Functions
+title: 教學課程：使用 VS Code 在 Python 中建立和部署無伺服器 Azure Functions
 description: 教學課程步驟 1：簡介和必要條件。
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: e6076bf9760a2f5b5e38622693b9a23561d3c964
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 388c49767e08d4f86ad02439ece58610b7c2cf09
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74467011"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992535"
 ---
 # <a name="tutorial-create-and-deploy-serverless-azure-functions-in-python-with-visual-studio-code"></a>教學課程：使用 Visual Studio Code 在 Python 中建立和部署無伺服器 Azure Functions
 
@@ -43,7 +43,9 @@ Azure Functions 會在無伺服器環境中執行您的程式碼，而不需要�
 
 ### <a name="azure-functions-core-tools"></a>Azure Functions Core Tools
 
-遵循[使用 Azure Functions Core Tools](/azure/azure-functions/functions-run-local#v2) 上適用於您作業系統的指示。 這些工具本身是以 .NET Core 撰寫，而 Core Tools 套件最好是使用 Node.js 套件管理員 (npm) 來安裝，這也是為什麼您目前需要安裝 .NET Core 和 node.js 的原因，即使是 Python 程式碼也一樣。 不過，您可以使用上述文件所述的「擴充功能搭售方案」來略過 .NET Core 需求。 不論是哪種情況，您都只需要安裝這些元件一次，然後 Visual Studio Code 便會自動提示您安裝任何更新。
+遵循[使用 Azure Functions Core Tools](/azure/azure-functions/functions-run-local#v2) 上適用於您作業系統的指示。
+
+這些工具是以 .NET Core 撰寫，而 Core Tools 套件最好是使用 Node.js 套件管理員 (npm) 來安裝，這也是為什麼您目前需要安裝 .NET Core 和 Node.js 的原因，即使在 Python 中使用 Azure Functions 也是如此。 不過，您可以使用上述文件所述的「擴充功能搭售方案」來略過 .NET Core 需求。 不論是哪種情況，您都只需要安裝這些元件一次，然後 Visual Studio Code 便會自動提示您安裝任何更新。
 
 ### <a name="sign-in-to-azure"></a>登入 Azure
 
@@ -57,7 +59,9 @@ Azure Functions 會在無伺服器環境中執行您的程式碼，而不需要�
 
 以 Azure Functions 標誌開頭的輸出 (您需要向上捲動輸出) 表示 Azure Functions Core Tools 存在。
 
-如果無法辨識 `func` 命令，請驗證您安裝 Azure Functions Core Tools 的資料夾是否已包含在 PATH 環境變數中。
+如果無法辨識 `func` 命令，請再次執行 `npm install -g azure-functions-core-tools` 並確認安裝成功。 也請確定您使用 `-g` 參數搭配 install 命令；否則 npm 只會在目前的資料夾中安裝套件。
+
+`func` 命令會透過 Node.js 全域資料夾中安裝的 *func.cmd* 檔案運作。 若要查看此資料夾的位置，請執行 `npm -l`，並檢查輸出結尾的位置。
 
 > [!div class="nextstepaction"]
 > [我已登入 Azure](tutorial-vs-code-serverless-python-02.md)

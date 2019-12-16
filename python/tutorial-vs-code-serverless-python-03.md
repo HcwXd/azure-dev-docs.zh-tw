@@ -1,15 +1,15 @@
 ---
-title: 教學課程：在 Visual Studio Code 中檢查 Azure Functions 的 Python 程式碼檔案
+title: 教學課程：在 VS Code 中檢查 Azure Functions 的 Python 程式碼檔案
 description: 教學課程步驟 3：了解 Azure Functions 提供的範本 Python 程式碼。
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 5fa6f0095dec212f935c8c2e106f63eb58784d00
-ms.sourcegitcommit: 9d0a6de18d9b5180c1cb485eff8e2774de48d225
+ms.openlocfilehash: 253bc4384f896c9114f2f1113cdf0ee2f290819d
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540506"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992503"
 ---
 # <a name="tutorial-examine-the-python-code-files-in-visual-studio-code"></a>教學課程：檢查 Visual Studio Code 中的 Python 程式碼檔案
 

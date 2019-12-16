@@ -1,15 +1,15 @@
 ---
-title: 教學課程：使用 Visual Studio Code 在 Python 中部署 Azure Functions
+title: 教學課程：使用 VS Code 在 Python 中部署 Azure Functions
 description: 教學課程步驟 5：將 Python 函式程式碼部署至 Azure，並瞭解如何在本機專案與 Azure 之間串流記錄及同步處理設定。
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 0c917ac707c33963187fc1a3000be9e52b21deeb
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 07af40c402104f07844c2cbe0d84c38c86f2fca2
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466998"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992514"
 ---
 # <a name="tutorial-deploy-azure-functions-in-python"></a>教學課程：在 Python 中部署 Azure Functions
 

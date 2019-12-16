@@ -1,15 +1,15 @@
 ---
-title: 教學課程：使用 Visual Studio Code 在 Python 中新增 Azure Functions 的儲存體繫結
+title: 教學課程：使用 VS Code 在 Python 中新增 Azure Functions 的儲存體繫結
 description: 教學課程步驟 7：在 Python 中新增繫結，以將訊息寫入至 Azure 儲存體。
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 8f949b0673ed39f51b3a14ffd9a6dd572176dcba
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 9547912dc8f952e60d97efb2617f65f9fad67678
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466827"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992479"
 ---
 # <a name="tutorial-add-a-storage-binding-for-azure-functions-in-python"></a>教學課程：在 Python 中新增 Azure Functions 的儲存體繫結
 

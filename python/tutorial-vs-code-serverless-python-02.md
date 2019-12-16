@@ -1,15 +1,15 @@
 ---
-title: 教學課程：使用 Visual Studio Code 建立 Azure Functions 的 Python 函式
+title: 教學課程：使用 VS Code 建立 Azure Functions 的 Python 函式
 description: 教學課程步驟 2：示範如何使用 VS Code 的 Azure Functions 擴充功能。
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 5ccb93abf37011de5075768b73ed330fd91461ea
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 49ab6b150f14268b6d52ac48524f66e6e520e547
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466034"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992524"
 ---
 # <a name="tutorial-create-a-python-function-for-azure-functions"></a>教學課程：建立適用於 Azure Functions 的 Python 函式
 

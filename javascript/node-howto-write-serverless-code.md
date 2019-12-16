@@ -4,12 +4,12 @@ description: 有關如何使用 Azure Functions 來建立和部署無伺服器�
 ms.topic: article
 ms.date: 08/19/2019
 ms.custom: seo-javascript-september2019, seo-javascript-october2019
-ms.openlocfilehash: e8caa6d540d7f3be815b05e627b82745ccf9c14f
-ms.sourcegitcommit: 9d0a6de18d9b5180c1cb485eff8e2774de48d225
+ms.openlocfilehash: d1b17e33b5ae4aa51a84ceae8005a5385c162967
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540493"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992468"
 ---
 # <a name="use-azure-functions-to-write-serverless-nodejs-code-on-azure"></a>使用 Azure Functions 在 Azure 上撰寫無伺服器 Node.js 程式碼
 
@@ -17,7 +17,7 @@ ms.locfileid: "74540493"
 
 首先，直接跳至：
 
-- [使用 Visual Studio Code 建立第一個函式](/azure/azure-functions/functions-create-first-function-vs-code)。 本文會為您在 Visual Studio Code 內容中導入 Azure Functions，可簡化許多詳細資料。
+- [使用 Visual Studio Code 建立第一個函式](/azure/azure-functions/functions-create-first-function-vs-code)。 本文會為您在 Visual Studio Code 內容中導入 Azure Functions，其可簡化許多詳細資料。
 
 接下來，藉由檢閱下列文章，進一步了解 Azure Functions 可執行的動作：
 
