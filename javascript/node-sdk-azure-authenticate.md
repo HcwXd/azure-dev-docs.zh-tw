@@ -3,12 +3,12 @@ title: 使用適用於 Node.js 的 Azure 管理模組進行驗證
 description: 使用用來進入適用於 Node.js 之 Azure 管理模組的服務主體進行驗證
 ms.topic: article
 ms.date: 06/17/2017
-ms.openlocfilehash: bf368183b63dbe42dd02d8236cf7e7b73cbc1845
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 76233fb6e6d15829783ff98b3af672abc7eba226
+ms.sourcegitcommit: 5c65d22b5203b0c17806463d349a6ede93a99fa0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74467268"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "75010508"
 ---
 # <a name="authenticate-with-the-azure-modules-for-nodejs"></a>使用適用於 Node.js 的 Azure 模組進行驗證
 
@@ -17,6 +17,8 @@ ms.locfileid: "74467268"
 - 基本驗證
 - 互動式登入
 - 服務主體驗證
+
+[!INCLUDE [chrome-note](includes/chrome-note.md)]
 
 ## <a name="basic-authentication"></a>基本驗證
 

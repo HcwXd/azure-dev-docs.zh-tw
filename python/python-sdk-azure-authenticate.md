@@ -4,16 +4,18 @@ description: 使用用來進入適用於 Python 之 Azure 管理程式庫的服�
 ms.date: 04/11/2019
 ms.topic: conceptual
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 93d41e76bc8fb58d70a3590e2ea3658014a8673a
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 760b8e7c565cbef3d8e6e7664a53f6e2758bbe8c
+ms.sourcegitcommit: 5c65d22b5203b0c17806463d349a6ede93a99fa0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466446"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "75010548"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>使用適用於 Python 的 Azure 管理程式庫來進行驗證
 
 本文說明在使用 Python 管理程式庫時如何驗證您的應用程式。 您可以透過數個選項向 Azure 驗證您的應用程式。
+
+[!INCLUDE [chrome-note](includes/chrome-note.md)]
 
 ## <a name="mgmt-auth-token"></a>使用權杖認證進行驗證
 
