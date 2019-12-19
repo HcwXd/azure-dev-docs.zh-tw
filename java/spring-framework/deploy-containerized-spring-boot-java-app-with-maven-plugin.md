@@ -1,5 +1,5 @@
 ---
-title: 透過 Maven 和 Azure 將 Spring Boot JAR 檔案應用程式部署到雲端
+title: 透過 Maven 將 Spring Boot 應用程式部署到 Azure
 description: 了解如何使用適用於 Azure Web 應用程式的 Maven 外掛程式，將 Spring Boot 應用程式部署至 Azure。
 services: app-service
 documentationcenter: java
@@ -9,12 +9,12 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: seo-java-july2019, seo-java-august2019
-ms.openlocfilehash: 8ea9007dbc929ccbe2718b16c1381e1d09ec3b3a
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 5468016954c562258245958cf7b95d2200dcc5f0
+ms.sourcegitcommit: db803eba96ffa73b21b94fcb41439cb9b7a0e3c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811900"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "75031676"
 ---
 # <a name="use-maven-for-azure-web-apps-to-deploy-a-containerized-spring-boot-app-to-azure"></a>使用適用於 Azure Web Apps 的 Maven，將容器化 Spring Boot 應用程式部署至 Azure
 
