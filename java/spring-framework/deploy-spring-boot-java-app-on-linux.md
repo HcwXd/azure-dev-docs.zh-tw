@@ -3,24 +3,24 @@ title: 在適用於容器的 Azure App Service 上部署 Spring Boot Web App
 description: 本教學課程會逐步引導您將 Spring Boot 應用程式部署為 Microsoft Azure 上之 Linux Web 應用程式的步驟。
 services: azure app service
 documentationcenter: java
-ms.date: 11/12/2019
+ms.date: 12/31/2019
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: 63e9b6bda4edb332441df20b5a6e7b2637aff610
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: a98575021be229ed067ce424cd101721c98f9ea4
+ms.sourcegitcommit: 3b8ccf447921a55f16c25795914d9eed64c2b9cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811895"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755754"
 ---
 # <a name="deploy-a-spring-boot-application-on-azure-app-service-for-container"></a>在適用於容器的 Azure App Service 上部署 Spring Boot 應用程式
 
 本教學課程會逐步引導您使用 [Docker] 將 [Spring Boot] 應用程式容器化，並且將您的 Docker 映像部署至 [Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro) 中的 Linux 主機。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要完成本教學課程中的步驟，您必須具備下列必要條件：
 
@@ -92,17 +92,13 @@ ms.locfileid: "74811895"
 
 1. 瀏覽至 [Azure 入口網站]並登入。
 
-   一旦您已在 Azure 入口網站登入您的帳戶後，就可以遵循[使用 Azure 入口網站建立私人 Docker 容器登錄]文章中的步驟，為便於了解，會在下列步驟中加以釋義。
+   一旦您已在 Azure 入口網站登入您的帳戶後，請遵循[使用 Azure 入口網站建立私人 Docker 容器登錄]文章中的步驟，為便於了解，會在下列步驟中加以釋義。
 
-1. 依序按一下功能表的 [+ 新增]  圖示、[容器]  ，以及 [Azure Container Registry]  。
+1. 按一下功能表的 [+ 新增]  圖示、[容器]  ，然後按一下 [Azure Container Registry]  。
    
    ![建立新的 Azure Container Registry][AR01]
 
-1. 當 Azure Container Registry 範本的資訊頁面顯示時，按一下 [建立]  。 
-
-   ![建立新的 Azure Container Registry][AR02]
-
-1. 當 [建立容器登錄]  頁面顯示時，輸入您的 [登錄名稱]  和 [資源群組]  ，針對 [管理使用者]  選擇 [啟用]  ，然後按一下 [建立]  。
+1. [建立容器登錄]  頁面顯示時，請輸入 [登錄名稱]  、[訂用帳戶]  、[資源群組]  和 [位置]  。 針對 [管理使用者]  選取 [啟用]  。 接著，按一下 [建立]  。
 
    ![設定 Azure Container Registry 設定][AR03]
 
@@ -114,7 +110,7 @@ ms.locfileid: "74811895"
 
 1. 瀏覽至 Spring Boot 應用程式的已完成專案目錄 (例如："*C:\SpringBoot\gs-spring-boot-docker\complete*" 或 " */users/robert/SpringBoot/gs-spring-boot-docker/complete*")，並使用文字編輯器開啟 pom.xml  檔案。
 
-1. 使用最新版的 [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) 以及本教學課程上一節的 Azure Container Registry 登入伺服器值和存取設定，更新 pom.xml  檔案中的 `<properties>` 集合。 例如︰
+1. 使用最新版的 [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) 以及本教學課程上一節的 Azure Container Registry 登入伺服器值和存取設定，更新 pom.xml  檔案中的 `<properties>` 集合。 例如：
 
    ```xml
    <properties>
@@ -126,22 +122,28 @@ ms.locfileid: "74811895"
    </properties>
    ```
 
-1. 將 [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) 新增至 pom.xml  檔案中的 `<plugins>` 集合，然後在 `<from>/<image>` 指定基底映像、在 `<to>/<image>` 指定最終映像名稱，並在 `<to>/<auth>` 指定上一節中的使用者名稱和密碼。 例如︰
+1. 將 [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) 新增至 pom.xml  檔案中的 `<plugins>` 集合。  此範例使用 1.8.0 版。 
+
+在 `<from>/<image>`指定基底映像，這裡是 `openjdk:8-jre-alpine`。 在 `<to>/<image>` 中指定要從基底建立的最終映像名稱。  
+
+驗證 `{docker.image.prefix}` 是先前顯示登錄頁面上的**登入伺服器**。 `{project.artifactId}` 是專案第一個 Mavin 組建中 JAR 檔案的名稱和版本號碼。
+
+在 `<to>/<auth>` 節點的 [登錄] 窗格中指定使用者名稱和密碼。 例如：
 
    ```xml
    <plugin>
      <artifactId>jib-maven-plugin</artifactId>
      <groupId>com.google.cloud.tools</groupId>
-     <version>${jib-maven-plugin.version}</version>
+     <version>1.8.0</version>
      <configuration>
         <from>
             <image>openjdk:8-jre-alpine</image>
         </from>
         <to>
-            <image>${docker.image.prefix}/${project.artifactId}</image>
+            <image>{docker.image.prefix}/{project.artifactId}</image>
             <auth>
-               <username>${username}</username>
-               <password>${password}</password>
+               <username>{username}</username>
+               <password>{password}</password>
             </auth>
         </to>
      </configuration>
@@ -156,46 +158,60 @@ ms.locfileid: "74811895"
 
 > [!NOTE]
 >
-> 當您使用 Jib 將映像推送到 Azure Container Registry 時，映像將不接受 *Dockerfile*；如需詳細資訊，請參閱[此文件](https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html)。
+> 當您使用 Jib 將映像推送到 Azure Container Registry 時，映像將不會使用「Dockerfile」  ；如需詳細資訊，請參閱[此文件](https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html)。
 >
 
 ## <a name="create-a-web-app-on-linux-on-azure-app-service-using-your-container-image"></a>使用您的容器映像在 Azure App Service 上建立 Linux 的 Web 應用程式
 
 1. 瀏覽至 [Azure 入口網站]並登入。
 
-2. 依序按一下功能表的 [+ 建立資源]  圖示、[Web]  ，以及 [用於容器的 Web App]  。
+2. 按一下功能表的 [+ 建立資源]  圖示，按一下 [Web]  ，然後按一下 [用於容器的 Web App]  。
    
    ![在 Azure 入口網站中建立新的 Web 應用程式][LX01]
 
 3. 當 [Linux 上的 Web 應用程式]  頁面顯示時，輸入下列資訊：
 
-   a. 為 [應用程式名稱]  輸入唯一名稱；例如："wingtiptoyslinux" 
+   * 從下拉式清單選擇 [訂用帳戶]  。
 
-   b. 從下拉式清單選擇 [訂用帳戶]  。
+   * 選擇現有 [資源群組]  ，或指定名稱以建立新的資源群組。
 
-   c. 選擇現有 [資源群組]  ，或指定名稱以建立新的資源群組。
+   * 為 [應用程式名稱]  輸入唯一名稱；例如："wingtiptoyslinux" 
 
-   d. 選擇 *Linux* 作為 **OS**。
+   * 將 `Docker Container` 指定為 [發佈]  。
 
-   e. 按一下 [App Service 方案/位置]  ，並選擇現有的 App Service 方案，或按一下 [新建]  以建立新的 App Service 方案。
+   * 針對 [作業系統]  選擇 [Linux]  。
 
-   f. 按一下 [設定容器]  ，並輸入下列資訊：
+   * 選取 [區域]  。
 
-   * 選擇 [單一容器]  和 [Azure Container Registry]  。
+   * 接受 **Linux 方案**，並選擇現有的 **App Service 方案**，或按一下 [建立新的]  來建立新的 App Service 方案。
 
-   * **登錄**：選擇您先前建立的容器名稱，例如："wingtiptoysregistry" 
-
-   * **映像**：選擇映像名稱，例如："gs-spring-boot-docker" 
-   
-   * **標籤**︰選擇映像的標記，例如："latest" 
-   
-   * **啟動檔案**：將其保留為空白，因為映像已有啟動命令
-   
-   e. 在輸入上述所有資訊後，按一下 [套用]  。
+   * 按一下 **[下一步Docker]** 。
 
    ![設定 Web 應用程式設定][LX02]
 
-4. 按一下頁面底部的 [新增]  。
+      在 [Web 應用程式]  頁面上，選取 [Docker]  ，然後輸入下列資訊：
+
+   * 選取 [單一容器]  。
+
+   * **登錄**：選擇您的容器，例如："wingtiptoysregistry" 
+
+   * **映像**：選取先前建立的映像，例如："gs-spring-boot-docker" 
+
+   * **標籤**︰選擇映像的標記，例如："latest" 
+   
+   * **啟動命令**：將其保留為空白，因為映像已有啟動命令
+   
+   上述所有資訊皆輸入之後，按一下 [檢閱 + 建立]  。
+
+   ![設定 Web 應用程式設定][LX02-A]
+
+   * 按一下 [檢閱 + 建立]  。
+   
+檢閱資訊，然後按一下 [建立]  。
+
+部署完成後，請按一下 [移至資源]  。  [部署] 頁面會顯示用來存取應用程式的 URL。
+
+   ![取得部署的 URL][LX02-B]
 
 > [!NOTE]
 >
@@ -203,13 +219,13 @@ ms.locfileid: "74811895"
 >
 > 1. 瀏覽至 [Azure 入口網站]並登入。
 > 
-> 2. 按一下 **App Service** 的圖示，並從清單中選取您的 Web 應用程式。
+> 2. 按一下 **Web Apps** 的圖示，然後從 [App Services]  頁面選取您的應用程式。
 >
-> 4. 按一下 [組態]  。 (下圖中的項目 #1。)
+> 4. 按一下左側瀏覽窗格中的 [設定]  。
 >
-> 5. 在 [應用程式設定]  區段中，新增名為 **PORT** 的新設定，並輸入您的自訂連接埠號碼作為其值。 (下圖中的項目 #2、#3、#4。)
+> 5. 在 [應用程式設定]  區段中，新增名為 **PORT** 的新設定，並輸入您的自訂連接埠號碼作為其值。
 >
-> 6. 按一下 [檔案]  。 (下列映像中的項目 #5。)
+> 6. 按一下 [確定]  。 然後按一下 [儲存]  。
 >
 > ![在 Azure 入口網站中儲存自訂連接埠號碼][LX03]
 >
@@ -284,12 +300,11 @@ The embedded Tomcat server in the sample Spring Boot application is configured t
 
 [SB01]: ./media/deploy-spring-boot-java-app-on-linux/SB01.png
 [SB02]: ./media/deploy-spring-boot-java-app-on-linux/SB02.png
-
 [AR01]: ./media/deploy-spring-boot-java-app-on-linux/AR01.png
-[AR02]: ./media/deploy-spring-boot-java-app-on-linux/AR02.png
 [AR03]: ./media/deploy-spring-boot-java-app-on-linux/AR03.png
 [AR04]: ./media/deploy-spring-boot-java-app-on-linux/AR04.png
-
 [LX01]: ./media/deploy-spring-boot-java-app-on-linux/LX01.png
 [LX02]: ./media/deploy-spring-boot-java-app-on-linux/LX02.png
+[LX02-A]: ./media/deploy-spring-boot-java-app-on-linux/LX02-A.png
+[LX02-B]: ./media/deploy-spring-boot-java-app-on-linux/LX02-B.png
 [LX03]: ./media/deploy-spring-boot-java-app-on-linux/LX03.png

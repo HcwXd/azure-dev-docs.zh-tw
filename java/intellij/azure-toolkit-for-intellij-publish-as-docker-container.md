@@ -7,16 +7,16 @@ ms.date: 02/01/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 0d57d691853cf16dba21cda9cea670629528c144
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 8b601f2faf1431cf393db3560077e299d2a52f4c
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812509"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191055"
 ---
-# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>使用適用於 IntelliJ 的 Azure 工具組，將 Web 應用程式發佈作為 Docker 容器
+# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij-deprecated"></a>使用適用於 IntelliJ 的 Azure 工具組將 Web 應用程式發佈為 Docker 容器 (已淘汰)
 
-Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 適用於 IntelliJ 的 Azure 工具組可為 Java 開發人員簡化此部署程序，其憑借的方法是為 Microsoft Azure 的部署新增「發佈作為 Docker 容器」  功能。 本文會引導您完成所需步驟，以便將應用程式發佈至 Azure 來作為 Docker 容器。
+Docker 容器是常見的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 適用於 IntelliJ 的 Azure 工具組可為 Java 開發人員簡化此部署程序，其憑借的方法是為 Microsoft Azure 的部署新增「發佈作為 Docker 容器」  功能。 本文會引導您完成所需步驟，以便將應用程式發佈至 Azure 來作為 Docker 容器。
 
 > [!NOTE]
 >
@@ -52,7 +52,7 @@ Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker �
 
    a. 在 [Docker 映像名稱]  方塊中，輸入 Docker 主機的唯一名稱 (精靈會自動建立一個名稱，但您可以修改)。 
 
-   b. [主機]  區域會顯示您已建立的任何 Docker 主機。 執行下列其中一個動作： 
+   b. [主機]  區域會顯示您已建立的任何 Docker 主機。 執行下列任一步驟： 
    * 如果您有現存的 Docker 主機，您可以對該主機部署 Web 應用程式。
    * 若要建立 Docker 主機，則請按一下綠色加號 ( **+** )。  
      [建立 Docker 主機]  對話方塊會隨即開啟。 
@@ -69,7 +69,7 @@ Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker �
       
    d. 在 [作業系統和大小]  索引標籤上，執行下列動作︰      
       * **主機作業系統**：輸入主機所在虛擬機器的作業系統。 
-      * **大小**：輸入主機的虛擬機器大小。   
+      * **Size**：輸入主機的虛擬機器大小。   
        
    e. 在 [資源群組]  索引標籤上，選取下列其中一項︰      
       * **新增資源群組**：為您的主機建立資源群組。

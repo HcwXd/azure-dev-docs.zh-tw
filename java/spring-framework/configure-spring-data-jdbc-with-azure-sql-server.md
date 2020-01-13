@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 76fe515c6f315a340d5c306edfef31cdf736ceed
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 028e54c54410caf9e81448fd8df8283532591895
+ms.sourcegitcommit: 7722fc50eeab0f97bd0ea9cb3263da87244af406
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811992"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492186"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a>如何搭配使用 Spring Data JDBC 和 Azure SQL Database
 
@@ -20,7 +20,7 @@ ms.locfileid: "74811992"
 
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在 [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) 中使用 [Java 資料庫連線 (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) 儲存和擷取資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 請務必具備下列必要條件，以便本文中說明的步驟：
 
@@ -30,7 +30,7 @@ ms.locfileid: "74811992"
 * [Curl](https://curl.haxx.se/) 或類似的 HTTP 公用程式，以便測試功能。
 * [Git](https://git-scm.com/downloads) 用戶端。
 
-## <a name="create-an-azure-sql-satabase"></a>建立 Azure SQL Database
+## <a name="create-an-azure-sql-database"></a>建立 Azure SQL Database
 
 ### <a name="create-a-sql-database-server-using-the-azure-portal"></a>使用 Azure 入口網站建立 SQL 資料庫伺服器
 
@@ -53,20 +53,19 @@ ms.locfileid: "74811992"
 
    ![指定 SQL Database 屬性][SQL02]
    
-1. 按一下 [伺服器]  、[建立新的伺服器]  ，然後指定下列資訊：
+1. 按一下 [伺服器]  、[建立新的]  ，然後指定下列資訊：
 
    - **伺服器名稱**：為 SQL 伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoyssql.database.windows.net  。
    - **伺服器管理員登入**：指定資料庫管理員的名稱。
    - **密碼**和**確認密碼**：指定資料庫管理員的密碼。
    - **位置**：指定與資料庫最為接近的地理區域。
 
-   ![指定 SQL 伺服器][SQL03]
 
-1. 上述所有資訊皆輸入完成時，按一下 [選取]  。
+1. 一旦您輸入上述所有資訊後，按一下 [確定]  。
 
-1. 在此教學課程中，指定價格最實惠的 [定價層]  ，然後按一下 [建立]  。
+1. 按一下 [檢閱及建立]  。
 
-   ![建立 SQL Database][SQL04]
+1. 檢閱設定，然後按一下 [建立]  。
 
 ### <a name="configure-a-firewall-rule-for-your-sql-server-using-the-azure-portal"></a>使用 Azure 入口網站設定 SQL 伺服器的防火牆規則
 
@@ -74,9 +73,7 @@ ms.locfileid: "74811992"
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 SQL 伺服器。
 
-   ![選取 SQL 伺服器][SQL05]
-
-1. 在 [概觀]  區段中，按一下 [顯示防火牆設定] 
+1. 在左側瀏覽窗格中，按一下 [概觀]  區段，然後按一下 [設定伺服器防火牆] 
 
    ![顯示防火牆設定][SQL06]
 
@@ -89,8 +86,6 @@ ms.locfileid: "74811992"
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 SQL 資料庫。
-
-   ![選取 SQL Database][SQL08]
 
 1. 按一下 [連接字串]  ，然後按一下 [JDBC]  ，並複製 [JDBC] 文字欄位中的值。
 
@@ -115,7 +110,7 @@ ms.locfileid: "74811992"
     ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `spring.datasource.url` | 指定本文稍早所編輯的 SQL JDBC 字串版本。 |
    | `spring.datasource.username` | 指定本文稍早所述的 SQL 管理員名稱，並對其附加縮略的伺服器名稱。 |
@@ -165,7 +160,7 @@ ms.locfileid: "74811992"
    [{"id":1,"name":"dog","species":"canine"},{"id":2,"name":"cat","species":"feline"}]
    ```
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在 Azure SQL 資料庫中使用 JDBC 儲存和擷取資訊。
 

@@ -4,12 +4,12 @@ description: 教學課程步驟 1：簡介和必要條件。
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 388c49767e08d4f86ad02439ece58610b7c2cf09
-ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
+ms.openlocfilehash: a380a447150f29653a1f94a3fe1f6464dd495a81
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992535"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75190995"
 ---
 # <a name="tutorial-create-and-deploy-serverless-azure-functions-in-python-with-visual-studio-code"></a>教學課程：使用 Visual Studio Code 在 Python 中建立和部署無伺服器 Azure Functions
 
@@ -19,33 +19,36 @@ Azure Functions 會在無伺服器環境中執行您的程式碼，而不需要�
 
 如果您在本教學課程中的任何步驟遇到問題，我們很樂意聆聽細節。 請使用每篇文章結尾處的 **[我遇到問題]** 按鈕來提交意見反應。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [Azure 訂用帳戶](#azure-subscription)。
-- [搭配 Azure Functions 擴充功能的 Visual Studio Code](#visual-studio-code-python-and-the-azure-functions-extension)。
 - [Azure Functions Core Tools](#azure-functions-core-tools)。
+- [搭配 Azure Functions 擴充功能的 Visual Studio Code](#visual-studio-code-python-and-the-azure-functions-extension)。
 
 ### <a name="azure-subscription"></a>Azure 訂用帳戶
 
 如果您沒有 Azure 訂用帳戶，請[立即註冊](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-functions-extension&mktingSource=vscode-tutorial-functions-extension)免費的 30 天帳戶，即可獲得價值 200 美元的 Azure 點數，讓您可以試用各種服務組合。
 
+### <a name="azure-functions-core-tools"></a>Azure Functions Core Tools
+
+遵循 [使用 Azure Functions Core Tools](/azure/azure-functions/functions-run-local#v2) 上適用於您作業系統的指示，安裝 Azure Functions Core Tools。 忽略 Chocolately 套件管理員文章中的註解，這不是完成本教學課程所需的項目。
+
+安裝 Node.js 時，請使用預設選項，「不要」  選取自動安裝必要工具的選項。  此外，請務必使用 `-g` 選項搭配 `npm install` 命令，讓 Core Tools 可用於後續的命令。
+
+    > [!TIP]
+    > The Core Tools are written in .NET Core, and the Core Tools package is best installed using the Node.js package manager, npm, which is why you need to install .NET Core and Node.js at present, even for working with Azure Functions in Python. You can, however bypass the .NET Core requirement using "extension bundles" as described in the aforementioned documentation. Whatever the case, you need install these components only once, after which Visual Studio Code automatically prompts you to install any updates.
+
 ### <a name="visual-studio-code-python-and-the-azure-functions-extension"></a>Visual Studio Code、Python 和 Azure Functions 擴充功能
 
 請安裝下列軟體：
 
-- Azure Functions 所需的 Python 3.7 或 Python 3.6。 [Python 3.7.5](https://www.python.org/downloads/release/python-375/) 和 [Python 3.6.8](https://www.python.org/downloads/release/python-368/) 是最新的相容版本。
-- [Visual Studio Code](https://code.visualstudio.com/)。
+- Azure Functions 所需的 Python 3.7 或 Python 3.6。 [Python 3.7.5](https://www.python.org/downloads/release/python-375/) 和 [Python 3.6.8](https://www.python.org/downloads/release/python-368/) 是最新的相容版本。 請在這些頁面上向下捲動，以尋找安裝程式。 安裝時，選取 [將 Python 3.x 新增至路徑]  ，藉由選取 [立即安裝]  選項來使用預設選項。 在 Windows 上，也請在程序結束時選取 [停用路徑長度限制]  。
+- [Visual Studio Code](https://code.visualstudio.com/) \(英文\)。
 - [Python 擴充功能](https://marketplace.visualstudio.com/items?itemName=ms-python.python)，如 [Visual Studio Code Python 教學課程 - 必要條件](https://code.visualstudio.com/docs/python/python-tutorial)所述。
 - [Azure Functions 擴充功能](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)。 如需一般資訊，請造訪 [vscode-azurefunctions GitHub 存放庫](https://github.com/Microsoft/vscode-azurefunctions)。
 
-> [!NOTE]
-> Azure Functions 擴充功能隨附於 [Azure Tools 擴充套件](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)。
-
-### <a name="azure-functions-core-tools"></a>Azure Functions Core Tools
-
-遵循[使用 Azure Functions Core Tools](/azure/azure-functions/functions-run-local#v2) 上適用於您作業系統的指示。
-
-這些工具是以 .NET Core 撰寫，而 Core Tools 套件最好是使用 Node.js 套件管理員 (npm) 來安裝，這也是為什麼您目前需要安裝 .NET Core 和 Node.js 的原因，即使在 Python 中使用 Azure Functions 也是如此。 不過，您可以使用上述文件所述的「擴充功能搭售方案」來略過 .NET Core 需求。 不論是哪種情況，您都只需要安裝這些元件一次，然後 Visual Studio Code 便會自動提示您安裝任何更新。
+    > [!NOTE]
+    > Azure Functions 擴充功能隨附於 [Azure Tools 擴充套件](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)。
 
 ### <a name="sign-in-to-azure"></a>登入 Azure
 

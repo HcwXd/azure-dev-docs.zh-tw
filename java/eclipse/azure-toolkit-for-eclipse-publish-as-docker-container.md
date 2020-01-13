@@ -7,16 +7,16 @@ ms.date: 02/01/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 2d81c2a23a58c2dfdb036988b8831efe0c821392
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: d1e384525ec32141b945f50d1d5be7190e84b239
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811807"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191045"
 ---
-# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>使用 Azure Toolkit for Eclipse 將 Web 應用程式發佈作為 Docker 容器
+# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse-deprecated"></a>使用適用於 Eclipse 的 Azure 工具組將 Web 應用程式發佈為 Docker 容器 (已淘汰)
 
-Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 Azure Toolkit for Eclipse 可為 Java 開發人員簡化此部署程序，其憑借的方法是為 Microsoft Azure 的部署新增「發佈作為 Docker 容器」  功能。 本文會引導您完成所需步驟，以便將應用程式發佈至 Azure 來作為 Docker 容器。
+Docker 容器是常見的 Web 應用程式部署方法。 藉由使用 Docker 容器，開發人員可將所有的專案檔和相依性合併至單一套件，以供部署至伺服器。 Azure Toolkit for Eclipse 可為 Java 開發人員簡化此部署程序，其憑借的方法是為 Microsoft Azure 的部署新增「發佈作為 Docker 容器」  功能。 本文會引導您完成所需步驟，以便將應用程式發佈至 Azure 來作為 Docker 容器。
 
 > [!NOTE]
 > Docker 的詳細資訊位於 [Docker 的官方網站]。
@@ -46,7 +46,7 @@ Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker �
 
    a. 在 [Docker 映像名稱]  方塊中，輸入 Docker 主機的唯一名稱 (精靈會自動建立一個名稱，但您可以修改)。
 
-   b. [主機]  區域會顯示您已建立的任何 Docker 主機。 執行下列其中一個動作：
+   b. [主機]  區域會顯示您已建立的任何 Docker 主機。 執行下列任一步驟：
 
    * 如果您有現存的 Docker 主機，您可以對該主機部署 Web 應用程式。
    * 若要建立新的 Docker 主機，請按一下 [新增]  。  
@@ -57,7 +57,7 @@ Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker �
 
 4. 在 [設定新的虛擬機器]  視窗中，對您的 Docker 主機指定下列資訊。 (精靈會自動為您產生大部分的選項，但您可以對這些資訊進行修改)。
 
-   a. **名稱**：輸入 Docker 主機的唯一名稱。 (此名稱與您稍早指定的 Docker 映像名稱不同)。
+   a. **Name**：輸入 Docker 主機的唯一名稱。 (此名稱與您稍早指定的 Docker 映像名稱不同)。
 
    b. 訂用帳戶  ：輸入您用於主機的 Azure 訂用帳戶。
 
@@ -65,7 +65,7 @@ Docker 容器是常用的 Web 應用程式部署方法。 藉由使用 Docker �
 
    d. 在 [主機作業系統和大小]  索引標籤上︰ 
    * **主機作業系統**：輸入主機所在虛擬機器的作業系統。
-   * **大小**：輸入主機的虛擬機器大小。
+   * **Size**：輸入主機的虛擬機器大小。
 
    e. 在 [資源群組]  索引標籤上： 
    * **新增資源群組**：為您的主機建立新的資源群組。

@@ -3,12 +3,12 @@ title: 從 Visual Studio Code 使用容器登錄
 description: 教學課程第 2 部分：使用容器登錄
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.openlocfilehash: 7d51e8011824ec19e9530f9bc94bcb2ce07f2851
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: c5e9ff3cd803ef4d57408199682c71e4b57f2d77
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466637"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191012"
 ---
 # <a name="use-a-container-registry"></a>使用容器登錄
 
@@ -20,9 +20,13 @@ ms.locfileid: "74466637"
 
 ## <a name="create-an-azure-container-registry"></a>建立 Azure Container Registry
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)，然後選取 [建立資源]   > [容器]   > [容器登錄]  。
+1. 登入 [Azure 入口網站](https://portal.azure.com)，然後選取 [建立資源]  。
 
-    ![在 Azure 入口網站中建立容器登錄](media/deploy-containers/portal-01.png)
+    ![在 Azure 入口網站上建立新資源](media/deploy-containers/portal-01a.png)
+
+1. 在下一個頁面上，選取 [容器]   >  [Container Registry]  。
+
+    ![在 Azure 入口網站中建立容器登錄](media/deploy-containers/portal-01b.png)
 
 1. 在出現的 [建立容器登錄]  表單中，輸入適當的值：
 
@@ -50,6 +54,8 @@ ms.locfileid: "74466637"
     ```bash
     docker login <registry_name>.azurecr.io -u <username> -p <password>
     ```
+
+    為獲得較高的安全性，請使用 `--password-stdin` 而不是 `-p <password>`，然後在出現提示時貼上密碼。
 
 1. 在 Visual Studio Code 中，開啟 **Docker** 總管，然後確定您剛安裝的登錄端點顯示在 [登錄]  之下：
 

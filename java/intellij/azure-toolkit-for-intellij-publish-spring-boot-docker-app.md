@@ -7,14 +7,14 @@ ms.date: 11/13/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: eb8458301036ffedfce98844c22aa4ef1aafb0e0
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 00d6d77c78a1b38bbeb5369301956b2cfce166a5
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812496"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191123"
 ---
-# <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>使用適用於 IntelliJ 的 Azure 工具組，將 Spring Boot 應用程式發佈為 Docker 容器
+# <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij-deprecated"></a>使用適用於 IntelliJ 的 Azure 工具組，將 Spring Boot 應用程式發佈為 Docker 容器 (已淘汰)
 
 [Spring Framework] 是一個開放原始碼解決方案，可協助 Java 開發人員建立企業級應用程式。 建立在該平台之基礎上的其中一個更熱門的專案是 [Spring Boot]，其中會提供用來建立獨立 Java 應用程式的簡化方法。
 
@@ -110,7 +110,7 @@ IntelliJ 會匯入 Spring Boot 應用程式作為專案，並且在匯入完成�
 
 ### <a name="create-a-deployment-ready-artifact"></a>建立已可供部署的構件
 
-若要發佈 Spring Boot 應用程式，您必須建立已可供部署的構件。 請使用下列步驟：
+若要發佈 Spring Boot 應用程式，您必須建立已可供部署的構件。 使用下列步驟：
 
 1. 在 IntelliJ 中開啟 web 應用程式專案。
 

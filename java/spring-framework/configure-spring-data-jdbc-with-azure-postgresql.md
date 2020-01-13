@@ -3,24 +3,22 @@ title: 如何搭配使用 Spring Data JDBC 和 Azure PostgreSQL
 description: 了解如何搭配使用 Spring Data JDBC 和 Azure PostgreSQL 資料庫。
 services: postgresql
 documentationcenter: java
-ms.date: 12/19/2018
+ms.date: 12/26/2019
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: d7f4ddeab5c46f6070145e5aab0b273156ed38a0
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: b5abc7479a52aa84cd3f05ffb56e5c7f31d0c533
+ms.sourcegitcommit: 94ca8c28d8d3e954cf118f1f46ac905c3a470b38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811998"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75502362"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-postgresql"></a>如何搭配使用 Spring Data JDBC 和 Azure PostgreSQL
 
-## <a name="overview"></a>概觀
-
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在 Azure [PostgreSQL](https://www.postgresql.org/) 資料庫中使用 Java 資料庫連線 (JDBC)[ 儲存和擷取資訊](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 請務必具備下列必要條件，以便本文中說明的步驟：
 
@@ -47,19 +45,20 @@ ms.locfileid: "74811998"
 
 1. 輸入以下資訊：
 
-   - **伺服器名稱**：為 PostgreSQL 伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoyspostgresql.postgres.database.azure.com  。
-   - 訂用帳戶  ：指定您要使用的 Azure 訂用帳戶。
    - **資源群組**：指定是要建立新的資源群組，還是選擇現有的資源群組。
-   - **選取來源**：在此教學課程中，選取 `Blank` 以建立新的資料庫。
+   - 訂用帳戶  ：指定您要使用的 Azure 訂用帳戶。
+   - **伺服器名稱**：為 PostgreSQL 伺服器選擇唯一的名稱；此名稱將用來建立完整網域名稱，例如 wingtiptoyspostgresql.postgres.database.azure.com  。
+   - **選取來源**：在此教學課程中，選取 `None` 以建立新的資料庫。
    - **伺服器管理員登入**：指定資料庫管理員的名稱。
    - **密碼**和**確認密碼**：指定資料庫管理員的密碼。
    - **位置**：指定與資料庫最為接近的地理區域。
    - **版本**：指定最新的資料庫版本。
-   - **定價層**：在此教學課程中，指定價格最實惠的定價層。
 
    ![建立 PostgreSQL 資料庫屬性][POSTGRESQL02]
 
-1. 上述所有資訊皆輸入完成時，按一下 [建立]  。
+1. 上述所有資訊皆輸入完成時，按一下 [檢閱並建立]  。
+
+1. 驗證規格，然後按一下 [建立]  。
 
 ### <a name="configure-a-firewall-rule-for-your-postgresql-database-server-using-the-azure-portal"></a>使用 Azure 入口網站設定 PostgreSQL 資料庫伺服器的防火牆規則
 
@@ -67,19 +66,15 @@ ms.locfileid: "74811998"
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 PostgreSQL 資料庫。
 
-   ![選取 PostgreSQL 資料庫][POSTGRESQL03]
-
 1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
 
-   ![設定連線安全性][POSTGRESQL04]
+   ![設定連線安全性][POSTGRESQL03]
 
 ### <a name="retrieve-the-connection-string-for-your-postgresql-server-using-the-azure-portal"></a>使用 Azure 入口網站擷取 PostgreSQL 伺服器的連接字串
 
 1. 從 <https://portal.azure.com/> 瀏覽至 Azure 入口網站並登入。
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 PostgreSQL 資料庫。
-
-   ![選取 PostgreSQL 資料庫][POSTGRESQL03]
 
 1. 按一下 [連接字串]  ，然後複製 [JDBC]  文字欄位中的值。
 
@@ -94,7 +89,7 @@ ms.locfileid: "74811998"
    ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `host` | 指定本文稍早所述的完整 PostgreSQL 伺服器名稱。 |
    | `host` | 指定 PostgreSQL 伺服器連接埠，預設值為 `5432`。 |
@@ -159,7 +154,7 @@ ms.locfileid: "74811998"
     ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `spring.datasource.url` | 指定本文稍早所述的 PostgreSQL JDBC 字串。 |
    | `spring.datasource.username` | 指定本文稍早所述的 PostgreSQL 管理員名稱，並對其附加縮略的伺服器名稱。 |
@@ -209,7 +204,7 @@ ms.locfileid: "74811998"
    [{"id":1,"name":"dog","species":"canine"},{"id":2,"name":"cat","species":"feline"}]
    ```
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在 Azure PostgreSQL 資料庫中使用 JDBC 儲存和擷取資訊。
 
