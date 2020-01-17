@@ -6,18 +6,18 @@ ms.date: 11/27/2019
 ms.service: mysql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: 83883ffd06353854a3c69c9abdc946a035dda6b1
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 927cc72a526651be71a7983a298ca2c6718f4546
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811968"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022094"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-database-for-mysql"></a>如何搭配使用 Spring Data JPA 與適用於 MySQL 的 Azure 資料庫
 
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在[適用於 MySQL 的 Azure 資料庫](/azure/mysql/)中使用 [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm) 儲存和擷取資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 請務必具備下列必要條件，以便本文中說明的步驟：
 
@@ -63,7 +63,7 @@ ms.locfileid: "74811968"
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 MySQL 資料庫。
 
-1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
+1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。 (在此練習中，IP 位址是您的開發電腦 (亦即用戶端) 的 IP 位址。  您可以將該 IP 位址用於**起始 IP 位址**和**結束 IP 位址**。 另請參閱標題底下的附註，*使用 mysql 命令列公用程式建立資料庫*。)
 
    ![設定連線安全性][MYSQL04]
 
@@ -86,7 +86,7 @@ ms.locfileid: "74811968"
    ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `host` | 指定本文稍早所述的完整 MySQL 伺服器名稱。 |
    | `user` | 指定本文稍早所述的 MySQL 管理員和縮略的伺服器名稱。 |
@@ -110,6 +110,7 @@ ms.locfileid: "74811968"
    
    mysql>
    ```
+   > 注意:如果收到伺服器無法辨識此 IP 位址的錯誤，錯誤中將顯示您用戶端所使用的 IP 位址。  返回並進行指派，如先前所述：*使用 Azure 入口網站設定伺服器的防火牆規則*。
 
 1. 輸入 `mysql` 命令來建立名為 mysqldb  的資料庫，如下列範例所示：
 
@@ -165,7 +166,7 @@ ms.locfileid: "74811968"
     ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `spring.jpa.database-platform` | 指定 JPA 資料庫平台。 |
    | `spring.datasource.url` | 指定本文稍早所述的 MySQL JDBC 字串。 |
@@ -216,7 +217,7 @@ ms.locfileid: "74811968"
    [{"id":1,"name":"dog","species":"canine"},{"id":2,"name":"cat","species":"feline"}]
    ```
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在適用於 MySQL 的 Azure 資料庫中使用 JPA 儲存和擷取資訊。
 

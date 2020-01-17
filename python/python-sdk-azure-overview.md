@@ -3,18 +3,18 @@ title: 適用於 Python 的 Azure SDK
 description: 概述適用於 Python 的 Azure SDK 有何特性和功能，可協助開發人員在使用 Azure 服務時更具生產力。
 ms.date: 10/30/2019
 ms.topic: conceptual
-ms.openlocfilehash: 7a70f6050890bc384bac0d58ba3f0aa2e5e553cb
-ms.sourcegitcommit: 5c65d22b5203b0c17806463d349a6ede93a99fa0
+ms.openlocfilehash: 83a9541330f270e51ffa5ed8952a93dee8ff132f
+ms.sourcegitcommit: ac68fb174d606c7af2bfa79fe32b8ca7b73c86a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "75010585"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75946693"
 ---
 # <a name="azure-sdk-for-python"></a>適用於 Python 的 Azure SDK
 
 適用於 Python 的 Azure SDK 可簡化從 Python 應用程式程式碼中使用和管理 Azure 資源的工作。 SDK 支援 Python 2.7 和 Python 3.5.3 或更新版本。
 
-您可以藉由使用 `pip install <library>` 安裝 SDK 的任何個別元件程式庫來安裝 SDK。 您可以在[適用於 Python 的 Azure SDK 套件索引](https://github.com/Azure/azure-sdk-for-python/blob/master/packages.md)上看到程式庫清單
+您可以藉由使用 `pip install <library>` 安裝 SDK 的任何個別元件程式庫來安裝 SDK。 您可以在[適用於 Python 的 Azure SDK 文件](https://azure.github.io/azure-sdk-for-python/)上找到不同服務的程式庫名稱。
 
 如需安裝程式庫並將其匯入專案的詳細資訊，請參閱[安裝 SDK](python-sdk-azure-install.md)。 然後檢閱[開始使用 SDK](python-sdk-azure-get-started.yml)，針對您自己的 Azure 訂用帳戶設定驗證並執行範例程式碼。
 

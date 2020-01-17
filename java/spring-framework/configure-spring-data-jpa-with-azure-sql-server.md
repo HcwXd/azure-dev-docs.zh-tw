@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: d5c90992f4b669bf6089d0c0118496dfa33d67f1
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: a57fbc5dc8be0848f0b68fd1a45a1478de52b419
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811941"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022134"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-sql-database"></a>如何搭配使用 Spring Data JPA 和 Azure SQL Database
 
@@ -20,7 +20,7 @@ ms.locfileid: "74811941"
 
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在 [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) 中使用 [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm) 儲存和擷取資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 請務必具備下列必要條件，以便本文中說明的步驟：
 
@@ -76,7 +76,7 @@ ms.locfileid: "74811941"
 
    ![顯示防火牆設定][SQL06]
 
-1. 在 [防火牆和虛擬網路]  區段中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
+1. 在 [防火牆和虛擬網路]  區段中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。 (在此練習中，IP 位址是您的開發電腦 (亦即用戶端) 的 IP 位址。  您可以將該 IP 位址用於**起始 IP 位址**和**結束 IP 位址**。)
 
    ![設定防火牆設定][SQL07]
 
@@ -114,7 +114,7 @@ ms.locfileid: "74811941"
     ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `spring.datasource.url` | 指定本文稍早所編輯的 SQL JDBC 字串版本。 |
    | `spring.datasource.username` | 指定本文稍早所述的 SQL 管理員名稱，並對其附加縮略的伺服器名稱。 |
@@ -164,7 +164,7 @@ ms.locfileid: "74811941"
    [{"id":1,"name":"dog","species":"canine"},{"id":2,"name":"cat","species":"feline"}]
    ```
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在 Azure SQL 資料庫中使用 JPA 儲存和擷取資訊。
 

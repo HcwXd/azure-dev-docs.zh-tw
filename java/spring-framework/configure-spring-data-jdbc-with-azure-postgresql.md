@@ -7,12 +7,12 @@ ms.date: 12/26/2019
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: b5abc7479a52aa84cd3f05ffb56e5c7f31d0c533
-ms.sourcegitcommit: 94ca8c28d8d3e954cf118f1f46ac905c3a470b38
+ms.openlocfilehash: 956867a355ffdd64dbeac8e85df4d0ced4362d16
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75502362"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022096"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-postgresql"></a>如何搭配使用 Spring Data JDBC 和 Azure PostgreSQL
 
@@ -66,7 +66,7 @@ ms.locfileid: "75502362"
 
 1. 按一下 [所有資源]  ，然後按一下您剛才建立的 PostgreSQL 資料庫。
 
-1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
+1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。 (在此練習中，IP 位址是您的開發電腦 (亦即用戶端) 的 IP 位址。  您可以將該 IP 位址用於**起始 IP 位址**和**結束 IP 位址**。)
 
    ![設定連線安全性][POSTGRESQL03]
 
@@ -105,6 +105,7 @@ ms.locfileid: "75502362"
    
    postgres=>
    ```
+   > 注意:如果收到伺服器無法辨識此 IP 位址的錯誤，錯誤中將顯示您用戶端所使用的 IP 位址。  返回並進行指派，如先前所述：*使用 Azure 入口網站設定伺服器的防火牆規則*。
 
 1. 輸入 `psql` 命令來建立名為 mypgsqldb  的資料庫，如下列範例所示：
 

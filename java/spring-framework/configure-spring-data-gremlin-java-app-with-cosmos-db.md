@@ -3,17 +3,17 @@ title: 如何搭配 Azure Cosmos DB SQL API 使用 Spring Data Gremlin Starter
 description: 了解如何設定搭配 Azure Cosmos DB SQL API 使用 Spring Boot Initializer 建立的應用程式。
 services: cosmos-db
 documentationcenter: java
-ms.date: 12/19/2018
+ms.date: 01/10/2020
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: b5e6b3866b9b1e6a326547c053c628a282d9aaf3
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 61bf7d78edf2fcdc755d90588fe1c839d319f823
+ms.sourcegitcommit: ac68fb174d606c7af2bfa79fe32b8ca7b73c86a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812105"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75946722"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>如何搭配 Azure Cosmos DB SQL API 使用 Spring Data Gremlin Starter
 
@@ -23,7 +23,7 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 
 本文將示範如何使用 Azure 入口網站建立可與 Gremlin API 搭配使用的 Azure Cosmos DB，接著使用 **[Spring Initializr]** 建立自訂的 Java 應用程式，然後將 Spring Data Gremlin Starter 功能新增到您的自訂應用程式，以使用 Gremlin 將資料儲存於您的 Azure Cosmos DB 以及從中擷取資料。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要遵循本文中的步驟，需要具備下列必要條件：
 
@@ -42,29 +42,27 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 
 1. 瀏覽至 Azure 入口網站 <https://portal.azure.com/> ，然後按一下 **+ 新增資源** 。
 
-   ![建立資源][AZ01]
-
 1. 依序按一下 [資料庫]  和 [Azure Cosmos DB]  。
 
    ![建立 Azure Cosmos DB][AZ02]
 
 1. 在 [Azure Cosmos DB]  頁面上，輸入下列資訊：
 
-   * 輸入唯一的**識別碼**，您將使用此識別碼作為資料庫 Gremlin URI 的一部份。 例如：如果您輸入 **wingtiptoysdata** 作為**識別碼**，則 Gremlin URI 會是 wingtiptoysdata.gremlin.cosmosdb.azure.com  。
-   * 選擇 [Gremlin (圖表)]  作為 API。
    * 選取您想要用於資料庫的**訂用帳戶**。
    * 指定是否要為資料庫建立新的**資源群組**，或選擇現有的資源群組。
+   * 輸入唯一的**帳戶名稱**，您將使用此帳戶名稱作為資料庫 Gremlin URI 的一部份。 例如：如果您輸入 **wingtiptoysdata** 作為**帳戶名稱**，則 Gremlin URI 會是 *wingtiptoysdata.gremlin.cosmosdb.azure.com*。
+   * 選擇 [Gremlin (圖表)]  作為 API。
    * 指定資料庫的**位置**。
    
-   當您指定這些選項之後，按一下 [建立]  以建立您的資料庫。
+在指定這些選項後，按一下 [檢閱+建立]  。
 
    ![指定 Azure Cosmos DB 選項][AZ03]
 
-1. 當您的資料庫建立之後，它會列在您的 Azure [儀表板]  中，以及 [所有資源]  和 [Azure Cosmos DB]  頁面下方。 您可以按一下這些任何位置上的資料庫，來開啟快取的屬性頁面。
+檢閱規格，並按一下 [建立]  以建立您的資料庫。
 
-   ![所有資源][AZ04]
+1. 建立資料庫之後，按一下 [移至資源]  。 其也會列在您的 Azure [儀表板]  中，以及 [所有資源]  和 [Azure Cosmos DB]  頁面下方。 您可以按一下這些任何位置上的資料庫，來開啟快取的屬性頁面。
 
-1. 當資料庫的屬性頁面顯示時，按一下 [存取金鑰]  ，並複製資料庫的 URI 和存取金鑰；您將會在 Spring Boot 應用程式中使用這些值。
+1. 當資料庫的屬性頁面顯示時，按一下 [金鑰]  ，並複製資料庫的 URI 和存取金鑰；您將會在 Spring Boot 應用程式中使用這些值。
 
    ![存取金鑰][AZ05]
 
@@ -77,9 +75,10 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 1. 當 [新增圖表]  顯示時，輸入下列資訊：
 
    * 為資料庫指定唯一的**資料庫識別碼**。
-   * 為圖表指定唯一的**圖表識別碼**。
    * 您可以選擇指定 [儲存體容量]  ，或是接受預設值。
-   * 指定您的**輸送量**；在此範例中，您可以選擇 400 個要求單位 (RU)。
+   * 為圖表指定唯一的**圖表識別碼**。
+   * 指定**分割區索引鍵**。 如需詳細資訊，請參閱[使用 Azure Cosmos DB 中的資料分割圖表](https://docs.microsoft.com/azure/cosmos-db/graph-partitioning)。
+按一下 [確定]  。
    
    當您指定這些選項之後，按一下 [確認]  以建立您的圖表。
 
@@ -104,8 +103,6 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 
 1. 出現提示時，將專案下載至本機電腦上的路徑。
 
-   ![下載自訂的 Spring Boot 專案][SI02]
-
 1. 當您在本機系統上擷取檔案之後，就可以開始編輯簡單的 Spring Boot 應用程式。
 
    ![自訂的 Spring Boot 專案檔][SI03]
@@ -119,8 +116,6 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
    -或-
 
    `/users/example/home/wingtiptoysdata/pom.xml`
-
-   ![尋找 pom.xml 檔案][PM01]
 
 1. 在文字編輯器中開啟 pom.xml  檔案，並將 Spring Data Gremlin Starter 新增至 `<dependencies>` 的清單中：
 
@@ -138,7 +133,7 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 
 ## <a name="configure-your-spring-boot-app-to-use-your-azure-cosmos-db"></a>設定 Spring Boot 應用程式以使用您的 Azure Cosmos DB
 
-1. 找出應用程式的 [resources]  目錄，並建立名為 application.yml  的新檔案。 例如︰
+1. 找出應用程式的 [resources]  目錄，並建立名為 application.yml  的新檔案。 例如：
 
    `C:\SpringBoot\wingtiptoysdata\src\main\resources\application.yml`
 
@@ -161,7 +156,7 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
    
    其中：
    
-   | 欄位 | 說明 |
+   | 欄位 | 描述 |
    |---|---|
    | `endpoint` | 指定您資料庫的 Gremlin URI，其衍生自稍早在本教學課程中建立 Azure Cosmos DB 時指定的**識別碼**。 |
    | `port` | 指定 TCP/IP 連接埠，其應該是用於 HTTPS 的 **443**。 |
@@ -558,23 +553,19 @@ Spring Data Gremlin Starter 可為 Apache 中的 Gremlin 查詢語言提供 Spri
 
 <!-- IMG List -->
 
-[AZ01]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ01.png
 [AZ02]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ02.png
 [AZ03]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ03.png
-[AZ04]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ04.png
 [AZ05]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ05.png
 [AZ06]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ06.png
 [AZ07]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ07.png
 [AZ08]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/AZ08.png
 
 [SI01]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/SI01.png
-[SI02]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/SI02.png
 [SI03]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/SI03.png
 
 [RE01]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/RE01.png
 [RE02]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/RE02.png
 
-[PM01]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/PM01.png
 [PM02]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/PM02.png
 
 [JV01]: ./media/configure-spring-data-gremlin-java-app-with-cosmos-db/JV01.png

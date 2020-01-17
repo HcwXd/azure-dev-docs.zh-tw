@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 028e54c54410caf9e81448fd8df8283532591895
-ms.sourcegitcommit: 7722fc50eeab0f97bd0ea9cb3263da87244af406
+ms.openlocfilehash: d5e7ff3a31f8fb66b4231770c86094244752b439
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492186"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022123"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a>如何搭配使用 Spring Data JDBC 和 Azure SQL Database
 
@@ -77,7 +77,7 @@ ms.locfileid: "75492186"
 
    ![顯示防火牆設定][SQL06]
 
-1. 在 [防火牆和虛擬網路]  區段中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
+1. 在 [防火牆和虛擬網路]  區段中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。 (在此練習中，IP 位址是您的開發電腦 (亦即用戶端) 的 IP 位址。  您可以將該 IP 位址用於**起始 IP 位址**和**結束 IP 位址**。)
 
    ![設定防火牆設定][SQL07]
 

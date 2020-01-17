@@ -6,18 +6,18 @@ ms.date: 12/19/2018
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: d2134ae08bdad69af1e347476e96833d375ee966
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 5748f3e51132ff003e41d61f9c10dff61b95e364
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811957"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022095"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-postgresql"></a>如何搭配使用 Spring Data JPA 和 Azure PostgreSQL
 
 本文示範如何建立使用 [Spring Data] 的應用程式範例，以在[適用於 PostgreSQL 的 Azure 資料庫](/azure/postgresql/)中使用 [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm) 儲存和擷取資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 請務必具備下列必要條件，以便本文中說明的步驟：
 
@@ -69,7 +69,7 @@ ms.locfileid: "74811957"
 
 1. 按一下 [連線安全性]  。
 
-1. 藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
+1. 藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。 (在此練習中，IP 位址是您的開發電腦 (亦即用戶端) 的 IP 位址。  您可以將該 IP 位址用於**起始 IP 位址**和**結束 IP 位址**。)
 
    ![選取 PostgreSQL 資料庫][POSTGRESQL03]
 
@@ -90,7 +90,7 @@ ms.locfileid: "74811957"
    ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `host` | 指定本文稍早所述的完整 PostgreSQL 伺服器名稱。 |
    | `host` | 指定 PostgreSQL 伺服器連接埠，預設值為 `5432`。 |
@@ -106,6 +106,7 @@ ms.locfileid: "74811957"
    
    postgres=>
    ```
+   > 注意:如果收到伺服器無法辨識此 IP 位址的錯誤，錯誤中將顯示您用戶端所使用的 IP 位址。  返回並進行指派，如先前所述：*使用 Azure 入口網站設定伺服器的防火牆規則*。
 
 1. 輸入 `psql` 命令來建立名為 mypgsqldb  的資料庫，如下列範例所示：
 
@@ -155,7 +156,7 @@ ms.locfileid: "74811957"
     ```
    其中：
 
-   | 參數 | 說明 |
+   | 參數 | 描述 |
    |---|---|
    | `spring.datasource.url` | 指定本文稍早所述的 PostgreSQL JDBC 字串。 |
    | `spring.datasource.username` | 指定本文稍早所述的 PostgreSQL 管理員名稱，並對其附加縮略的伺服器名稱。 |
@@ -205,7 +206,7 @@ ms.locfileid: "74811957"
    [{"id":1,"name":"dog","species":"canine"},{"id":2,"name":"cat","species":"feline"}]
    ```
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 在此教學課程中，您已建立使用 Spring Data 的範例 Java 應用程式，以在 Azure PostgreSQL 資料庫中使用 JPA 儲存和擷取資訊。
 

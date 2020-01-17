@@ -6,12 +6,12 @@ ms.date: 01/07/2020
 ms.service: mysql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: a36484cb6858422f4d9b0e6a5c72a793f3686514
-ms.sourcegitcommit: 3b8ccf447921a55f16c25795914d9eed64c2b9cf
+ms.openlocfilehash: 7a6550be633b29d97d55b8db2f50b2c57d0ba30d
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755638"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022079"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-mysql"></a>如何搭配使用 Spring Data JDBC 和 Azure MySQL
 
@@ -67,7 +67,7 @@ ms.locfileid: "75755638"
 
 1. 按一下 [所有資源]  ，然後按一下您剛才所建立的「適用於 MySQL 的 Azure 資料庫」資源。
 
-1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。
+1. 按一下 [連線安全性]  ，然後在 [防火牆規則]  中，藉由指定規則的唯一名稱來建立新的規則，然後輸入需要存取資料庫的 IP 位址範圍，再按一下 [儲存]  。 (在此練習中，IP 位址是您的開發電腦 (亦即用戶端) 的 IP 位址。  您可以將該 IP 位址用於**起始 IP 位址**和**結束 IP 位址**。)
 
    ![設定連線安全性][MYSQL04]
 
@@ -113,6 +113,7 @@ ms.locfileid: "75755638"
    
    mysql>
    ```
+   > 注意:如果收到伺服器無法辨識此 IP 位址的錯誤，錯誤中將顯示您用戶端所使用的 IP 位址。  返回並進行指派，如先前所述：*使用 Azure 入口網站設定伺服器的防火牆規則*。
 
 1. 輸入 `mysql` 命令來建立名為 mysqldb  的資料庫，如下列範例所示：
 
@@ -192,9 +193,9 @@ ms.locfileid: "75755638"
 1. 從命令提示字元使用 `curl` 建立新的記錄，如下列範例所示：
 
    ```shell
-   curl -s -d '{"name":"dog","species":"canine"}' -H "Content-Type: application/json" -X POST http://localhost:8080/pets
+   curl -s -d "{\"name\":\"dog\",\"species\":\"canine\"}" -H "Content-Type: application/json" -X POST http://localhost:8080/pets
 
-   curl -s -d '{"name":"cat","species":"feline"}' -H "Content-Type: application/json" -X POST http://localhost:8080/pets
+   curl -s -d "{\"name\":\"cat\",\"species\":\"feline\"}" -H "Content-Type: application/json" -X POST http://localhost:8080/pets
    ```
 
    應用程式應該會傳回如下所示的值：
