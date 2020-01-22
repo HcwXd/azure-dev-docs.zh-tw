@@ -152,8 +152,16 @@
       items:
         - name: 新增根憑證
           href: java-sdk-add-certificate-ca-store.md
-        - name: 驗證
+        - name: Authenticate
           href: java-sdk-azure-authenticate.md
+        - name: 將 JAVA 遷移至 Azure
+          items:
+            - name: 概觀
+              href: migration-overview.md
+            - name: Tomcat 至 Azure App Service
+              href: migrate-tomcat-to-tomcat-app-service.md
+            - name: Tomcat 至 AKS 上的容器
+              href: migrate-tomcat-to-containers-on-azure-kubernetes-service.md
     - name: 程式碼範例
       items:
         - name: Service Fabric
