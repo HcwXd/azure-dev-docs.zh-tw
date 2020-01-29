@@ -4,20 +4,20 @@ description: 教學課程步驟 7：清除 Azure 資源
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 5a890ae2db4f9aa9bd3ca09364467adb022beed8
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 8145b33ae52427d55c9b3de9fcf6fb20467b7ba9
+ms.sourcegitcommit: a8073315f751631ab983618fa9f812eb95d8b2dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466049"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125261"
 ---
 # <a name="tutorial-clean-up-resources-after-deploying-to-azure-app-service-on-linux-from-visual-studio-code"></a>教學課程：在部署至 Linux 上的 Azure App Service 之後，從 Visual Studio Code 清除資源
 
 [上一個步驟：串流記錄](tutorial-deploy-app-service-on-linux-06.md)
 
-您所建立的 Azure App Service 包含可能會產生費用的支援 App Service 方案。 若要清除資源，請以滑鼠右鍵按一下 [Azure：  App Service] 總管中的 App Service，然後選取 [刪除]  。
+您所建立的 Azure App Service 包含可能會產生費用的支援 App Service 方案。 若要避免這類成本，請同時刪除包含所有資源的資源群組。
 
-您也可以造訪 [Azure 入口網站](https://portal.azure.com)、從左側瀏覽窗格選取 [資源群組]  、選取您已在本教學課程過程中建立的資源群組，然後使用 [刪除資源群組]  命令。
+[!INCLUDE [delete-resource-group](includes/delete-resource-group.md)]
 
 ## <a name="next-steps"></a>後續步驟
 

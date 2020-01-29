@@ -2,24 +2,26 @@
 title: 教學課程：清除 Azure Functions 中與 Python 程式碼搭配使用的資源
 description: 教學課程步驟 8：清除 Azure 資源以避免產生持續費用。
 ms.topic: conceptual
-ms.date: 09/12/2019
+ms.date: 01/15/2020
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 441e3de83dfc56bc8c5b1b2adbcfb2042fe83355
-ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
+ms.openlocfilehash: 264c09a8d84c7115bb0a56d0455d576187695db0
+ms.sourcegitcommit: a8073315f751631ab983618fa9f812eb95d8b2dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992437"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125251"
 ---
 # <a name="tutorial-clean-up-azure-resources-for-azure-functions"></a>教學課程：清除適用於 Azure Functions 的 Azure 資源
 
 [上一個步驟：新增儲存體繫結](tutorial-vs-code-serverless-python-07.md)
 
-本文說明如何移除在本教學課程中建立的 Azure 資源。 您使用 Visual Studio Code 建立的 Azure 函式應用程式包含可能產生最低費用的資源。
+本文說明如何移除在本教學課程中建立的 Azure 資源。 您使用 Visual Studio Code 建立的 Azure 函式應用程式包含可能產生最低費用的資源。 (如需詳細資訊，請參閱 [Functions 定價](https://azure.microsoft.com/pricing/details/functions/)。)
 
-若要清除資源，請以滑鼠右鍵按一下 [Azure：  函式] 總管中的函式應用程式，然後選取 [刪除函式應用程式]  。 如需詳細資訊，請參閱 [Functions 定價](https://azure.microsoft.com/pricing/details/functions/)。
+清除資源的最佳方式就是刪除資源群組，其中包含本教學課程中使用的所有個別資源。 資源包括函數應用程式、儲存體帳戶，以及支援的 App Service 方案。
 
-您也可以造訪 [Azure 入口網站](https://portal.azure.com)、從左側瀏覽窗格選取 [資源群組]  、選取您已在本教學課程過程中建立的資源群組，然後使用 [刪除資源群組]  命令。
+[!INCLUDE [delete-resource-group](includes/delete-resource-group.md)]
+
+在 Visual Studio Code 中，您可能會注意到 [Azure：  函數] 總管中函數應用程式上的捷徑功能表具有 [刪除函數應用程式]  命令。 不過，此命令只會刪除函數應用程式，並將其他資源留在原處，因而可能會產生持續成本。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: d5e7ff3a31f8fb66b4231770c86094244752b439
-ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
+ms.openlocfilehash: b75db0f3cff02b5f7ead90265a170fc63405dbb6
+ms.sourcegitcommit: 3585b1b5148e0f8eb950037345bafe6a4f6be854
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76022123"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76283331"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a>如何搭配使用 Spring Data JDBC 和 Azure SQL Database
 
@@ -46,10 +46,10 @@ ms.locfileid: "76022123"
 
 1. 指定下列資訊：
 
-   - **資料庫名稱**：為 SQL Database 選擇唯一的名稱；您會在稍後將會指定的 SQL 伺服器中建立此名稱。
-   - 訂用帳戶  ：指定您要使用的 Azure 訂用帳戶。
-   - **資源群組**：指定是要建立新的資源群組，還是選擇現有的資源群組。
-   - **選取來源**：在此教學課程中，選取 `Blank database` 以建立新的資料庫。
+   * **資料庫名稱**：為 SQL Database 選擇唯一的名稱；您會在稍後將會指定的 SQL 伺服器中建立此名稱。
+   * 訂用帳戶  ：指定您要使用的 Azure 訂用帳戶。
+   * **資源群組**：指定是要建立新的資源群組，還是選擇現有的資源群組。
+   * **選取來源**：在此教學課程中，選取 `Blank database` 以建立新的資料庫。
 
    ![指定 SQL Database 屬性][SQL02]
    
@@ -91,6 +91,19 @@ ms.locfileid: "76022123"
 
    ![擷取 JDBC 連接字串][SQL09]
 
+### <a name="create-test-table-in-database"></a>在資料庫中建立測試資料表
+若要針對此資料庫執行用戶端應用程式，請使用下列 SQL 命令來建立新的資料表。
+
+``` SQL
+IF NOT EXISTS (SELECT 1 FROM sysobjects WHERE NAME='pet' and XTYPE='U')
+  CREATE TABLE pet (
+    id      INT           IDENTITY  PRIMARY KEY,
+    name    VARCHAR(255),
+    species VARCHAR(255)
+  );
+
+```
+
 ## <a name="configure-the-sample-application"></a>設定範例應用程式
 
 1. 開啟命令殼層，並使用 git 命令複製範例專案，如下列範例所示：
@@ -99,11 +112,21 @@ ms.locfileid: "76022123"
    git clone https://github.com/Azure-Samples/spring-data-jdbc-on-azure.git
    ```
 
+1. 修改 POM 檔案以包含下列相依性：
+
+```
+ <dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>7.4.1.jre11</version>
+ </dependency>
+```
 1. 在範例專案的 [資源]  目錄中尋找 application.properties  檔案，如果該檔案不存在，則加以建立。
 
 1. 在文字編輯器中開啟 application.properties  檔案、在檔案中新增或設定下列幾行，然後使用本文稍早的適當值來取代範例值：
 
    ```yaml
+   spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
    spring.datasource.url=jdbc:sqlserver://wingtiptoyssql.database.windows.net:1433;database=wingtiptoys;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
    spring.datasource.username=wingtiptoysuser@wingtiptoyssql
    spring.datasource.password=********
@@ -136,8 +159,12 @@ ms.locfileid: "76022123"
 
    ```shell
    curl -s -d '{"name":"dog","species":"canine"}' -H "Content-Type: application/json" -X POST http://localhost:8080/pets
+   ```
 
-   curl -s -d '{"name":"cat","species":"feline"}' -H "Content-Type: application/json" -X POST http://localhost:8080/pets
+   或者：
+
+``` shell
+   curl -s -d "{\"name\":\"cat\",\"species\":\"feline\"}" -H "Content-Type: application/json" -X POST http://localhost:8080/pets
    ```
 
    應用程式應該會傳回如下所示的值：

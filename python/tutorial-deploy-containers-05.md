@@ -4,20 +4,20 @@ description: 教學課程步驟 5：清除 Azure 資源以避免產生持續費�
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 0c6688dcfb1d3c8adbf4ba2e0eb2603ce85de43c
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: bbafb323c49b9dd6879bf69924d8e8bcf62093a3
+ms.sourcegitcommit: a8073315f751631ab983618fa9f812eb95d8b2dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466067"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125234"
 ---
 # <a name="tutorial-clean-up-azure-resources"></a>教學課程：清除 Azure 資源
 
 [上一個步驟：串流記錄](tutorial-deploy-containers-04.md)
 
-本文說明如何移除您使用 Visual Studio Code 將應用程式部署至 Azure App Service 時所建立的 Azure 資源。
+您在本教學課程中建立的 Azure 資源會產生持續費用。 若要避免這類成本，請刪除包含所有這些資源的資源群組。
 
-您在本教學課程中建立的各種 Azure 資源都會產生持續費用。 若要清除它們，最好方法為造訪 [Azure 入口網站](https://portal.azure.com)、從左側瀏覽窗格選取 [資源群組]  、選取您已在本教學課程過程中建立的資源群組，然後使用 [刪除資源群組]  命令。
+[!INCLUDE [delete-resource-group](includes/delete-resource-group.md)]
 
 ## <a name="next-steps"></a>後續步驟
 
