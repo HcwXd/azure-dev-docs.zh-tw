@@ -1,26 +1,20 @@
 ---
 title: 開始使用適用於 Node.js 的 Azure 模組
 description: 以適用於 Node.js 的 Azure 模組開始驗證和資源管理
-author: karlerickson
-manager: douge
-ms.author: karler
 ms.date: 06/17/2017
 ms.topic: conceptual
-ms.prod: azure
-ms.devlang: nodejs
-ms.service: azure-nodejs
-ms.openlocfilehash: 3ba92eae7d6d287cec668dbd1bfcac8e52b04017
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 66aface16b4281c541f0f40a3f0f6cbc12be8f89
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68690832"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872123"
 ---
 # <a name="get-started-with-the-azure-modules-for-nodejs"></a>開始使用適用於 Node.js 的 Azure 模組
 
 本指南會逐步引導您安裝 Azure Node.js 模組、使用服務主體向 Azure 進行驗證，以及執行可在 Azure 訂用帳戶中建立資源並連線至 Azure 雲端服務的範例程式碼。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - 一個 Azure 帳戶。 如果您沒有帳戶，請[取得免費試用帳戶](https://azure.microsoft.com/free/)
 - [Node.js](https://nodejs.org)

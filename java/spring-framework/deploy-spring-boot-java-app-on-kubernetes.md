@@ -9,12 +9,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.custom: mvc
-ms.openlocfilehash: d30148a3f4d1fc63585b6ca4141566ba2cac4146
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: eefd56cf6fc2c290d585dfe4274b7395a6d77be3
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811929"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872173"
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-kubernetes-service"></a>在 Azure Kubernetes Service 中的 Kubernetes 叢集上部署 Spring Boot 應用程式
 
@@ -22,7 +22,7 @@ ms.locfileid: "74811929"
 
 本教學課程會逐步引導您結合這兩項受歡迎的開放原始碼技術，以開發 Spring Boot 應用程式並把它部署到 Microsoft Azure。 更具體來說，您使用 *[Spring Boot]* 開發應用程式、用 *[Kubernetes]* 部署容器，以及用 [Azure Kubernetes Service (AKS)] 裝載應用程式。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * Azure 訂用帳戶；如果您還沒有 Azure 訂用帳戶，則可以啟用 [MSDN 訂戶權益]或註冊[免費的 Azure 帳戶]。
 * [Azure 命令列介面 (CLI)]。
@@ -117,7 +117,7 @@ ms.locfileid: "74811929"
    ```xml
    <properties>
       <docker.image.prefix>wingtiptoysregistry.azurecr.io</docker.image.prefix>
-      <jib-maven-plugin.version>1.7.0</jib-maven-plugin.version>
+      <jib-maven-plugin.version>1.8.0</jib-maven-plugin.version>
       <java.version>1.8</java.version>
    </properties>
    ```
@@ -204,7 +204,7 @@ ms.locfileid: "74811929"
 
 1. 開啟命令提示字元。
 
-1. 使用 `kubectl run` 命令在 Kubernetes 叢集中執行容器。 為您在 Kubernetes 中的應用程式提供服務名稱和完整的映像名稱。 例如︰
+1. 使用 `kubectl run` 命令在 Kubernetes 叢集中執行容器。 為您在 Kubernetes 中的應用程式提供服務名稱和完整的映像名稱。 例如：
    ```
    kubectl run gs-spring-boot-docker --image=wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest
    ```
@@ -214,7 +214,7 @@ ms.locfileid: "74811929"
 
    * `--image` 參數指定合併的登入伺服器和映像名稱為 `wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest`
 
-1. 使用 `kubectl expose` 命令向外部公開您的 Kubernetes 叢集。 指定您的服務名稱、用來存取應用程式的公開 TCP 通訊埠，以及應用程式接聽的內部目標連接埠。 例如︰
+1. 使用 `kubectl expose` 命令向外部公開您的 Kubernetes 叢集。 指定您的服務名稱、用來存取應用程式的公開 TCP 通訊埠，以及應用程式接聽的內部目標連接埠。 例如：
    ```
    kubectl expose deployment gs-spring-boot-docker --type=LoadBalancer --port=80 --target-port=8080
    ```

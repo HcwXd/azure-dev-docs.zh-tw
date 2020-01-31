@@ -1,18 +1,14 @@
 ---
 title: 用來進行驗證和 AAD 的 Azure SDK for Go 範例
 description: 精選數個範例，供您與 Azure SDK for Go 中的 Azure Active Directory (AAD) 和驗證搭配使用。
-author: sptramer
-ms.author: sttramer
-manager: carmonm
 ms.date: 09/05/2018
 ms.topic: sample
-ms.devlang: go
-ms.openlocfilehash: 3a92c885ad7a79391fb41d463d47353602579c3c
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: ccada2ed6812bf5139f8c1c34c16059e83b02f52
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68292103"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871946"
 ---
 # <a name="azure-sdk-for-go-samples-for-authentication-and-aad"></a>用來進行驗證和 AAD 的 Azure SDK for Go 範例
 
@@ -20,7 +16,7 @@ ms.locfileid: "68292103"
 
 所有適用於 Azure SDK for Go 的範例都位於 [GitHub](https://github.com/Azure-Samples/azure-sdk-for-go-samples)。
 
-| Name | 說明 |
+| 名稱 | 描述 |
 |------|-------------|
 | [internal/iam/authorizers](https://github.com/Azure-Samples/azure-sdk-for-go-samples/blob/master/internal/iam/authorizers.go) | 如何使用 Azure 進行驗證以使用服務。 |
 | [authorization/authorization](https://github.com/Azure-Samples/azure-sdk-for-go-samples/blob/master/authorization/authorization.go) | 新增、移除和檢查 AAD 角色。 |

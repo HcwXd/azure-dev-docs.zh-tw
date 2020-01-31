@@ -6,12 +6,12 @@ ms.author: karler
 ms.date: 11/12/2019
 ms.service: app-service
 ms.topic: article
-ms.openlocfilehash: aa26952b320392beb553f327920fe5bd905a0b85
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 47f318708fbe786b2fd0b58dc7d68cdd5c975856
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811823"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872133"
 ---
 # <a name="deploy-a-spring-app-to-app-service-with-mysql"></a>使用 MySQL 將 Spring 應用程式部署至 App Service
 
@@ -19,7 +19,7 @@ ms.locfileid: "74811823"
 
 本教學課程是以熱門的 Spring PetClinic 範例應用程式為基礎。 在本主題中，您將在本機測試應用程式的 HSQLDB 版本，然後將它部署到 [Azure App Service](/azure/app-service/containers)。 之後，您將設定和部署使用[適用於 MySQL 的 Azure 資料庫](/azure/mysql)的版本。 最後，您將了解如何存取應用程式記錄，以及藉由增加執行您應用程式的背景工作角色數目來相應放大。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * [Azure CLI](https://docs.microsoft.com/cli/azure/overview)
 * [Java 8](http://java.oracle.com/)
@@ -121,7 +121,7 @@ Maven 將會使用這些值，以您提供的名稱建立 Azure 資源。 藉由
 <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <configuration>
         <schemaVersion>v2</schemaVersion>
         <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>

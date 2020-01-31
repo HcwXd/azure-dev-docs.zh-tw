@@ -5,12 +5,12 @@ author: yevster
 ms.author: yebronsh
 ms.topic: conceptual
 ms.date: 1/20/2020
-ms.openlocfilehash: fbf1faabbefcb987cf398a45005eb480ec16b27d
-ms.sourcegitcommit: 3585b1b5148e0f8eb950037345bafe6a4f6be854
+ms.openlocfilehash: d32c38d763901152135b965484362031dfac7f0a
+ms.sourcegitcommit: 367780fe48d977c82cb84208c128b0bf694b1029
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "76288587"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76825792"
 ---
 # <a name="migrate-java-applications-to-azure"></a>將應用程式遷移至 Azure
 
@@ -129,9 +129,9 @@ JAVA EE 應用程式必須部署至與 Java EE 相容的應用程式伺服器 (�
 
 |目的地&nbsp;→<br><br>應用程式&nbsp;類型&nbsp;↓|App<br>服務<br>Java SE|App<br>服務<br>Tomcat|App<br>服務<br>WildFly|Azure<br>Spring<br>Cloud|AKS|虛擬機器|
 |---|---|---|---|---|---|---|
-| Spring Boot /<br>JAR 應用程式 | 已規劃 | 已規劃        | 已規劃 | 已規劃 | 已規劃        | 已規劃 |
-| Spring Cloud /<br>微服務   | N/A     | N/A            | N/A     | 已規劃 | 已規劃        | 已規劃 |
-| Web 應用程式<br>在 Tomcat 上     | N/A     | [可用][2] | N/A     | N/A     | [可用][3] | 已規劃 |
+| Spring Boot /<br>JAR 應用程式 | [可用][5] | 已規劃        | 已規劃 | 已規劃 | 已規劃        | 已規劃 |
+| Spring Cloud /<br>微服務   | N/A            | N/A            | N/A     | 已規劃 | 已規劃        | 已規劃 |
+| Web 應用程式<br>在 Tomcat 上     | N/A            | [可用][2] | N/A     | N/A     | [可用][3] | 已規劃 |
 
 **Java EE 應用程式**
 
@@ -139,12 +139,14 @@ JAVA EE 應用程式必須部署至與 Java EE 相容的應用程式伺服器 (�
 
 |目的地&nbsp;→<br><br>應用程式伺服器&nbsp;↓|App<br>服務<br>Java SE|App<br>服務<br>Tomcat|App<br>服務<br>WildFly|Azure<br>Spring<br>Cloud|AKS|虛擬機器|
 |---|---|---|---|---|---|---|
-| WildFly /<br>JBoss AS | N/A | N/A | 已規劃 | N/A | 已規劃 | 已規劃 |
-| WebLogic              | N/A | N/A | 已規劃 | N/A | 已規劃 | 已規劃 |
-| WebSphere             | N/A | N/A | 已規劃 | N/A | 已規劃 | 已規劃 |
-| JBoss EAP             | N/A | N/A | 已規劃 | N/A | N/A     | 已規劃 |
+| WildFly /<br>JBoss AS | N/A | N/A | 已規劃 | N/A | 已規劃 | 已規劃        |
+| WebLogic              | N/A | N/A | 已規劃 | N/A | 已規劃 | [可用][4] |
+| WebSphere             | N/A | N/A | 已規劃 | N/A | 已規劃 | 已規劃        |
+| JBoss EAP             | N/A | N/A | 已規劃 | N/A | N/A     | 已規劃        |
 
 <!-- reference links, for use with tables -->
 [1]: media/migration-overview/logo_azure.svg
 [2]: migrate-tomcat-to-tomcat-app-service.md
 [3]: migrate-tomcat-to-containers-on-azure-kubernetes-service.md
+[4]: migrate-weblogic-to-virtual-machines.md
+[5]: migrate-java-se-to-java-se-app-service.md

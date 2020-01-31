@@ -1,18 +1,14 @@
 ---
 title: 使用 Azure SDK for Go 進行驗證
 description: 了解 Azure SDK for Go 中可用的驗證方法及其使用方式。
-author: sptramer
-ms.author: sttramer
-manager: carmonm
 ms.date: 09/05/2018
 ms.topic: conceptual
-ms.devlang: go
-ms.openlocfilehash: 34a3995b4eb5cc9012ca03b11fa8199460b9f9d4
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: b4bf09dbb3f59c77c2914ae9c9091dc0af31b093
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68292069"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871969"
 ---
 # <a name="authentication-methods-in-the-azure-sdk-for-go"></a>Azure SDK for Go 中可用的驗證方法
 
@@ -68,12 +64,12 @@ Azure SDK for Go 提供數種不同類型的驗證，各自使用不同的認證
 下表詳細說明針對環境式驗證所支援的每種驗證類型，需要設定的環境變數。
 
 
-|  驗證類型   |     環境變數     |                                                                                                     說明                                                                                                      |
+|  驗證類型   |     環境變數     |                                                                                                     描述                                                                                                      |
 |------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **用戶端認證** |      `AZURE_TENANT_ID`       |                                                                    服務主體所屬的 Active Directory 租用戶 ID。                                                                     |
 |                        |      `AZURE_CLIENT_ID`       |                                                                                       服務主體的名稱或 ID。                                                                                       |
 |                        |    `AZURE_CLIENT_SECRET`     |                                                                                  與服務主體關聯的密碼。                                                                                   |
-|    **憑證**     |      `AZURE_TENANT_ID`       |                                                                   憑證註冊的 Active Directory 租用戶 ID。                                                                    |
+|    **[MSSQLSERVER 的通訊協定內容]**     |      `AZURE_TENANT_ID`       |                                                                   憑證註冊的 Active Directory 租用戶 ID。                                                                    |
 |                        |      `AZURE_CLIENT_ID`       |                                                                              與憑證相關聯的用戶端識別碼。                                                                              |
 |                        |   `AZURE_CERTIFICATE_PATH`   |                                                                                       用戶端憑證檔案的路徑。                                                                                       |
 |                        | `AZURE_CERTIFICATE_PASSWORD` |                                                                                       用戶端憑證的密碼。                                                                                       |
@@ -85,7 +81,7 @@ Azure SDK for Go 提供數種不同類型的驗證，各自使用不同的認證
 
 若要連線到預設 Azure 公用雲端以外的雲端或管理端點，請設定下列環境變數。 最常見的幾個原因是您使用了 Azure Stack、位於不同地理區域的雲端，或傳統部署模型。
 
-| 環境變數 | 說明  |
+| 環境變數 | 描述  |
 |----------------------|--------------|
 | `AZURE_ENVIRONMENT` | 要連線到的雲端環境名稱。 |
 | `AZURE_AD_RESOURCE` | 連線時要使用的 Active Directory 資源識別碼，會作為您管理端點的 URI。 |
@@ -101,7 +97,7 @@ authorizer, err := auth.NewAuthorizerFromEnvironment()
 
 若要在 Azure Stack 上進行驗證，您需要設定以下變數：
 
-| 環境變數 | 說明  |
+| 環境變數 | 描述  |
 |----------------------|--------------|
 | `AZURE_AD_ENDPOINT` | Azure Active Directory 端點。 |
 | `AZURE_AD_RESOURCE` | Active Directory 資源識別碼。 |

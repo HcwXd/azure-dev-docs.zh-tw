@@ -6,12 +6,12 @@ ms.reviewer: joshuapa
 ms.date: 4/24/2019
 ms.service: cosmos-db
 ms.topic: article
-ms.openlocfilehash: ab49d2c05477d6f2674cd410cf3b9fbeda357bf8
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 53bc7d9ebd03fb122d58dd52145876e698dc751f
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812166"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872163"
 ---
 # <a name="how-to-use-spring-and-cosmos-db-with-app-service-on-linux"></a>如何在 Linux 上的 App Service 中使用 Spring 和 Cosmos DB
 
@@ -23,11 +23,11 @@ ms.locfileid: "74812166"
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction)
 - [App Service Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要遵循本文中的步驟，需要具備下列必要條件：
 
-- 若要將 Java Web 應用程式部署到雲端，必須要有 Azure 訂用帳戶。 如果您還沒有 Azure 訂用帳戶，您可以啟用 [MSDN 訂閱者權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)或註冊[免費的 Azure 帳戶]((https://azure.microsoft.com/pricing/free-trial/))。
+- 若要將 Java Web 應用程式部署到雲端，必須要有 Azure 訂用帳戶。 如果您還沒有 Azure 訂用帳戶，您可以啟用 [MSDN 訂閱者權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)或註冊[免費的 Azure 帳戶](https://azure.microsoft.com/pricing/free-trial/)。
 - [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
 - [Java 8 JDK](https://docs.microsoft.com/azure/java/jdk/java-jdk-install)
 - [Maven 3](http://maven.apache.org/)
