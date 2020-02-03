@@ -33,4 +33,4 @@ ms.locfileid: "74466576"
     ![VS Code 已在中斷點上停止](media/functions-extension/debugging-breakpoint.png)
 
 > [!div class="nextstepaction"]
-> [我已在本基執行函式應用程式](tutorial-vscode-serverless-node-04.md) [我遇到問題](https://www.research.net/r/PWZWZ52?tutorial=node-deployment-azurefunctions&step=run-app)
+> [我已在本機執行函式應用程式](tutorial-vscode-serverless-node-04.md) [我遇到問題](https://www.research.net/r/PWZWZ52?tutorial=node-deployment-azurefunctions&step=run-app)
